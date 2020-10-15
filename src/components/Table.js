@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
 import api from "../api/covid19india";
 import { STATE_NAMES } from "../constants";
+
 const columns = [
   "State/UT",
   "Confirmed",
@@ -11,15 +12,8 @@ const columns = [
   "Tested",
 ];
 
-const testData = [
-  ["Joe James", "Test Corp", "Yonkers", "NY"],
-  ["John Walsh", "Test Corp", "Hartford", "CT"],
-  ["Bob Herm", "Test Corp", "Tampa", "FL"],
-  ["James Houston", "Test Corp", "Dallas", "TX"],
-];
-
 function Table() {
-  const data = useState({});
+  const [data, setData] = useState({});
 
   useEffect(() => {
     const getTableData = async () => {
@@ -38,7 +32,7 @@ function Table() {
           res.data[state].total.tested,
         ]);
       }
-      console.log(formatData);
+      setData(formatData.filter((arr) => arr[0] !== "India"));
     };
     getTableData();
   }, []);
@@ -53,7 +47,11 @@ function Table() {
     viewColumns: false,
     selectableRows: "none",
   };
-  return <MUIDataTable data={testData} columns={columns} options={options} />;
+  return (
+    Object.keys(data).length !== 0 && (
+      <MUIDataTable data={data} columns={columns} options={options} />
+    )
+  );
 }
 
 export default Table;
