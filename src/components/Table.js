@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
-
+import api from "../api/covid19india";
+import { STATE_NAMES } from "../constants";
 const columns = [
   "State/UT",
   "Confirmed",
@@ -10,7 +11,7 @@ const columns = [
   "Tested",
 ];
 
-const data = [
+const testData = [
   ["Joe James", "Test Corp", "Yonkers", "NY"],
   ["John Walsh", "Test Corp", "Hartford", "CT"],
   ["Bob Herm", "Test Corp", "Tampa", "FL"],
@@ -18,6 +19,30 @@ const data = [
 ];
 
 function Table() {
+  const data = useState({});
+
+  useEffect(() => {
+    const getTableData = async () => {
+      const res = await api.get("/v4/data.json");
+      console.log(res.data);
+      const formatData = [];
+      for (const state in res.data) {
+        formatData.push([
+          STATE_NAMES[state],
+          res.data[state].total.confirmed,
+          res.data[state].total.confirmed -
+            res.data[state].total.recovered -
+            res.data[state].total.deceased,
+          res.data[state].total.recovered,
+          res.data[state].total.deceased,
+          res.data[state].total.tested,
+        ]);
+      }
+      console.log(formatData);
+    };
+    getTableData();
+  }, []);
+
   const options = {
     filterType: "checkbox",
     pagination: false,
@@ -28,7 +53,7 @@ function Table() {
     viewColumns: false,
     selectableRows: "none",
   };
-  return <MUIDataTable data={data} columns={columns} options={options} />;
+  return <MUIDataTable data={testData} columns={columns} options={options} />;
 }
 
 export default Table;
