@@ -1,7 +1,8 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 
+import LeftLanding from "./LeftLanding";
+import RightLanding from "./RightLanding";
 import useStyles from "../styles/LandingStyles";
 
 function Landing() {
@@ -11,10 +12,10 @@ function Landing() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12</Paper>
+          <LeftLanding />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12</Paper>
+          <RightLanding />
         </Grid>
       </Grid>
     </div>
