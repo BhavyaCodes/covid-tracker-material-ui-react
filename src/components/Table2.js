@@ -13,15 +13,11 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
-import DeleteIcon from "@material-ui/icons/Delete";
-// import FilterListIcon from "@material-ui/icons/FilterList";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, confirmed, active, recovered, deceased) {
+  return { name, confirmed, active, recovered, deceased };
 }
 
 const rows = [
@@ -71,12 +67,12 @@ const headCells = [
     id: "name",
     numeric: false,
     disablePadding: false,
-    label: "Dessert (100g serving)",
+    label: "State/UT",
   },
-  { id: "calories", numeric: true, disablePadding: false, label: "Calories" },
-  { id: "fat", numeric: true, disablePadding: false, label: "Fat (g)" },
-  { id: "carbs", numeric: true, disablePadding: false, label: "Carbs (g)" },
-  { id: "protein", numeric: true, disablePadding: false, label: "Protein (g)" },
+  { id: "confirmed", numeric: true, disablePadding: false, label: "Confirmed" },
+  { id: "active", numeric: true, disablePadding: false, label: "Active" },
+  { id: "recovered", numeric: true, disablePadding: false, label: "Recovered" },
+  { id: "deceased", numeric: true, disablePadding: false, label: "Deceased" },
 ];
 
 function EnhancedTableHead(props) {
@@ -178,7 +174,7 @@ const EnhancedTableToolbar = (props) => {
           id="tableTitle"
           component="div"
         >
-          Nutrition
+          State / Union territory data
         </Typography>
       )}
     </Toolbar>
@@ -216,10 +212,10 @@ const useStyles = makeStyles((theme) => ({
 export default function EnhancedTable() {
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("calories");
+  const [orderBy, setOrderBy] = React.useState("confirmed");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(false);
+  const [dense, setDense] = React.useState(true);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const handleRequestSort = (event, property) => {
@@ -268,7 +264,7 @@ export default function EnhancedTable() {
     setDense(event.target.checked);
   };
 
-  const isSelected = (name) => selected.indexOf(name) !== -1;
+  // const isSelected = (name) => selected.indexOf(name) !== -1;
 
   const emptyRows =
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
@@ -313,10 +309,10 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row">
                         {row.name}
                       </TableCell>
-                      <TableCell align="right">{row.calories}</TableCell>
-                      <TableCell align="right">{row.fat}</TableCell>
-                      <TableCell align="right">{row.carbs}</TableCell>
-                      <TableCell align="right">{row.protein}</TableCell>
+                      <TableCell align="right">{row.confirmed}</TableCell>
+                      <TableCell align="right">{row.active}</TableCell>
+                      <TableCell align="right">{row.recovered}</TableCell>
+                      <TableCell align="right">{row.deceased}</TableCell>
                     </TableRow>
                   );
                 })}
