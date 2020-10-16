@@ -45,6 +45,8 @@ function Table() {
     filter: false,
     search: false,
     viewColumns: false,
+    serverSide: true,
+    responsive: "standard",
     selectableRows: "none",
   };
   return (
