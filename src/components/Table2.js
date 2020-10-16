@@ -14,8 +14,6 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Switch from "@material-ui/core/Switch";
 
 import { STATE_NAMES } from "../constants";
 import api from "../api/covid19india";
@@ -57,20 +55,20 @@ const headCells = [
     disablePadding: false,
     label: "State/UT",
   },
-  { id: "confirmed", numeric: true, disablePadding: false, label: "Confirmed" },
-  { id: "active", numeric: true, disablePadding: false, label: "Active" },
-  { id: "recovered", numeric: true, disablePadding: false, label: "Recovered" },
+  { id: "confirmed", numeric: true, disablePadding: true, label: "Confirmed" },
+  { id: "active", numeric: true, disablePadding: true, label: "Active" },
+  { id: "recovered", numeric: true, disablePadding: true, label: "Recovered" },
   { id: "deceased", numeric: true, disablePadding: false, label: "Deceased" },
 ];
 
 function EnhancedTableHead(props) {
   const {
     classes,
-    onSelectAllClick,
+    // onSelectAllClick,
     order,
     orderBy,
-    numSelected,
-    rowCount,
+    // numSelected,
+    // rowCount,
     onRequestSort,
   } = props;
   const createSortHandler = (property) => (event) => {
@@ -146,25 +144,14 @@ const EnhancedTableToolbar = (props) => {
         [classes.highlight]: numSelected > 0,
       })}
     >
-      {numSelected > 0 ? (
-        <Typography
-          className={classes.title}
-          color="inherit"
-          variant="subtitle1"
-          component="div"
-        >
-          {numSelected} selected
-        </Typography>
-      ) : (
-        <Typography
-          className={classes.title}
-          variant="h6"
-          id="tableTitle"
-          component="div"
-        >
-          State / Union territory data
-        </Typography>
-      )}
+      <Typography
+        className={classes.title}
+        variant="h6"
+        id="tableTitle"
+        component="div"
+      >
+        State / Union territory data
+      </Typography>
     </Toolbar>
   );
 };
@@ -182,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   table: {
-    minWidth: 750,
+    minWidth: 0,
   },
   visuallyHidden: {
     border: 0,
@@ -322,9 +309,15 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row">
                         {row.name}
                       </TableCell>
-                      <TableCell align="right">{row.confirmed}</TableCell>
-                      <TableCell align="right">{row.active}</TableCell>
-                      <TableCell align="right">{row.recovered}</TableCell>
+                      <TableCell padding="none" align="right">
+                        {row.confirmed}
+                      </TableCell>
+                      <TableCell padding="none" align="right">
+                        {row.active}
+                      </TableCell>
+                      <TableCell padding="none" align="right">
+                        {row.recovered}
+                      </TableCell>
                       <TableCell align="right">{row.deceased}</TableCell>
                     </TableRow>
                   );
