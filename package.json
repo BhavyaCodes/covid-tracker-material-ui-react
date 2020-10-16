@@ -14,7 +14,9 @@
     "mui-datatables": "^3.5.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-simple-maps": "^2.1.2",
+    "react-tooltip": "^4.2.10"
   },
   "scripts": {
     "start": "react-scripts start",
