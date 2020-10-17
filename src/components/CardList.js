@@ -4,16 +4,12 @@ import Grid from "@material-ui/core/Grid";
 import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
 import { DataContext } from "../context/data.context";
-import {
-  AttributeContext,
-  DispatchAttributeContext,
-} from "../context/attribute.context";
+import { AttributeContext } from "../context/attribute.context";
 
 function Cards() {
   const classes = useStyles();
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
-  const dispatchAttribute = useContext(DispatchAttributeContext);
 
   console.log(attribute);
 

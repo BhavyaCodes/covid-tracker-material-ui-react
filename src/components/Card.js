@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+import { DispatchAttributeContext } from "../context/attribute.context";
 import useStyles from "../styles/CardStyles";
 
 export default function ({ heading, subHeading, number, active, type }) {
   const classes = useStyles();
+  const dispatchAttribute = useContext(DispatchAttributeContext);
 
   const propToClass = {
     confirmed: classes.bgRed,
@@ -16,8 +18,15 @@ export default function ({ heading, subHeading, number, active, type }) {
     deceased: classes.bgGray,
   };
 
+  const handleClick = () => {
+    dispatchAttribute({ type });
+  };
+
   return (
-    <Card className={`${classes.root} ${active && propToClass[type]}`}>
+    <Card
+      className={`${classes.root} ${active && propToClass[type]}`}
+      onClick={handleClick}
+    >
       <CardContent>
         <Typography
           className={classes.title}
