@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { geoMercator, geoAlbers } from "d3-geo";
+// import { geoMercator, geoAlbers } from "d3-geo";
 import {
   ZoomableGroup,
   ComposableMap,
@@ -9,8 +9,8 @@ import {
 
 import indiaMap from "../maps/india-map-2.json";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+// const geoUrl =
+//   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = ({ setTooltipContent }) => {
   return (
@@ -19,9 +19,9 @@ const MapChart = ({ setTooltipContent }) => {
         data-tip=""
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          scale: 900,
-          rotate: [-20, -5, -14],
-          center: [60, 10],
+          scale: 1050,
+          rotate: [-80, -5, 0],
+          center: [0, 17.5],
         }}
       >
         <Geographies geography={indiaMap}>
