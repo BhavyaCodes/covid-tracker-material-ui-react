@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { geoMercator, geoCentroid } from "d3-geo";
+import { geoMercator, geoAlbers } from "d3-geo";
 import {
   ZoomableGroup,
   ComposableMap,
@@ -17,9 +17,11 @@ const MapChart = ({ setTooltipContent }) => {
     <>
       <ComposableMap
         data-tip=""
-        projection={geoMercator()}
+        projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          scale: 200,
+          scale: 900,
+          rotate: [-20, -5, -14],
+          center: [60, 10],
         }}
       >
         <Geographies geography={indiaMap}>
