@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Grid from "@material-ui/core/Grid";
 
 import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
-
-import api from "../api/covid19india";
+import { DataContext } from "../context/data.context";
 
 function Cards() {
   const classes = useStyles();
+  const data = useContext(DataContext);
+  console.log("data", data);
 
-  const [data, setData] = useState({
+  const [cardData, setCardData] = useState({
     confirmed: {
       total: "---",
       delta: "---",
@@ -28,36 +29,39 @@ function Cards() {
   });
 
   useEffect(() => {
-    const getData = async () => {
-      const res = await api.get("/v4/data.json");
-      const india = res.data["TT"];
-      console.log(india);
-      setData({
-        confirmed: {
-          total: numberWithCommas(india.total.confirmed),
-          delta: "+" + numberWithCommas(india.delta.confirmed),
-        },
-        active: {
-          total: numberWithCommas(
-            india.total.confirmed - india.total.recovered - india.total.deceased
-          ),
-        },
-        recovered: {
-          total: numberWithCommas(india.total.recovered),
-          delta: "+" + numberWithCommas(india.delta.recovered),
-        },
-        deceased: {
-          total: numberWithCommas(india.total.deceased),
-          delta: "+" + numberWithCommas(india.delta.deceased),
-        },
-      });
-    };
-    getData();
-  }, []);
+    if (!data.hasLoaded) {
+      return;
+    }
+    setCardData({
+      confirmed: {
+        total: numberWithCommas(data.indiaData.total.confirmed),
+        delta: "+" + numberWithCommas(data.indiaData.delta.confirmed),
+      },
+      active: {
+        total: numberWithCommas(
+          data.indiaData.total.confirmed -
+            data.indiaData.total.recovered -
+            data.indiaData.total.deceased
+        ),
+      },
+      recovered: {
+        total: numberWithCommas(data.indiaData.total.recovered),
+        delta: "+" + numberWithCommas(data.indiaData.delta.recovered),
+      },
+      deceased: {
+        total: numberWithCommas(data.indiaData.total.deceased),
+        delta: "+" + numberWithCommas(data.indiaData.delta.deceased),
+      },
+    });
+  }, [data]);
 
   const numberWithCommas = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
+
+  if (!data.hasLoaded) {
+    return <div>Loading</div>;
+  }
 
   return (
     <div className={classes.root}>
@@ -65,25 +69,29 @@ function Cards() {
         <Grid item xs={3}>
           <Card
             heading="Confirmed"
-            subHeading={data.confirmed.delta}
-            number={data.confirmed.total}
+            subHeading={cardData.confirmed.delta}
+            number={cardData.confirmed.total}
           />
         </Grid>
         <Grid item xs={3}>
-          <Card heading="Active" subHeading="-" number={data.active.total} />
+          <Card
+            heading="Active"
+            subHeading="-"
+            number={cardData.active.total}
+          />
         </Grid>
         <Grid item xs={3}>
           <Card
             heading="Recovered"
-            subHeading={data.recovered.delta}
-            number={data.recovered.total}
+            subHeading={cardData.recovered.delta}
+            number={cardData.recovered.total}
           />
         </Grid>
         <Grid item xs={3}>
           <Card
             heading="Deceased"
-            subHeading={data.deceased.delta}
-            number={data.deceased.total}
+            subHeading={cardData.deceased.delta}
+            number={cardData.deceased.total}
           />
         </Grid>
       </Grid>

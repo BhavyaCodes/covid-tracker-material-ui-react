@@ -24,9 +24,10 @@ export function DataProvider(props) {
           res.data[state].total.tested,
         ]);
       }
+      const indiaData = res.data["TT"];
       // const filterData = formatData.filter((arr) => arr[0] !== "India");
       // console.log(filterData);
-      setData({ hasLoaded: true, data: formatData });
+      setData({ hasLoaded: true, data: formatData, indiaData });
       // setRows(
       //   filterData.map((arr) => {
       //     return createData(arr[0], arr[1], arr[2], arr[3], arr[4]);
