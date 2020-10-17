@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 
 import PropTypes from "prop-types";
 import clsx from "clsx";
@@ -15,6 +15,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
+import { DataContext } from "../context/data.context";
 import { STATE_NAMES } from "../constants";
 import api from "../api/covid19india";
 
@@ -192,6 +193,8 @@ export default function EnhancedTable() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
   const [rows, setRows] = React.useState([]);
+  const data = useContext(DataContext);
+  console.log(data);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
