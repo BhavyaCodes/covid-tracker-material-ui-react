@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 
 import PropTypes from "prop-types";
 import clsx from "clsx";
@@ -15,8 +15,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
-import { STATE_NAMES } from "../constants";
-import api from "../api/covid19india";
+import { DataContext } from "../context/data.context";
 
 function createData(name, confirmed, active, recovered, deceased) {
   return { name, confirmed, active, recovered, deceased };
@@ -192,6 +191,7 @@ export default function EnhancedTable() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
   const [rows, setRows] = React.useState([]);
+  const data = useContext(DataContext);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -241,33 +241,19 @@ export default function EnhancedTable() {
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   useEffect(() => {
-    const getTableData = async () => {
-      const res = await api.get("/v4/data.json");
-      console.log(res.data);
-      const formatData = [];
-      for (const state in res.data) {
-        formatData.push([
-          STATE_NAMES[state],
-          res.data[state].total.confirmed,
-          res.data[state].total.confirmed -
-            res.data[state].total.recovered -
-            res.data[state].total.deceased,
-          res.data[state].total.recovered,
-          res.data[state].total.deceased,
-          res.data[state].total.tested,
-        ]);
-      }
-      const filterData = formatData.filter((arr) => arr[0] !== "India");
-      console.log(filterData);
-      setRows(
-        filterData.map((arr) => {
-          return createData(arr[0], arr[1], arr[2], arr[3], arr[4]);
-        })
-      );
-      // setData(formatData.filter((arr) => arr[0] !== "India"));
-    };
-    getTableData();
-  }, []);
+    if (!data.hasLoaded) {
+      return;
+    }
+    const filterData = data.data.filter((arr) => arr[0] !== "India");
+    setRows(
+      filterData.map((arr) => {
+        return createData(arr[0], arr[1], arr[2], arr[3], arr[4]);
+      })
+    );
+  }, [data]);
+  if (!data.hasLoaded) {
+    return <div>spinner</div>;
+  }
 
   return (
     <div className={classes.root}>
