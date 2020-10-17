@@ -1,11 +1,7 @@
 import React, { memo } from "react";
 // import { geoMercator, geoAlbers } from "d3-geo";
-import {
-  ZoomableGroup,
-  ComposableMap,
-  Geographies,
-  Geography,
-} from "react-simple-maps";
+import red from "@material-ui/core/colors/red";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 import indiaMap from "../maps/india-map-2.json";
 
@@ -31,8 +27,8 @@ const MapChart = ({ setTooltipContent }) => {
                 key={geo.rsmKey}
                 geography={geo}
                 onMouseEnter={() => {
-                  const { st_nm, st_code } = geo.properties;
-                  setTooltipContent(`${st_nm} — ${st_code}`);
+                  const { name } = geo.properties;
+                  setTooltipContent(`${name} - xyz`);
                 }}
                 onMouseLeave={() => {
                   setTooltipContent("");
