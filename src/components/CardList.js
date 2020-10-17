@@ -4,11 +4,18 @@ import Grid from "@material-ui/core/Grid";
 import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
 import { DataContext } from "../context/data.context";
+import {
+  AttributeContext,
+  DispatchAttributeContext,
+} from "../context/attribute.context";
 
 function Cards() {
   const classes = useStyles();
   const data = useContext(DataContext);
-  console.log("data", data);
+  const attribute = useContext(AttributeContext);
+  const dispatchAttribute = useContext(DispatchAttributeContext);
+
+  console.log(attribute);
 
   const [cardData, setCardData] = useState({
     confirmed: {
@@ -68,6 +75,8 @@ function Cards() {
       <Grid container spacing={2}>
         <Grid item xs={3}>
           <Card
+            active={attribute === "confirmed"}
+            type="confirmed"
             heading="Confirmed"
             subHeading={cardData.confirmed.delta}
             number={cardData.confirmed.total}
@@ -75,6 +84,8 @@ function Cards() {
         </Grid>
         <Grid item xs={3}>
           <Card
+            active={attribute === "active"}
+            type="active"
             heading="Active"
             subHeading="-"
             number={cardData.active.total}
@@ -82,6 +93,8 @@ function Cards() {
         </Grid>
         <Grid item xs={3}>
           <Card
+            active={attribute === "recovered"}
+            type="recovered"
             heading="Recovered"
             subHeading={cardData.recovered.delta}
             number={cardData.recovered.total}
@@ -89,6 +102,8 @@ function Cards() {
         </Grid>
         <Grid item xs={3}>
           <Card
+            active={attribute === "deceased"}
+            type="deceased"
             heading="Deceased"
             subHeading={cardData.deceased.delta}
             number={cardData.deceased.total}

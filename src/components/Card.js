@@ -6,11 +6,18 @@ import Typography from "@material-ui/core/Typography";
 
 import useStyles from "../styles/CardStyles";
 
-export default function ({ heading, subHeading, number }) {
+export default function ({ heading, subHeading, number, active, type }) {
   const classes = useStyles();
 
+  const propToClass = {
+    confirmed: classes.bgRed,
+    active: classes.bgBlue,
+    recovered: classes.bgGreen,
+    deceased: classes.bgGray,
+  };
+
   return (
-    <Card className={classes.root}>
+    <Card className={`${classes.root} ${active && propToClass[type]}`}>
       <CardContent>
         <Typography
           className={classes.title}
