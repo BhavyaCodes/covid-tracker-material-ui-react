@@ -38,7 +38,9 @@ function Cards() {
     setCardData({
       confirmed: {
         total: numberWithCommas(data.indiaData.total.confirmed),
-        delta: "+" + numberWithCommas(data.indiaData.delta.confirmed),
+        delta: data.indiaData.delta.confirmed
+          ? "+" + numberWithCommas(data.indiaData.delta.confirmed)
+          : "♥",
       },
       active: {
         total: numberWithCommas(
@@ -49,11 +51,15 @@ function Cards() {
       },
       recovered: {
         total: numberWithCommas(data.indiaData.total.recovered),
-        delta: "+" + numberWithCommas(data.indiaData.delta.recovered),
+        delta: data.indiaData.delta.recovered
+          ? "+" + numberWithCommas(data.indiaData.delta.recovered)
+          : "♥",
       },
       deceased: {
         total: numberWithCommas(data.indiaData.total.deceased),
-        delta: "+" + numberWithCommas(data.indiaData.delta.deceased),
+        delta: data.indiaData.delta.deceased
+          ? "+" + numberWithCommas(data.indiaData.delta.deceased)
+          : "?",
       },
     });
   }, [data]);
