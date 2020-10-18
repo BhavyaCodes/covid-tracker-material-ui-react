@@ -1,7 +1,8 @@
 import React, { memo, useContext } from "react";
 import _ from "lodash";
-// import red from "@material-ui/core/colors/red";
+import red from "@material-ui/core/colors/red";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { scaleQuantize } from "d3-scale";
 
 import indiaMap from "../maps/india-map-2.json";
 import { DataContext } from "../context/data.context";
@@ -38,6 +39,10 @@ const MapChart = ({ setTooltipContent }) => {
     return max;
   };
 
+  const colorScale = scaleQuantize()
+    .domain([0, getMaxValue()])
+    .range([red[50], red[100], red[400], red[900]]);
+
   return (
     <>
       <ComposableMap
@@ -51,33 +56,36 @@ const MapChart = ({ setTooltipContent }) => {
       >
         <Geographies geography={indiaMap}>
           {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                onMouseEnter={() => {
-                  const { name } = geo.properties;
-                  setTooltipContent(`${name} - xyz`);
-                }}
-                onMouseLeave={() => {
-                  setTooltipContent("");
-                }}
-                style={{
-                  default: {
-                    fill: "#D6D6DA",
-                    outline: "none",
-                  },
-                  hover: {
-                    fill: "#F53",
-                    outline: "none",
-                  },
-                  pressed: {
-                    fill: "#E42",
-                    outline: "none",
-                  },
-                }}
-              />
-            ))
+            geographies.map((geo) => {
+              const alias = geo.properties.alias;
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  onMouseEnter={() => {
+                    const { name } = geo.properties;
+                    setTooltipContent(`${name} - xyz`);
+                  }}
+                  onMouseLeave={() => {
+                    setTooltipContent("");
+                  }}
+                  style={{
+                    default: {
+                      fill: "#D6D6DA",
+                      outline: "none",
+                    },
+                    hover: {
+                      fill: "#F53",
+                      outline: "none",
+                    },
+                    pressed: {
+                      fill: "#E42",
+                      outline: "none",
+                    },
+                  }}
+                />
+              );
+            })
           }
         </Geographies>
       </ComposableMap>
