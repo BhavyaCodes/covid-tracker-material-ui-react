@@ -15,6 +15,7 @@ const MapChart = ({ setTooltipContent }) => {
     return null;
   }
   data.data = _.omit(data.data, ["TT"]);
+  console.log(data);
 
   const getMaxValue = () => {
     let max = 0;
@@ -41,7 +42,17 @@ const MapChart = ({ setTooltipContent }) => {
 
   const colorScale = scaleQuantize()
     .domain([0, getMaxValue()])
-    .range([red[50], red[100], red[400], red[900]]);
+    .range([
+      red[50],
+      red[100],
+      red[200],
+      red[300],
+      red[400],
+      red[500],
+      red[700],
+      red[800],
+      red[900],
+    ]);
 
   return (
     <>
@@ -58,6 +69,8 @@ const MapChart = ({ setTooltipContent }) => {
           {({ geographies }) =>
             geographies.map((geo) => {
               const alias = geo.properties.alias;
+              console.log(alias);
+              // const num = data.data[alias]["total"][attribute];
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -71,7 +84,11 @@ const MapChart = ({ setTooltipContent }) => {
                   }}
                   style={{
                     default: {
-                      fill: "#D6D6DA",
+                      fill: colorScale(
+                        data.data[alias]
+                          ? data.data[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                     },
                     hover: {
