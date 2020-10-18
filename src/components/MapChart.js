@@ -1,12 +1,8 @@
 import React, { memo } from "react";
-// import { geoMercator, geoAlbers } from "d3-geo";
 import red from "@material-ui/core/colors/red";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 import indiaMap from "../maps/india-map-2.json";
-
-// const geoUrl =
-//   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = ({ setTooltipContent }) => {
   return (
