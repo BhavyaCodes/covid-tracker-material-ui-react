@@ -1,6 +1,7 @@
 import React, { memo, useContext } from "react";
 import _ from "lodash";
 import red from "@material-ui/core/colors/red";
+import pink from "@material-ui/core/colors/pink";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
 
@@ -90,10 +91,18 @@ const MapChart = ({ setTooltipContent }) => {
                           : "#EEE"
                       ),
                       outline: "none",
+                      stroke: red["A100"],
+                      strokeWidth: "2px",
                     },
                     hover: {
-                      fill: "#F53",
+                      fill: colorScale(
+                        data.data[alias]
+                          ? data.data[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
+                      stroke: pink["A400"],
+                      strokeWidth: "3px",
                     },
                     pressed: {
                       fill: "#E42",
