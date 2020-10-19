@@ -16,6 +16,7 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
 import { DataContext } from "../context/data.context";
+import { STATE_NAMES } from "../constants";
 
 function createData(name, confirmed, active, recovered, deceased) {
   return { name, confirmed, active, recovered, deceased };
@@ -244,7 +245,20 @@ export default function EnhancedTable() {
     if (!data.hasLoaded) {
       return;
     }
-    const filterData = data.data.filter((arr) => arr[0] !== "India");
+    const formatData = [];
+    for (const state in data.data) {
+      formatData.push([
+        STATE_NAMES[state],
+        data.data[state].total.confirmed,
+        data.data[state].total.confirmed -
+          data.data[state].total.recovered -
+          data.data[state].total.deceased,
+        data.data[state].total.recovered,
+        data.data[state].total.deceased,
+        data.data[state].total.tested,
+      ]);
+    }
+    const filterData = formatData.filter((arr) => arr[0] !== "India");
     setRows(
       filterData.map((arr) => {
         return createData(arr[0], arr[1], arr[2], arr[3], arr[4]);
