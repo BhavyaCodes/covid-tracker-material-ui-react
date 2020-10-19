@@ -89,25 +89,21 @@ const MapChart = ({ setTooltipContent }) => {
 
   const colorScalegrey = scaleQuantize()
     .domain([0, getMaxValue()])
-    .range([
-      grey[50],
-      grey[100],
-      grey[200],
-      grey[300],
-      grey[400],
-      grey[500],
-      grey[700],
-      grey[800],
-      grey[900],
-    ]);
+    .range([grey[200], grey[300], grey[400], grey[500], grey[700]]);
 
   const colorScale = () => {
     switch (attribute) {
       case "confirmed": {
         return colorScaleRed;
       }
+      case "active": {
+        return colorScaleBlue;
+      }
       case "recovered": {
         return colorScaleGreen;
+      }
+      case "deceased": {
+        return colorScalegrey;
       }
       default: {
         return colorScaleGreen;
@@ -163,11 +159,20 @@ const MapChart = ({ setTooltipContent }) => {
                   }}
                   style={{
                     default: {
-                      fill: colorScale()(
-                        data.data[alias]
-                          ? data.data[alias]["total"][attribute]
-                          : "#EEE"
-                      ),
+                      fill:
+                        attribute !== "active"
+                          ? colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"][attribute]
+                                : "#EEE"
+                            )
+                          : colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"]["confirmed"] -
+                                    data.data[alias]["total"]["recovered"] -
+                                    data.data[alias]["total"]["deceased"]
+                                : "#EEE"
+                            ),
                       outline: "none",
                       stroke: strokeColor[attribute].normal,
                       strokeWidth: "2px",
