@@ -9,7 +9,7 @@ import grey from "@material-ui/core/colors/grey";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
 
-import indiaMap from "../maps/india-map-2.json";
+import indiaMap from "../maps/india-map-3.json";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
 
@@ -148,7 +148,7 @@ const MapChart = ({ setTooltipContent }) => {
         <Geographies geography={indiaMap}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const alias = geo.properties.alias;
+              const alias = geo.id;
               console.log(alias);
               return (
                 <Geography
