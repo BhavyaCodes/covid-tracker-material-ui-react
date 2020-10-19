@@ -59,6 +59,20 @@ const MapChart = ({ setTooltipContent }) => {
       red[900],
     ]);
 
+  const colorScaleBlue = scaleQuantize()
+    .domain([0, getMaxValue()])
+    .range([
+      blue[50],
+      blue[100],
+      blue[200],
+      blue[300],
+      blue[400],
+      blue[500],
+      blue[700],
+      blue[800],
+      blue[900],
+    ]);
+
   const colorScaleGreen = scaleQuantize()
     .domain([0, getMaxValue()])
     .range([
@@ -71,6 +85,20 @@ const MapChart = ({ setTooltipContent }) => {
       green[700],
       green[800],
       green[900],
+    ]);
+
+  const colorScalegrey = scaleQuantize()
+    .domain([0, getMaxValue()])
+    .range([
+      grey[50],
+      grey[100],
+      grey[200],
+      grey[300],
+      grey[400],
+      grey[500],
+      grey[700],
+      grey[800],
+      grey[900],
     ]);
 
   const colorScale = () => {
