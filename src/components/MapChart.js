@@ -178,21 +178,39 @@ const MapChart = ({ setTooltipContent }) => {
                       strokeWidth: "2px",
                     },
                     hover: {
-                      fill: colorScale()(
-                        data.data[alias]
-                          ? data.data[alias]["total"][attribute]
-                          : "#EEE"
-                      ),
+                      fill:
+                        attribute !== "active"
+                          ? colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"][attribute]
+                                : "#EEE"
+                            )
+                          : colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"]["confirmed"] -
+                                    data.data[alias]["total"]["recovered"] -
+                                    data.data[alias]["total"]["deceased"]
+                                : "#EEE"
+                            ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
                     },
                     pressed: {
-                      fill: colorScale()(
-                        data.data[alias]
-                          ? data.data[alias]["total"][attribute]
-                          : "#EEE"
-                      ),
+                      fill:
+                        attribute !== "active"
+                          ? colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"][attribute]
+                                : "#EEE"
+                            )
+                          : colorScale()(
+                              data.data[alias]
+                                ? data.data[alias]["total"]["confirmed"] -
+                                    data.data[alias]["total"]["recovered"] -
+                                    data.data[alias]["total"]["deceased"]
+                                : "#EEE"
+                            ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
