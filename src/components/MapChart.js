@@ -2,6 +2,10 @@ import React, { memo, useContext } from "react";
 import _ from "lodash";
 import red from "@material-ui/core/colors/red";
 import pink from "@material-ui/core/colors/pink";
+import green from "@material-ui/core/colors/green";
+import blue from "@material-ui/core/colors/blue";
+import grey from "@material-ui/core/colors/grey";
+
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
 
@@ -41,7 +45,7 @@ const MapChart = ({ setTooltipContent }) => {
     return max;
   };
 
-  const colorScale = scaleQuantize()
+  const colorScaleRed = scaleQuantize()
     .domain([0, getMaxValue()])
     .range([
       red[50],
@@ -54,6 +58,53 @@ const MapChart = ({ setTooltipContent }) => {
       red[800],
       red[900],
     ]);
+
+  const colorScaleGreen = scaleQuantize()
+    .domain([0, getMaxValue()])
+    .range([
+      green[50],
+      green[100],
+      green[200],
+      green[300],
+      green[400],
+      green[500],
+      green[700],
+      green[800],
+      green[900],
+    ]);
+
+  const colorScale = () => {
+    switch (attribute) {
+      case "confirmed": {
+        return colorScaleRed;
+      }
+      case "recovered": {
+        return colorScaleGreen;
+      }
+      default: {
+        return colorScaleGreen;
+      }
+    }
+  };
+
+  const strokeColor = {
+    confirmed: {
+      normal: red["A100"],
+      hover: pink["A400"],
+    },
+    active: {
+      normal: blue["A100"],
+      hover: blue["A400"],
+    },
+    recovered: {
+      normal: green["A100"],
+      hover: green["A400"],
+    },
+    deceased: {
+      normal: grey["A100"],
+      hover: grey["A400"],
+    },
+  };
 
   return (
     <>
@@ -71,7 +122,6 @@ const MapChart = ({ setTooltipContent }) => {
             geographies.map((geo) => {
               const alias = geo.properties.alias;
               console.log(alias);
-              // const num = data.data[alias]["total"][attribute];
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -85,23 +135,23 @@ const MapChart = ({ setTooltipContent }) => {
                   }}
                   style={{
                     default: {
-                      fill: colorScale(
+                      fill: colorScale()(
                         data.data[alias]
                           ? data.data[alias]["total"][attribute]
                           : "#EEE"
                       ),
                       outline: "none",
-                      stroke: red["A100"],
+                      stroke: strokeColor[attribute].normal,
                       strokeWidth: "2px",
                     },
                     hover: {
-                      fill: colorScale(
+                      fill: colorScale()(
                         data.data[alias]
                           ? data.data[alias]["total"][attribute]
                           : "#EEE"
                       ),
                       outline: "none",
-                      stroke: pink["A400"],
+                      stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
                     },
                     pressed: {
