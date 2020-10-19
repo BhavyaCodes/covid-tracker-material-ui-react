@@ -155,8 +155,14 @@ const MapChart = ({ setTooltipContent }) => {
                       strokeWidth: "3px",
                     },
                     pressed: {
-                      fill: "#E42",
+                      fill: colorScale()(
+                        data.data[alias]
+                          ? data.data[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
+                      stroke: strokeColor[attribute].hover,
+                      strokeWidth: "3px",
                     },
                   }}
                 />
