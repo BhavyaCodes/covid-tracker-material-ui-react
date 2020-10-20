@@ -6,11 +6,11 @@ import MapHeader from "./MapHeader";
 
 function Map() {
   const [content, setContent] = useState("");
-  const [location, setLocation] = useState("India");
+  const [locationId, setLocationId] = useState("TT");
   return (
     <div>
-      <MapHeader location={location} />
-      <MapChart setTooltipContent={setContent} setLocation={setLocation} />
+      <MapHeader locationId={locationId} />
+      <MapChart setTooltipContent={setContent} setLocationId={setLocationId} />
       <ReactTooltip>{content}</ReactTooltip>
     </div>
   );

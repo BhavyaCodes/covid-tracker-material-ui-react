@@ -13,14 +13,13 @@ import indiaMap from "../maps/india-map-3.json";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
 
-const MapChart = ({ setTooltipContent }) => {
+const MapChart = ({ setTooltipContent, setLocationId }) => {
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
   if (!data.hasLoaded) {
     return null;
   }
   data.data = _.omit(data.data, ["TT"]);
-  console.log(data);
 
   const getMaxValue = () => {
     let max = 0;
@@ -145,7 +144,6 @@ const MapChart = ({ setTooltipContent }) => {
           {({ geographies }) =>
             geographies.map((geo) => {
               const alias = geo.id;
-              console.log(alias);
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -153,6 +151,7 @@ const MapChart = ({ setTooltipContent }) => {
                   onMouseEnter={() => {
                     const { name } = geo.properties;
                     setTooltipContent(`${name} - xyz`);
+                    setLocationId(alias);
                   }}
                   onMouseLeave={() => {
                     setTooltipContent("");
