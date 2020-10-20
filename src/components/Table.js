@@ -307,13 +307,13 @@ export default function EnhancedTable() {
                         {row.name}
                       </TableCell>
                       <TableCell padding="none" align="right">
-                        {row.confirmed}
+                        {row.confirmed.toLocaleString("en-IN")}
                       </TableCell>
                       <TableCell padding="none" align="right">
-                        {row.active}
+                        {row.active.toLocaleString("en-IN")}
                       </TableCell>
                       <TableCell padding="none" align="right">
-                        {row.recovered}
+                        {row.recovered.toLocaleString("en-IN")}
                       </TableCell>
                       <TableCell align="right">{row.deceased}</TableCell>
                     </TableRow>

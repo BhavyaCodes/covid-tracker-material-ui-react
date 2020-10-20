@@ -37,36 +37,28 @@ function Cards() {
     }
     setCardData({
       confirmed: {
-        total: numberWithCommas(data.indiaData.total.confirmed),
+        total: data.indiaData.total.confirmed.toLocaleString("en-IN"),
         delta: data.indiaData.delta.confirmed
-          ? "+" + numberWithCommas(data.indiaData.delta.confirmed)
+          ? "+" + data.indiaData.delta.confirmed.toLocaleString("en-IN")
           : "♥",
       },
       active: {
-        total: numberWithCommas(
-          data.indiaData.total.confirmed -
-            data.indiaData.total.recovered -
-            data.indiaData.total.deceased
-        ),
+        total: data.indiaData.total.active.toLocaleString("en-IN"),
       },
       recovered: {
-        total: numberWithCommas(data.indiaData.total.recovered),
+        total: data.indiaData.total.recovered.toLocaleString("en-IN"),
         delta: data.indiaData.delta.recovered
-          ? "+" + numberWithCommas(data.indiaData.delta.recovered)
+          ? "+" + data.indiaData.delta.recovered.toLocaleString("en-IN")
           : "♥",
       },
       deceased: {
-        total: numberWithCommas(data.indiaData.total.deceased),
+        total: data.indiaData.total.deceased.toLocaleString("en-IN"),
         delta: data.indiaData.delta.deceased
-          ? "+" + numberWithCommas(data.indiaData.delta.deceased)
-          : "?",
+          ? "+" + data.indiaData.delta.deceased.toLocaleString("en-IN")
+          : "♥",
       },
     });
   }, [data]);
-
-  const numberWithCommas = (x) => {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  };
 
   if (!data.hasLoaded) {
     return <div>Loading</div>;
