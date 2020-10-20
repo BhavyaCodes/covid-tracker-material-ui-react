@@ -19,24 +19,24 @@ const MapChart = ({ setTooltipContent, setLocationId }) => {
   if (!data.hasLoaded) {
     return null;
   }
-  data.data = _.omit(data.data, ["TT"]);
+  const stateData = _.omit(data.data, ["TT"]);
 
   const getMaxValue = () => {
     let max = 0;
     if (attribute === "active") {
-      for (const state in data.data) {
+      for (const state in stateData) {
         let active =
-          data.data[state]["total"]["confirmed"] -
-          data.data[state]["total"]["recovered"] -
-          data.data[state]["total"]["deceased"];
+          stateData[state]["total"]["confirmed"] -
+          stateData[state]["total"]["recovered"] -
+          stateData[state]["total"]["deceased"];
         if (active > max) {
           max = active;
         }
       }
     } else {
-      for (const state in data.data) {
-        if (data.data[state]["total"][attribute] > max) {
-          max = data.data[state]["total"][attribute];
+      for (const state in stateData) {
+        if (stateData[state]["total"][attribute] > max) {
+          max = stateData[state]["total"][attribute];
         }
       }
     }
@@ -158,58 +158,32 @@ const MapChart = ({ setTooltipContent, setLocationId }) => {
                   }}
                   style={{
                     default: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
+
                       outline: "none",
                       stroke: strokeColor[attribute].normal,
                       strokeWidth: "2px",
                     },
                     hover: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
                     },
                     pressed: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
