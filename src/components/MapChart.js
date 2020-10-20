@@ -158,58 +158,32 @@ const MapChart = ({ setTooltipContent, setLocationId }) => {
                   }}
                   style={{
                     default: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"]["confirmed"] -
-                                    stateData[alias]["total"]["recovered"] -
-                                    stateData[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
+
                       outline: "none",
                       stroke: strokeColor[attribute].normal,
                       strokeWidth: "2px",
                     },
                     hover: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"]["confirmed"] -
-                                    stateData[alias]["total"]["recovered"] -
-                                    stateData[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
                     },
                     pressed: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              stateData[alias]
-                                ? stateData[alias]["total"]["confirmed"] -
-                                    stateData[alias]["total"]["recovered"] -
-                                    stateData[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
