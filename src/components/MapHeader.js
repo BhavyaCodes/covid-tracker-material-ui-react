@@ -33,12 +33,6 @@ function MapHeader({ locationId }) {
         {STATE_NAMES[locationId]}
       </Typography>
       <Typography variant="h6" gutterBottom>
-        {data.data[locationId]["total"][attribute]}
-      </Typography>
-      <Typography variant="h6" gutterBottom>
-        {attribute}
-      </Typography>
-      <Typography variant="h6" gutterBottom>
         <CountUp
           start={prevNumber}
           end={data.data[locationId]["total"][attribute]}
@@ -52,6 +46,9 @@ function MapHeader({ locationId }) {
             </div>
           )}
         </CountUp>
+      </Typography>
+      <Typography variant="h6" gutterBottom>
+        {attribute}
       </Typography>
     </div>
   );
