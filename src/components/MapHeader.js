@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 
+import CountUp from "react-countup";
+
 import Typography from "@material-ui/core/Typography";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
@@ -24,6 +26,25 @@ function MapHeader({ locationId }) {
       </Typography>
       <Typography variant="h6" gutterBottom>
         {attribute}
+      </Typography>
+      <Typography variant="h6" gutterBottom>
+        <CountUp
+          start={-875.039}
+          end={data.data[locationId]["total"][attribute]}
+          delay={0}
+          duration={0.5}
+          // separator=" "
+          // decimals={3}
+          // decimal=","
+          // prefix="EUR "
+          // suffix=" left"
+        >
+          {({ countUpRef }) => (
+            <div>
+              <span ref={countUpRef} />
+            </div>
+          )}
+        </CountUp>
       </Typography>
     </div>
   );
