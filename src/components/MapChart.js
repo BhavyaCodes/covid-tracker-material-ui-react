@@ -13,7 +13,7 @@ import indiaMap from "../maps/india-map-3.json";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
 
-const MapChart = ({ setTooltipContent, setLocationId }) => {
+const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
   if (!data.hasLoaded) {
@@ -165,8 +165,11 @@ const MapChart = ({ setTooltipContent, setLocationId }) => {
                       ),
 
                       outline: "none",
-                      stroke: strokeColor[attribute].normal,
-                      strokeWidth: "2px",
+                      stroke:
+                        locationId === alias
+                          ? strokeColor[attribute].hover
+                          : strokeColor[attribute].normal,
+                      strokeWidth: locationId === alias ? "3px" : "2px",
                     },
                     hover: {
                       fill: colorScale()(

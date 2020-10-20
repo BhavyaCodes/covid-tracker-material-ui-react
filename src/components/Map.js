@@ -10,7 +10,11 @@ function Map() {
   return (
     <div>
       <MapHeader locationId={locationId} />
-      <MapChart setTooltipContent={setContent} setLocationId={setLocationId} />
+      <MapChart
+        setTooltipContent={setContent}
+        setLocationId={setLocationId}
+        locationId={locationId}
+      />
       <ReactTooltip>{content}</ReactTooltip>
     </div>
   );
