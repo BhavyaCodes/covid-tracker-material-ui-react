@@ -44,11 +44,7 @@ function MapHeader({ locationId }) {
           end={data.data[locationId]["total"][attribute]}
           delay={0}
           duration={0.8}
-          // separator=" "
-          // decimals={3}
-          // decimal=","
-          // prefix="EUR "
-          // suffix=" left"
+          formattingFn={(num) => num.toLocaleString("en-IN")}
         >
           {({ countUpRef }) => (
             <div>
