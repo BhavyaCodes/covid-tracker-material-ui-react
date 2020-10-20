@@ -13,31 +13,30 @@ import indiaMap from "../maps/india-map-3.json";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
 
-const MapChart = ({ setTooltipContent }) => {
+const MapChart = ({ setTooltipContent, setLocationId }) => {
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
   if (!data.hasLoaded) {
     return null;
   }
-  data.data = _.omit(data.data, ["TT"]);
-  console.log(data);
+  const stateData = _.omit(data.data, ["TT"]);
 
   const getMaxValue = () => {
     let max = 0;
     if (attribute === "active") {
-      for (const state in data.data) {
+      for (const state in stateData) {
         let active =
-          data.data[state]["total"]["confirmed"] -
-          data.data[state]["total"]["recovered"] -
-          data.data[state]["total"]["deceased"];
+          stateData[state]["total"]["confirmed"] -
+          stateData[state]["total"]["recovered"] -
+          stateData[state]["total"]["deceased"];
         if (active > max) {
           max = active;
         }
       }
     } else {
-      for (const state in data.data) {
-        if (data.data[state]["total"][attribute] > max) {
-          max = data.data[state]["total"][attribute];
+      for (const state in stateData) {
+        if (stateData[state]["total"][attribute] > max) {
+          max = stateData[state]["total"][attribute];
         }
       }
     }
@@ -145,7 +144,6 @@ const MapChart = ({ setTooltipContent }) => {
           {({ geographies }) =>
             geographies.map((geo) => {
               const alias = geo.id;
-              console.log(alias);
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -153,64 +151,39 @@ const MapChart = ({ setTooltipContent }) => {
                   onMouseEnter={() => {
                     const { name } = geo.properties;
                     setTooltipContent(`${name} - xyz`);
+                    setLocationId(alias);
                   }}
                   onMouseLeave={() => {
                     setTooltipContent("");
                   }}
                   style={{
                     default: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
+
                       outline: "none",
                       stroke: strokeColor[attribute].normal,
                       strokeWidth: "2px",
                     },
                     hover: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
                     },
                     pressed: {
-                      fill:
-                        attribute !== "active"
-                          ? colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"][attribute]
-                                : "#EEE"
-                            )
-                          : colorScale()(
-                              data.data[alias]
-                                ? data.data[alias]["total"]["confirmed"] -
-                                    data.data[alias]["total"]["recovered"] -
-                                    data.data[alias]["total"]["deceased"]
-                                : "#EEE"
-                            ),
+                      fill: colorScale()(
+                        stateData[alias]
+                          ? stateData[alias]["total"][attribute]
+                          : "#EEE"
+                      ),
                       outline: "none",
                       stroke: strokeColor[attribute].hover,
                       strokeWidth: "3px",
