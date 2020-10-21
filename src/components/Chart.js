@@ -19,7 +19,6 @@ function Chart({ data, attribute = "confirmed" }) {
       const dateDuration =
         new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration;
       for (let date in data["MH"].dates) {
-        // const dateToday = new Date();
         const dataDate = new Date(
           date.split("-")[0],
           date.split("-")[1],
@@ -76,7 +75,6 @@ function Chart({ data, attribute = "confirmed" }) {
   return (
     <Line
       data={{
-        // labels: ["red", "blue", "yellow", "green"],
         datasets: [
           {
             label: "confirmed total cases in maharashtra",
