@@ -17,6 +17,7 @@
     "lodash": "^4.17.20",
     "mui-datatables": "^3.5.0",
     "react": "^16.14.0",
+    "react-chartjs-2": "^2.10.0",
     "react-countup": "^4.3.3",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
