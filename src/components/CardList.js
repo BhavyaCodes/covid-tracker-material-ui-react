@@ -11,8 +11,6 @@ function Cards() {
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
 
-  console.log(attribute);
-
   const [cardData, setCardData] = useState({
     confirmed: {
       total: "---",
