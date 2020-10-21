@@ -37,9 +37,17 @@ function Chart({ data, attribute = "confirmed" }) {
     }
   };
 
-  console.log("buildChartData", buildChartData(3));
+  // console.log("buildChartData", buildChartData(3));
 
   const options = {
+    legend: {
+      display: false,
+    },
+    elements: {},
+    tooltips: {
+      mode: "index",
+      intersect: false,
+    },
     scales: {
       xAxes: [
         {
@@ -56,9 +64,8 @@ function Chart({ data, attribute = "confirmed" }) {
             display: false,
           },
           ticks: {
-            // Include a dollar sign in the ticks
             callback: function (value, index, values) {
-              return value;
+              return value.toLocaleString("en-IN");
             },
           },
         },
@@ -73,6 +80,8 @@ function Chart({ data, attribute = "confirmed" }) {
         datasets: [
           {
             label: "confirmed total cases in maharashtra",
+            backgroundColor: "rgba(204, 16, 52, 0.5)",
+            borderColor: "#CC1034",
             data: buildChartData(3),
           },
         ],
