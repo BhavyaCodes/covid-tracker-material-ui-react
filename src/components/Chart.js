@@ -15,8 +15,9 @@ function Chart({ data, attribute = "confirmed" }) {
         chartData.push(newDataPoint);
       }
       return chartData;
-    } else if (duration === "3") {
-      const dateDuration = new Date().getTime() - 1000 * 60 * 60 * 24 * 90;
+    } else {
+      const dateDuration =
+        new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration;
       for (let date in data["MH"].dates) {
         // const dateToday = new Date();
         const dataDate = new Date(
@@ -36,7 +37,7 @@ function Chart({ data, attribute = "confirmed" }) {
     }
   };
 
-  console.log("buildChartData", buildChartData("3"));
+  console.log("buildChartData", buildChartData(3));
 
   const options = {
     scales: {
@@ -72,7 +73,7 @@ function Chart({ data, attribute = "confirmed" }) {
         datasets: [
           {
             label: "confirmed total cases in maharashtra",
-            data: buildChartData("3"),
+            data: buildChartData(3),
           },
         ],
       }}
