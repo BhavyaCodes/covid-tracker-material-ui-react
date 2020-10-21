@@ -5,7 +5,7 @@ import { HistoricalData } from "../context/historicalData.context";
 
 function ChartList() {
   const historicalData = useContext(HistoricalData);
-  const [state, setState] = useState("TT");
+  const [state, setState] = useState("GJ");
   const [duration, setDuration] = useState(3);
   const [type, setType] = useState("total");
 

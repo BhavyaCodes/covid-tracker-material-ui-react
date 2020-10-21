@@ -11,8 +11,24 @@ function Chart({
   backgroundColor,
   type,
 }) {
-  // console.log(data);
-  // console.log(attribute);
+  const numberFormatter = new Intl.NumberFormat("en-IN", {
+    maximumFractionDigits: 1,
+  });
+
+  const abbreviateNumber = (number) => {
+    if (Math.abs(number) < 1e3) return numberFormatter.format(number);
+    else if (Math.abs(number) >= 1e3 && Math.abs(number) < 1e5)
+      return numberFormatter.format(number / 1e3) + "K";
+    else if (Math.abs(number) >= 1e5 && Math.abs(number) < 1e7)
+      return numberFormatter.format(number / 1e5) + "L";
+    else if (Math.abs(number) >= 1e7 && Math.abs(number) < 1e10)
+      return numberFormatter.format(number / 1e7) + "Cr";
+    else if (Math.abs(number) >= 1e10 && Math.abs(number) < 1e14)
+      return numberFormatter.format(number / 1e10) + "K Cr";
+    else if (Math.abs(number) >= 1e14)
+      return numberFormatter.format(number / 1e14) + "L Cr";
+  };
+
   const buildChartData = () => {
     let chartData = [];
     if (duration === "all") {
@@ -73,7 +89,7 @@ function Chart({
           },
           ticks: {
             callback: function (value, index, values) {
-              return value.toLocaleString("en-IN");
+              return abbreviateNumber(value);
             },
           },
         },
