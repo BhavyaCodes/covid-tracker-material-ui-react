@@ -135,10 +135,11 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
         data-tip=""
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          scale: 1050,
-          rotate: [-80, -5, 0],
+          scale: 1600,
+          rotate: [-82.5, -3, 0],
           center: [0, 17.5],
         }}
+        height={850}
       >
         <Geographies geography={indiaMap}>
           {({ geographies }) =>
