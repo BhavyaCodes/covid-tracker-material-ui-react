@@ -1,5 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import Typography from "@material-ui/core/Typography";
 import { STATE_NAMES } from "../constants";
 
 function Chart({
@@ -11,6 +12,7 @@ function Chart({
   backgroundColor,
   type,
   labelText,
+  title,
 }) {
   const numberFormatter = new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 1,
@@ -106,19 +108,24 @@ function Chart({
   };
 
   return (
-    <Line
-      data={{
-        datasets: [
-          {
-            label: `${labelText} ${STATE_NAMES[state]}`,
-            backgroundColor: backgroundColor,
-            borderColor: borderColor,
-            data: buildChartData(),
-          },
-        ],
-      }}
-      options={options}
-    />
+    <>
+      <Typography variant="h6" gutterBottom>
+        {title}
+      </Typography>
+      <Line
+        data={{
+          datasets: [
+            {
+              label: `${labelText} ${STATE_NAMES[state]}`,
+              backgroundColor: backgroundColor,
+              borderColor: borderColor,
+              data: buildChartData(),
+            },
+          ],
+        }}
+        options={options}
+      />
+    </>
   );
 }
 

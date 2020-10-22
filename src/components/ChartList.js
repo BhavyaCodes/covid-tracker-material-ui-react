@@ -76,19 +76,19 @@ function ChartList() {
           onClick={() => handleDurationChange("all")}
           variant={duration === "all" ? "contained" : "outlined"}
         >
-          ALL
+          Beginning
         </Button>
         <Button
           onClick={() => handleDurationChange(3)}
           variant={duration === 3 ? "contained" : "outlined"}
         >
-          Last 3 months
+          3 Months
         </Button>
         <Button
           onClick={() => handleDurationChange(1)}
           variant={duration === 1 ? "contained" : "outlined"}
         >
-          Last month
+          1 Month
         </Button>
       </ButtonGroup>
       <ButtonGroup
@@ -119,16 +119,7 @@ function ChartList() {
         borderColor="#CC1034"
         backgroundColor="rgba(204, 16, 52, 0.5)"
         labelText="Confirmed cases in"
-      />
-      <Chart
-        data={historicalData.data}
-        state={state}
-        duration={duration}
-        attribute="deceased"
-        type={type}
-        borderColor="grey"
-        backgroundColor="rgba(186, 186, 186, 0.5)"
-        labelText="Deaths in"
+        title="Confirmed"
       />
       <Chart
         data={historicalData.data}
@@ -139,6 +130,18 @@ function ChartList() {
         borderColor="green"
         backgroundColor="rgba(40, 247, 17, 0.5)"
         labelText="Recovered in"
+        title="Recovered"
+      />
+      <Chart
+        data={historicalData.data}
+        state={state}
+        duration={duration}
+        attribute="deceased"
+        type={type}
+        borderColor="grey"
+        backgroundColor="rgba(186, 186, 186, 0.5)"
+        labelText="Deaths in"
+        title="Deceased"
       />
     </div>
   );
