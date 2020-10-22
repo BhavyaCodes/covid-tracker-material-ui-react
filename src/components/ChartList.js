@@ -36,6 +36,10 @@ function ChartList() {
     setDuration(value);
   };
 
+  const handleTypeChange = (value) => {
+    setType(value);
+  };
+
   if (!historicalData.hasLoaded) {
     return null;
   }
@@ -81,6 +85,20 @@ function ChartList() {
           variant={duration === 1 ? "contained" : "outlined"}
         >
           Last month
+        </Button>
+      </ButtonGroup>
+      <ButtonGroup color="primary" aria-label="outlined primary button group">
+        <Button
+          onClick={() => handleTypeChange("total")}
+          variant={type === "total" ? "contained" : "outlined"}
+        >
+          cumulative
+        </Button>
+        <Button
+          onClick={() => handleTypeChange("delta")}
+          variant={type === "delta" ? "contained" : "outlined"}
+        >
+          daily
         </Button>
       </ButtonGroup>
 

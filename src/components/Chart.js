@@ -33,11 +33,13 @@ function Chart({
     let chartData = [];
     if (duration === "all") {
       for (let date in data[state].dates) {
-        let newDataPoint = {
-          x: date,
-          y: data[state]["dates"][date][type][attribute],
-        };
-        chartData.push(newDataPoint);
+        if (data[state]["dates"][date][type]) {
+          let newDataPoint = {
+            x: date,
+            y: data[state]["dates"][date][type][attribute],
+          };
+          chartData.push(newDataPoint);
+        }
       }
       return chartData;
     } else {
@@ -50,11 +52,13 @@ function Chart({
           date.split("-")[2]
         );
         if (dateDuration - dataDate.getTime() <= 0) {
-          let newDataPoint = {
-            x: date,
-            y: data[state]["dates"][date][type][attribute],
-          };
-          chartData.push(newDataPoint);
+          if (data[state]["dates"][date][type]) {
+            let newDataPoint = {
+              x: date,
+              y: data[state]["dates"][date][type][attribute] || 0,
+            };
+            chartData.push(newDataPoint);
+          }
         }
       }
       return chartData;
