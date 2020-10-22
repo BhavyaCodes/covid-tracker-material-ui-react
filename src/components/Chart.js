@@ -1,5 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import Typography from "@material-ui/core/Typography";
 import { STATE_NAMES } from "../constants";
 
 function Chart({
@@ -10,6 +11,8 @@ function Chart({
   borderColor,
   backgroundColor,
   type,
+  labelText,
+  title,
 }) {
   const numberFormatter = new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 1,
@@ -33,28 +36,34 @@ function Chart({
     let chartData = [];
     if (duration === "all") {
       for (let date in data[state].dates) {
-        let newDataPoint = {
-          x: date,
-          y: data[state]["dates"][date][type][attribute],
-        };
-        chartData.push(newDataPoint);
-      }
-      return chartData;
-    } else {
-      const dateDuration =
-        new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration;
-      for (let date in data[state].dates) {
-        const dataDate = new Date(
-          date.split("-")[0],
-          date.split("-")[1],
-          date.split("-")[2]
-        );
-        if (dateDuration - dataDate.getTime() <= 0) {
+        if (data[state]["dates"][date][type]) {
           let newDataPoint = {
             x: date,
             y: data[state]["dates"][date][type][attribute],
           };
           chartData.push(newDataPoint);
+        }
+      }
+      return chartData;
+    } else {
+      const specifiedDate = new Date(
+        new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration
+      );
+      console.log(specifiedDate); // correct
+      for (let date in data[state].dates) {
+        const dataDate = new Date(
+          parseInt(date.split("-")[0]),
+          parseInt(date.split("-")[1]) - 1,
+          parseInt(date.split("-")[2])
+        );
+        if (specifiedDate < dataDate) {
+          if (data[state]["dates"][date][type]) {
+            let newDataPoint = {
+              x: date,
+              y: data[state]["dates"][date][type][attribute] || 0,
+            };
+            chartData.push(newDataPoint);
+          }
         }
       }
       return chartData;
@@ -91,6 +100,7 @@ function Chart({
             callback: function (value, index, values) {
               return abbreviateNumber(value);
             },
+            beginAtZero: true,
           },
         },
       ],
@@ -98,19 +108,24 @@ function Chart({
   };
 
   return (
-    <Line
-      data={{
-        datasets: [
-          {
-            label: `confirmed total cases in ${STATE_NAMES[state]}`,
-            backgroundColor: backgroundColor,
-            borderColor: borderColor,
-            data: buildChartData(),
-          },
-        ],
-      }}
-      options={options}
-    />
+    <>
+      <Typography variant="h6" gutterBottom>
+        {title}
+      </Typography>
+      <Line
+        data={{
+          datasets: [
+            {
+              label: `${labelText} ${STATE_NAMES[state]}`,
+              backgroundColor: backgroundColor,
+              borderColor: borderColor,
+              data: buildChartData(),
+            },
+          ],
+        }}
+        options={options}
+      />
+    </>
   );
 }
 
