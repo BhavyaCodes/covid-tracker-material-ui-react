@@ -43,7 +43,6 @@ function ChartList() {
   if (!historicalData.hasLoaded) {
     return null;
   }
-  console.log(historicalData);
   const renderRegionOptions = () => {
     return Object.keys(historicalData.data).map((stateId) => {
       if (STATE_NAMES[stateId]) {

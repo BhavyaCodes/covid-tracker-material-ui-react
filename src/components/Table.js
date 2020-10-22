@@ -186,11 +186,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function EnhancedTable() {
   const classes = useStyles();
-  const [order, setOrder] = React.useState("asc");
+  const [order, setOrder] = React.useState("desc");
   const [orderBy, setOrderBy] = React.useState("confirmed");
   const [selected, setSelected] = React.useState([]);
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
   const [rows, setRows] = React.useState([]);
   const data = useContext(DataContext);
 
@@ -227,19 +225,7 @@ export default function EnhancedTable() {
     // setSelected(newSelected);
   };
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
-
   // const isSelected = (name) => selected.indexOf(name) !== -1;
-
-  const emptyRows =
-    rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   useEffect(() => {
     if (!data.hasLoaded) {
@@ -250,9 +236,9 @@ export default function EnhancedTable() {
       formatData.push([
         STATE_NAMES[state],
         data.data[state].total.confirmed,
-        data.data[state].total.active,
+        data.data[state].total.active ? data.data[state].total.active : "-",
         data.data[state].total.recovered,
-        data.data[state].total.deceased,
+        data.data[state].total.deceased ? data.data[state].total.deceased : "-",
       ]);
     }
     const filterData = formatData.filter((arr) => arr[0] !== "India");
@@ -287,9 +273,8 @@ export default function EnhancedTable() {
               rowCount={rows.length}
             />
             <TableBody>
-              {stableSort(rows, getComparator(order, orderBy))
-                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map((row, index) => {
+              {stableSort(rows, getComparator(order, orderBy)).map(
+                (row, index) => {
                   // const isItemSelected = isSelected(row.name);
                   const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -315,27 +300,16 @@ export default function EnhancedTable() {
                       <TableCell padding="none" align="right">
                         {row.recovered.toLocaleString("en-IN")}
                       </TableCell>
-                      <TableCell align="right">{row.deceased}</TableCell>
+                      <TableCell align="right">
+                        {row.deceased.toLocaleString("en-IN")}
+                      </TableCell>
                     </TableRow>
                   );
-                })}
-              {emptyRows > 0 && (
-                <TableRow style={{ height: 33 * emptyRows }}>
-                  <TableCell colSpan={6} />
-                </TableRow>
+                }
               )}
             </TableBody>
           </Table>
         </TableContainer>
-        <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
-          component="div"
-          count={rows.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onChangePage={handleChangePage}
-          onChangeRowsPerPage={handleChangeRowsPerPage}
-        />
       </Paper>
     </div>
   );
