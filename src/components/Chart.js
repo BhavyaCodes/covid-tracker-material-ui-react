@@ -10,6 +10,7 @@ function Chart({
   borderColor,
   backgroundColor,
   type,
+  labelText,
 }) {
   const numberFormatter = new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 1,
@@ -97,6 +98,7 @@ function Chart({
             callback: function (value, index, values) {
               return abbreviateNumber(value);
             },
+            beginAtZero: true,
           },
         },
       ],
@@ -108,7 +110,7 @@ function Chart({
       data={{
         datasets: [
           {
-            label: `confirmed total cases in ${STATE_NAMES[state]}`,
+            label: `${labelText} ${STATE_NAMES[state]}`,
             backgroundColor: backgroundColor,
             borderColor: borderColor,
             data: buildChartData(),

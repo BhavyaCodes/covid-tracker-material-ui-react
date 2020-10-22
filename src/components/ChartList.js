@@ -67,7 +67,11 @@ function ChartList() {
           {renderRegionOptions()}
         </Select>
       </FormControl>
-      <ButtonGroup color="primary" aria-label="outlined primary button group">
+      <ButtonGroup
+        color="primary"
+        aria-label="outlined primary button group"
+        disableElevation
+      >
         <Button
           onClick={() => handleDurationChange("all")}
           variant={duration === "all" ? "contained" : "outlined"}
@@ -87,7 +91,11 @@ function ChartList() {
           Last month
         </Button>
       </ButtonGroup>
-      <ButtonGroup color="primary" aria-label="outlined primary button group">
+      <ButtonGroup
+        color="primary"
+        aria-label="outlined primary button group"
+        disableElevation
+      >
         <Button
           onClick={() => handleTypeChange("total")}
           variant={type === "total" ? "contained" : "outlined"}
@@ -110,6 +118,7 @@ function ChartList() {
         type={type}
         borderColor="#CC1034"
         backgroundColor="rgba(204, 16, 52, 0.5)"
+        labelText="Confirmed cases in"
       />
       <Chart
         data={historicalData.data}
@@ -119,6 +128,7 @@ function ChartList() {
         type={type}
         borderColor="grey"
         backgroundColor="rgba(186, 186, 186, 0.5)"
+        labelText="Deaths in"
       />
       <Chart
         data={historicalData.data}
@@ -128,6 +138,7 @@ function ChartList() {
         type={type}
         borderColor="green"
         backgroundColor="rgba(40, 247, 17, 0.5)"
+        labelText="Recovered in"
       />
     </div>
   );
