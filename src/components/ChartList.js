@@ -64,9 +64,24 @@ function ChartList() {
         </Select>
       </FormControl>
       <ButtonGroup color="primary" aria-label="outlined primary button group">
-        <Button onClick={() => handleDurationChange("all")}>ALL</Button>
-        <Button onClick={() => handleDurationChange(3)}>Last 3 months</Button>
-        <Button onClick={() => handleDurationChange(1)}>Last month</Button>
+        <Button
+          onClick={() => handleDurationChange("all")}
+          variant={duration === "all" ? "contained" : "outlined"}
+        >
+          ALL
+        </Button>
+        <Button
+          onClick={() => handleDurationChange(3)}
+          variant={duration === 3 ? "contained" : "outlined"}
+        >
+          Last 3 months
+        </Button>
+        <Button
+          onClick={() => handleDurationChange(1)}
+          variant={duration === 1 ? "contained" : "outlined"}
+        >
+          Last month
+        </Button>
       </ButtonGroup>
 
       <Chart
