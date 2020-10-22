@@ -26,8 +26,12 @@ function ChartList() {
   const [duration, setDuration] = useState(3);
   const [type, setType] = useState("total");
 
-  const handleChange = (event) => {
+  const handleRegionChange = (event) => {
     setState(event.target.value);
+  };
+
+  const handleDurationChange = (event) => {
+    setDuration(event.target.value);
   };
 
   if (!historicalData.hasLoaded) {
@@ -50,14 +54,14 @@ function ChartList() {
     <div>
       <FormControl className={classes.formControl}>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          id="region-selector"
           value={state}
-          onChange={handleChange}
+          onChange={handleRegionChange}
         >
           {renderRegionOptions()}
         </Select>
       </FormControl>
+
       <Chart
         data={historicalData.data}
         state={state}
