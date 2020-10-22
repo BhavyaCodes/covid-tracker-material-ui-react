@@ -11,7 +11,7 @@ function MapHeader({ locationId }) {
   const data = useContext(DataContext);
   const attribute = useContext(AttributeContext);
 
-  const [prevNumber, setPrevNumber] = useState("0");
+  const [prevNumber, setPrevNumber] = useState(0);
 
   useEffect(() => {
     if (!data.hasLoaded) {
