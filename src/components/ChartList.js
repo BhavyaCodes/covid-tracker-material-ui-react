@@ -5,6 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 import { HistoricalData } from "../context/historicalData.context";
 import { STATE_NAMES } from "../constants";
@@ -30,8 +32,8 @@ function ChartList() {
     setState(event.target.value);
   };
 
-  const handleDurationChange = (event) => {
-    setDuration(event.target.value);
+  const handleDurationChange = (value) => {
+    setDuration(value);
   };
 
   if (!historicalData.hasLoaded) {
@@ -61,6 +63,11 @@ function ChartList() {
           {renderRegionOptions()}
         </Select>
       </FormControl>
+      <ButtonGroup color="primary" aria-label="outlined primary button group">
+        <Button onClick={() => handleDurationChange("all")}>ALL</Button>
+        <Button onClick={() => handleDurationChange(3)}>Last 3 months</Button>
+        <Button onClick={() => handleDurationChange(1)}>Last month</Button>
+      </ButtonGroup>
 
       <Chart
         data={historicalData.data}
