@@ -250,9 +250,9 @@ export default function EnhancedTable() {
       formatData.push([
         STATE_NAMES[state],
         data.data[state].total.confirmed,
-        data.data[state].total.active,
+        data.data[state].total.active ? data.data[state].total.active : "-",
         data.data[state].total.recovered,
-        data.data[state].total.deceased,
+        data.data[state].total.deceased ? data.data[state].total.deceased : "-",
       ]);
     }
     const filterData = formatData.filter((arr) => arr[0] !== "India");
