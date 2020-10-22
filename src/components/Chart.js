@@ -43,15 +43,17 @@ function Chart({
       }
       return chartData;
     } else {
-      const dateDuration =
-        new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration;
+      const specifiedDate = new Date(
+        new Date().getTime() - 1000 * 60 * 60 * 24 * 30 * duration
+      );
+      console.log(specifiedDate); // correct
       for (let date in data[state].dates) {
         const dataDate = new Date(
-          date.split("-")[0],
-          date.split("-")[1],
-          date.split("-")[2]
+          parseInt(date.split("-")[0]),
+          parseInt(date.split("-")[1]) - 1,
+          parseInt(date.split("-")[2])
         );
-        if (dateDuration - dataDate.getTime() <= 0) {
+        if (specifiedDate < dataDate) {
           if (data[state]["dates"][date][type]) {
             let newDataPoint = {
               x: date,
