@@ -10,7 +10,6 @@ export function DataProvider(props) {
     const getData = async () => {
       const res = await api.get("/v4/data.json");
       const indiaData = res.data["TT"];
-      console.log(res.data);
       for (const state in res.data) {
         res.data[state].total.active =
           res.data[state].total.confirmed -

@@ -25,8 +25,7 @@ function MapHeader({ locationId }) {
   if (!data.hasLoaded) {
     return null;
   }
-  console.log(data.data);
-  console.log(locationId);
+
   return (
     <div>
       <Typography variant="h4" gutterBottom>
