@@ -143,6 +143,24 @@ function ChartList() {
         labelText="Deaths in"
         title="Deceased"
       />
+      <Chart
+        data={historicalData.data}
+        state={state}
+        duration={duration}
+        attribute="deceased"
+        type={type}
+        borderColor="grey"
+        backgroundColor="rgba(186, 186, 186, 0.5)"
+      />
+      <Chart
+        data={historicalData.data}
+        state={state}
+        duration={duration}
+        attribute="recovered"
+        type={type}
+        borderColor="green"
+        backgroundColor="rgba(40, 247, 17, 0.5)"
+      />
     </div>
   );
 }
