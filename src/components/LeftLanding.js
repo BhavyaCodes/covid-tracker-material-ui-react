@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 
-import SearchBar from "./SearchBar";
+// import SearchBar from "./SearchBar";
 import Table from "./Table";
 import CardList from "./CardList";
 import useStyles from "../styles/LeftLandingStyles";
@@ -18,7 +18,6 @@ function LeftLanding() {
         Search your district or state
       </Typography>
       <CardList />
-      <SearchBar />
       <Table />
     </div>
   );
