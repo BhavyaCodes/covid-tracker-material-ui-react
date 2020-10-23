@@ -10,11 +10,11 @@ function Landing() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+      <Grid container className={classes.container}>
+        <Grid item xs={12} sm={6} className={classes.left}>
           <LeftLanding />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} className={classes.right}>
           <RightLanding />
         </Grid>
       </Grid>

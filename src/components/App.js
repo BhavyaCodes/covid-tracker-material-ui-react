@@ -5,17 +5,17 @@ import Container from "@material-ui/core/Container";
 import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
+import useStyles from "../styles/AppStyles";
 
 function App() {
+  const classes = useStyles();
   return (
     <DataProvider>
       <AttributeProvider>
         <HistoricalDataProvider>
-          <div className="App">
-            <Container maxWidth="lg">
-              <Landing />
-            </Container>
-          </div>
+          <Container className={classes.root} maxWidth="lg">
+            <Landing />
+          </Container>
         </HistoricalDataProvider>
       </AttributeProvider>
     </DataProvider>
