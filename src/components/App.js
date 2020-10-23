@@ -32,17 +32,26 @@ function App() {
       <AttributeProvider>
         <HistoricalDataProvider>
           <CssBaseline />
-          <HideOnScroll>
-            <AppBar>
-              <Toolbar>
-                <Typography variant="h6">NavBar</Typography>
-              </Toolbar>
+          <div className={classes.root}>
+            <HideOnScroll>
+              <AppBar>
+                <Toolbar>
+                  <Typography variant="h6">NavBar</Typography>
+                </Toolbar>
+              </AppBar>
+            </HideOnScroll>
+            <Toolbar />
+            <Container className={classes.content} maxWidth="lg">
+              <Landing />
+            </Container>
+            <AppBar
+              position="absolute"
+              color="primary"
+              className={classes.footer}
+            >
+              <Toolbar>footer</Toolbar>
             </AppBar>
-          </HideOnScroll>
-          <Toolbar />
-          <Container className={classes.root} maxWidth="lg">
-            <Landing />
-          </Container>
+          </div>
         </HistoricalDataProvider>
       </AttributeProvider>
     </DataProvider>
