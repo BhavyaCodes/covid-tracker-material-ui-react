@@ -13,6 +13,10 @@ export default makeStyles((theme) => ({
   right: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: "0",
+      paddingRight: "0",
+    },
   },
   container: {
     [theme.breakpoints.up("sm")]: {
