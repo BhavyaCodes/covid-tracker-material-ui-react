@@ -8,7 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
+import { ThemeProvider } from "@material-ui/core/styles";
 
+import theme from "../styles/Theme";
 import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
@@ -31,27 +33,29 @@ function App() {
     <DataProvider>
       <AttributeProvider>
         <HistoricalDataProvider>
-          <CssBaseline />
-          <div className={classes.root}>
-            <HideOnScroll>
-              <AppBar>
-                <Toolbar>
-                  <Typography variant="h6">NavBar</Typography>
-                </Toolbar>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <div className={classes.root}>
+              <HideOnScroll>
+                <AppBar>
+                  <Toolbar>
+                    <Typography variant="h6">NavBar</Typography>
+                  </Toolbar>
+                </AppBar>
+              </HideOnScroll>
+              <Toolbar />
+              <Container className={classes.content} maxWidth="lg">
+                <Landing />
+              </Container>
+              <AppBar
+                position="absolute"
+                color="primary"
+                className={classes.footer}
+              >
+                <Toolbar>footer</Toolbar>
               </AppBar>
-            </HideOnScroll>
-            <Toolbar />
-            <Container className={classes.content} maxWidth="lg">
-              <Landing />
-            </Container>
-            <AppBar
-              position="absolute"
-              color="primary"
-              className={classes.footer}
-            >
-              <Toolbar>footer</Toolbar>
-            </AppBar>
-          </div>
+            </div>
+          </ThemeProvider>
         </HistoricalDataProvider>
       </AttributeProvider>
     </DataProvider>
