@@ -1,12 +1,10 @@
 import React from "react";
-import Map from "./Map";
-import ChartList from "./ChartList";
+import Table from "./Table";
 
 function RightLanding() {
   return (
     <div>
-      <Map />
-      <ChartList />
+      <Table />
     </div>
   );
 }
