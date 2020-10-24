@@ -5,6 +5,7 @@ import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
+import { colors } from "../constants";
 
 function Cards() {
   const classes = useStyles();
@@ -74,6 +75,8 @@ function Cards() {
             number={cardData.confirmed.total}
             bgColor={"rgba(240, 126, 126, 0.83)"}
             hoverColor={"rgba(240, 126, 126, 0.83)"}
+            fontColor={colors.red}
+            fontColorTransparent={colors.redTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -85,6 +88,8 @@ function Cards() {
             number={cardData.active.total}
             bgColor={"rgba(46, 120, 223, 0.42)"}
             hoverColor={"rgba(46, 120, 223, 0.42)"}
+            fontColor={colors.blue}
+            fontColorTransparent={colors.blueTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -96,6 +101,8 @@ function Cards() {
             number={cardData.recovered.total}
             bgColor={"rgba(44, 226, 80, 0.33)"}
             hoverColor={"rgba(40, 167, 69,0.2)"}
+            fontColor={colors.green}
+            fontColorTransparent={colors.greenTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -107,6 +114,8 @@ function Cards() {
             number={cardData.deceased.total}
             bgColor={"rgba(193, 193, 193, 0.32)"}
             hoverColor={"rgba(193, 193, 193, 0.32)"}
+            fontColor={colors.grey}
+            fontColorTransparent={colors.greyTransparent}
           />
         </Grid>
       </Grid>
