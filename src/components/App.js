@@ -13,7 +13,6 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-import { lightTheme, darkTheme } from "../styles/Theme";
 import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
@@ -23,22 +22,30 @@ function App() {
   const classes = useStyles();
   const [darkState, setDarkState] = useState(false);
   const paletteType = darkState ? "dark" : "light";
-  const [theme, setTheme] = useState(lightTheme);
+
+  const arcBlue = "#0B72B9";
+  const arcOrange = "#FFBA60";
+
+  const theme = createMuiTheme({
+    palette: {
+      common: {
+        blue: `${arcBlue}`,
+        orange: `${arcOrange}`,
+      },
+      primary: {
+        main: `${arcBlue}`,
+      },
+      secondary: {
+        main: `${arcOrange}`,
+      },
+      type: paletteType,
+    },
+  });
 
   const handleThemeChange = () => {
     setDarkState(!darkState);
-    console.log(darkState);
-
-    if (darkState) {
-      setTheme(lightTheme);
-      console.log("if");
-    } else {
-      setTheme(darkTheme);
-      console.log("else");
-    }
   };
 
-  console.log(theme.palette.type);
   function HideOnScroll(props) {
     const { children } = props;
     const trigger = useScrollTrigger();
