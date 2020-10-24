@@ -5,6 +5,10 @@ export default makeStyles((theme) => ({
     position: "relative",
     minHeight: "100vh",
   },
+  navItemsRight: {
+    margin: "auto",
+    marginRight: 0,
+  },
   content: {
     [theme.breakpoints.down("sm")]: {
       padding: "0 0",

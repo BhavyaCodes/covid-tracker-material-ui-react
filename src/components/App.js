@@ -8,8 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
-import Switch from "@material-ui/core/Switch";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+import Brightness7Icon from "@material-ui/icons/Brightness7";
+import IconButton from "@material-ui/core/IconButton";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -68,16 +69,17 @@ function App() {
                 <AppBar>
                   <Toolbar>
                     <Typography variant="h6">NavBar</Typography>
-                    <FormControlLabel
-                      control={
-                        <Switch
-                          checked={darkState}
-                          onChange={handleThemeChange}
-                          name="darkThemeToggle"
-                        />
-                      }
-                      label="Dark mode"
-                    />
+                    <div className={classes.navItemsRight}>
+                      <IconButton
+                        aria-label="toggle dark mode"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="false"
+                        onClick={handleThemeChange}
+                        color="inherit"
+                      >
+                        {darkState ? <Brightness7Icon /> : <Brightness4Icon />}
+                      </IconButton>
+                    </div>
                   </Toolbar>
                 </AppBar>
               </HideOnScroll>
