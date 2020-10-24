@@ -64,7 +64,7 @@ function Cards() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={3}>
           <Card
             active={attribute === "confirmed"}
@@ -72,6 +72,8 @@ function Cards() {
             heading="Confirmed"
             subHeading={cardData.confirmed.delta}
             number={cardData.confirmed.total}
+            bgColor={"rgba(240, 126, 126, 0.83)"}
+            hoverColor={"rgba(240, 126, 126, 0.83)"}
           />
         </Grid>
         <Grid item xs={3}>
@@ -81,6 +83,8 @@ function Cards() {
             heading="Active"
             subHeading="-"
             number={cardData.active.total}
+            bgColor={"rgba(46, 120, 223, 0.42)"}
+            hoverColor={"rgba(46, 120, 223, 0.42)"}
           />
         </Grid>
         <Grid item xs={3}>
@@ -90,6 +94,8 @@ function Cards() {
             heading="Recovered"
             subHeading={cardData.recovered.delta}
             number={cardData.recovered.total}
+            bgColor={"rgba(44, 226, 80, 0.33)"}
+            hoverColor={"rgba(40, 167, 69,0.2)"}
           />
         </Grid>
         <Grid item xs={3}>
@@ -99,6 +105,8 @@ function Cards() {
             heading="Deceased"
             subHeading={cardData.deceased.delta}
             number={cardData.deceased.total}
+            bgColor={"rgba(193, 193, 193, 0.32)"}
+            hoverColor={"rgba(193, 193, 193, 0.32)"}
           />
         </Grid>
       </Grid>
