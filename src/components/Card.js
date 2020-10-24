@@ -37,9 +37,6 @@ export default function ({
     bgGray: {
       backgroundColor: `${bgColor}`,
     },
-    active: {
-      backgroundColor: `${bgColor}`,
-    },
   }));
 
   const classes = useStyles();
