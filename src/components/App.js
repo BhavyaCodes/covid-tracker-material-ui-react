@@ -13,7 +13,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-import theme from "../styles/Theme";
+import Theme from "../styles/Theme";
 import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
@@ -22,16 +22,31 @@ import useStyles from "../styles/AppStyles";
 function App() {
   const classes = useStyles();
   const [darkState, setDarkState] = useState(false);
-  const palleteType = darkState ? "dark" : "light";
+  const paletteType = darkState ? "dark" : "light";
+  const [theme, setTheme] = useState(Theme);
 
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: palleteType,
-    },
-  });
+  // const darkTheme = createMuiTheme({
+  //   palette: {
+  //     type: paletteType,
+  //   },
+  // });
   const handleThemeChange = () => {
     setDarkState(!darkState);
+    // setTheme({
+    //   ...theme,
+    //   palette: {
+    //     ...theme.palette,
+    //     type: paletteType,
+    //   },
+    // });
+    setTheme((prevTheme) => ({
+      ...prevTheme,
+      palette: { ...prevTheme.palette, type: paletteType },
+    }));
   };
+
+  console.log(theme);
+  console.log(paletteType);
 
   function HideOnScroll(props) {
     const { children } = props;
@@ -48,39 +63,37 @@ function App() {
       <AttributeProvider>
         <HistoricalDataProvider>
           <ThemeProvider theme={theme}>
-            <ThemeProvider theme={darkTheme}>
-              <CssBaseline />
-              <div className={classes.root}>
-                <HideOnScroll>
-                  <AppBar>
-                    <Toolbar>
-                      <Typography variant="h6">NavBar</Typography>
-                      <FormControlLabel
-                        control={
-                          <Switch
-                            checked={darkState}
-                            onChange={handleThemeChange}
-                            name="darkThemeToggle"
-                          />
-                        }
-                        label="Dark mode"
-                      />
-                    </Toolbar>
-                  </AppBar>
-                </HideOnScroll>
-                <Toolbar />
-                <Container className={classes.content} maxWidth="lg">
-                  <Landing />
-                </Container>
-                <AppBar
-                  position="absolute"
-                  color="primary"
-                  className={classes.footer}
-                >
-                  <Toolbar>footer</Toolbar>
+            <CssBaseline />
+            <div className={classes.root}>
+              <HideOnScroll>
+                <AppBar>
+                  <Toolbar>
+                    <Typography variant="h6">NavBar</Typography>
+                    <FormControlLabel
+                      control={
+                        <Switch
+                          checked={darkState}
+                          onChange={handleThemeChange}
+                          name="darkThemeToggle"
+                        />
+                      }
+                      label="Dark mode"
+                    />
+                  </Toolbar>
                 </AppBar>
-              </div>
-            </ThemeProvider>
+              </HideOnScroll>
+              <Toolbar />
+              <Container className={classes.content} maxWidth="lg">
+                <Landing />
+              </Container>
+              <AppBar
+                position="absolute"
+                color="primary"
+                className={classes.footer}
+              >
+                <Toolbar>footer</Toolbar>
+              </AppBar>
+            </div>
           </ThemeProvider>
         </HistoricalDataProvider>
       </AttributeProvider>
