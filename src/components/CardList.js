@@ -64,7 +64,7 @@ function Cards() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={3}>
           <Card
             active={attribute === "confirmed"}

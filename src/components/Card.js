@@ -21,9 +21,17 @@ export default function ({
     root: {
       textAlign: "center",
       cursor: "pointer",
+      backgroundColor: "inherit",
       "&:hover": {
         backgroundColor: `${hoverColor}`,
       },
+      [theme.breakpoints.down("xs")]: {
+        borderRadius: "0",
+      },
+    },
+    cardContent: {
+      paddingLeft: 0,
+      paddingRight: 0,
     },
     bgRed: {
       backgroundColor: `${bgColor}`,
@@ -57,8 +65,9 @@ export default function ({
     <Card
       className={`${classes.root} ${active && propToClass[type]}`}
       onClick={handleClick}
+      elevation={0}
     >
-      <CardContent>
+      <CardContent className={classes.cardContent}>
         <Typography
           className={classes.title}
           color="textSecondary"
