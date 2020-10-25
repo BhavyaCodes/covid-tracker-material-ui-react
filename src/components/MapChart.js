@@ -20,6 +20,10 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
   if (!data.hasLoaded) {
     return null;
   }
+
+  const total = data.indiaData["total"][attribute];
+  console.log(total);
+
   const stateData = _.omit(data.data, ["TT"]);
 
   const getMaxValue = () => {
@@ -152,7 +156,12 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
                   geography={geo}
                   onMouseEnter={() => {
                     const { name } = geo.properties;
-                    setTooltipContent(`${name} - xyz`);
+                    setTooltipContent(
+                      `${name} - ${(
+                        ((stateData[alias]["total"][attribute] || 0) / total) *
+                        100
+                      ).toPrecision(4)}%`
+                    );
                     setLocationId(alias);
                   }}
                   onMouseLeave={() => {
