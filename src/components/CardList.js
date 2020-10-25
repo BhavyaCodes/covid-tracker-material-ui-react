@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Grid from "@material-ui/core/Grid";
 import Grow from "@material-ui/core/Grow";
+import Zoom from "@material-ui/core/Zoom";
 
 import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
@@ -67,7 +68,7 @@ function Cards() {
   return (
     <div className={classes.root}>
       <Grid container spacing={0}>
-        <Grow in={true}>
+        <Zoom in={true} style={{ transitionDelay: "50ms" }}>
           <Grid item xs={3}>
             <Card
               active={attribute === "confirmed"}
@@ -81,8 +82,8 @@ function Cards() {
               fontColorTransparent={colors.redTransparent}
             />
           </Grid>
-        </Grow>
-        <Grow in={true} timeout={1000}>
+        </Zoom>
+        <Zoom in={true} style={{ transitionDelay: "100ms" }}>
           <Grid item xs={3}>
             <Card
               active={attribute === "active"}
@@ -96,8 +97,8 @@ function Cards() {
               fontColorTransparent={colors.blueTransparent}
             />
           </Grid>
-        </Grow>
-        <Grow in={true} timeout={2000}>
+        </Zoom>
+        <Zoom in={true} style={{ transitionDelay: "200ms" }}>
           <Grid item xs={3}>
             <Card
               active={attribute === "recovered"}
@@ -111,8 +112,8 @@ function Cards() {
               fontColorTransparent={colors.greenTransparent}
             />
           </Grid>
-        </Grow>
-        <Grow in={true} timeout={2500}>
+        </Zoom>
+        <Zoom in={true} style={{ transitionDelay: "300ms" }}>
           <Grid item xs={3}>
             <Card
               active={attribute === "deceased"}
@@ -126,7 +127,7 @@ function Cards() {
               fontColorTransparent={colors.greyTransparent}
             />
           </Grid>
-        </Grow>
+        </Zoom>
       </Grid>
     </div>
   );
