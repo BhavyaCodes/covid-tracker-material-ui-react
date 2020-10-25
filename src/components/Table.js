@@ -181,6 +181,9 @@ const useStyles = makeStyles((theme) => ({
     top: 20,
     width: 1,
   },
+  name: {
+    fontWeight: 700,
+  },
 }));
 
 export default function EnhancedTable() {
@@ -287,7 +290,12 @@ export default function EnhancedTable() {
                       key={row.name}
                       // selected={isItemSelected}
                     >
-                      <TableCell component="th" id={labelId} scope="row">
+                      <TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        className={classes.name}
+                      >
                         {row.name}
                       </TableCell>
                       <TableCell padding="none" align="right">
