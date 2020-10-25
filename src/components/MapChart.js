@@ -157,10 +157,15 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
                   onMouseEnter={() => {
                     const { name } = geo.properties;
                     setTooltipContent(
-                      `${name} - ${(
-                        ((stateData[alias]["total"][attribute] || 0) / total) *
-                        100
-                      ).toPrecision(4)}%`
+                      `${name} - ${
+                        stateData[alias]
+                          ? (
+                              ((stateData[alias]["total"][attribute] || 0) /
+                                total) *
+                              100
+                            ).toPrecision(4)
+                          : 0
+                      }%`
                     );
                     setLocationId(alias);
                   }}
