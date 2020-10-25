@@ -9,4 +9,10 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  a: {
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+    },
+  },
 }));
