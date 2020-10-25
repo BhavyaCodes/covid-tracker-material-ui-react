@@ -1,7 +1,9 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import Typography from "@material-ui/core/Typography";
+
 import { STATE_NAMES } from "../constants";
+import useStyles from "../styles/ChartStyles";
 
 function Chart({
   data,
@@ -13,6 +15,7 @@ function Chart({
   type,
   labelText,
   title,
+  fontColor,
 }) {
   const numberFormatter = new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 1,
@@ -106,9 +109,11 @@ function Chart({
     },
   };
 
+  const classes = useStyles();
+
   return (
-    <>
-      <Typography variant="h6" gutterBottom>
+    <div className={classes.root}>
+      <Typography variant="h6" gutterBottom style={{ color: `${fontColor}` }}>
         {title}
       </Typography>
       <Line
@@ -124,7 +129,7 @@ function Chart({
         }}
         options={options}
       />
-    </>
+    </div>
   );
 }
 
