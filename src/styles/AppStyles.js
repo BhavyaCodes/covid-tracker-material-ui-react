@@ -5,6 +5,9 @@ export default makeStyles((theme) => ({
     position: "relative",
     minHeight: "100vh",
   },
+  logo: {
+    maxHeight: "30px",
+  },
   navItemsRight: {
     margin: "auto",
     marginRight: 0,

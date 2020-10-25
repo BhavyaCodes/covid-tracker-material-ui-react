@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
@@ -21,6 +20,7 @@ import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
 import useStyles from "../styles/AppStyles";
+import logo from "../images/logo.png";
 
 function App() {
   const classes = useStyles();
@@ -83,7 +83,7 @@ function App() {
               <HideOnScroll>
                 <AppBar>
                   <Toolbar>
-                    <Typography variant="h6">NavBar</Typography>
+                    <img src={logo} alt="logo" className={classes.logo} />
                     <div className={classes.navItemsRight}>
                       <IconButton
                         aria-label="toggle dark mode"

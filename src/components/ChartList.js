@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import Chart from "./Chart.js";
 
-import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
