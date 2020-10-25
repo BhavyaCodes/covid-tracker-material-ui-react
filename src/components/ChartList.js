@@ -10,16 +10,7 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 import { HistoricalData } from "../context/historicalData.context";
 import { STATE_NAMES } from "../constants";
-
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-}));
+import useStyles from "../styles/ChartListStyles";
 
 function ChartList() {
   const classes = useStyles();
@@ -56,16 +47,18 @@ function ChartList() {
     });
   };
   return (
-    <div>
-      <FormControl className={classes.formControl}>
-        <Select
-          id="region-selector"
-          value={state}
-          onChange={handleRegionChange}
-        >
-          {renderRegionOptions()}
-        </Select>
-      </FormControl>
+    <div className={classes.root}>
+      <div className={classes.selectorContainer}>
+        <FormControl className={classes.formControl}>
+          <Select
+            id="region-selector"
+            value={state}
+            onChange={handleRegionChange}
+          >
+            {renderRegionOptions()}
+          </Select>
+        </FormControl>
+      </div>
       <ButtonGroup
         color="primary"
         aria-label="outlined primary button group"
