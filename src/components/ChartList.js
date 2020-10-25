@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 import { HistoricalData } from "../context/historicalData.context";
-import { STATE_NAMES } from "../constants";
+import { STATE_NAMES, colors } from "../constants";
 import useStyles from "../styles/ChartListStyles";
 
 function ChartList() {
@@ -114,6 +114,7 @@ function ChartList() {
         backgroundColor="rgba(204, 16, 52, 0.5)"
         labelText="Confirmed cases in"
         title="Confirmed"
+        fontColor={colors.red}
       />
       <Chart
         data={historicalData.data}
@@ -125,6 +126,7 @@ function ChartList() {
         backgroundColor="rgba(40, 247, 17, 0.5)"
         labelText="Recovered in"
         title="Recovered"
+        fontColor={colors.green}
       />
       <Chart
         data={historicalData.data}
@@ -136,6 +138,7 @@ function ChartList() {
         backgroundColor="rgba(186, 186, 186, 0.5)"
         labelText="Deaths in"
         title="Deceased"
+        fontColor={colors.grey}
       />
     </div>
   );
