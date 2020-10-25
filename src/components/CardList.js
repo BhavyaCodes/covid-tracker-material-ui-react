@@ -5,6 +5,7 @@ import Card from "./Card";
 import useStyles from "../styles/CardListStyles";
 import { DataContext } from "../context/data.context";
 import { AttributeContext } from "../context/attribute.context";
+import { colors } from "../constants";
 
 function Cards() {
   const classes = useStyles();
@@ -72,8 +73,10 @@ function Cards() {
             heading="Confirmed"
             subHeading={cardData.confirmed.delta}
             number={cardData.confirmed.total}
-            bgColor={"rgba(240, 126, 126, 0.83)"}
-            hoverColor={"rgba(240, 126, 126, 0.83)"}
+            bgColor={"rgba(255, 87, 123, 0.1)"}
+            hoverColor={"rgba(255, 87, 123, 0.15)"}
+            fontColor={colors.red}
+            fontColorTransparent={colors.redTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -83,8 +86,10 @@ function Cards() {
             heading="Active"
             subHeading="-"
             number={cardData.active.total}
-            bgColor={"rgba(46, 120, 223, 0.42)"}
-            hoverColor={"rgba(46, 120, 223, 0.42)"}
+            bgColor={"rgba(46, 120, 223, 0.1)"}
+            hoverColor={"rgba(46, 120, 223, 0.2)"}
+            fontColor={colors.blue}
+            fontColorTransparent={colors.blueTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -94,8 +99,10 @@ function Cards() {
             heading="Recovered"
             subHeading={cardData.recovered.delta}
             number={cardData.recovered.total}
-            bgColor={"rgba(44, 226, 80, 0.33)"}
+            bgColor={"rgba(40, 167, 69,0.1)"}
             hoverColor={"rgba(40, 167, 69,0.2)"}
+            fontColor={colors.green}
+            fontColorTransparent={colors.greenTransparent}
           />
         </Grid>
         <Grid item xs={3}>
@@ -105,8 +112,10 @@ function Cards() {
             heading="Deceased"
             subHeading={cardData.deceased.delta}
             number={cardData.deceased.total}
-            bgColor={"rgba(193, 193, 193, 0.32)"}
-            hoverColor={"rgba(193, 193, 193, 0.32)"}
+            bgColor={"rgba(193, 193, 193, 0.1)"}
+            hoverColor={"rgba(193, 193, 193, 0.2)"}
+            fontColor={colors.grey}
+            fontColorTransparent={colors.greyTransparent}
           />
         </Grid>
       </Grid>

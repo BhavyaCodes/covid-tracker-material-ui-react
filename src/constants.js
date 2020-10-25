@@ -37,3 +37,14 @@ export const STATE_NAMES = {
   PY: "Puducherry",
   TT: "India",
 };
+
+export const colors = {
+  red: "rgba(255, 16, 67, 1)",
+  redTransparent: "rgba(255, 16, 67, 0.7)",
+  blue: "rgba(4, 123, 255, 1)",
+  blueTransparent: "rgba(4, 123, 255, 0.7)",
+  green: "rgba(40, 167, 69, 1)",
+  greenTransparent: "rgba(40, 167, 69, 0.7)",
+  grey: "rgba(108, 117, 125, 1)",
+  greyTransparent: "rgba(108, 117, 125, 0.7)",
+};

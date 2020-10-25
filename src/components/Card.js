@@ -15,6 +15,8 @@ export default function ({
   type,
   bgColor,
   hoverColor,
+  fontColor,
+  fontColorTransparent,
 }) {
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,6 +33,21 @@ export default function ({
     cardContent: {
       paddingLeft: 0,
       paddingRight: 0,
+    },
+    title: {
+      color: fontColor,
+      fontWeight: theme.typography.fontWeightBold,
+      fontSize: "0.8rem",
+    },
+    pos: {
+      color: fontColorTransparent,
+      fontWeight: theme.typography.fontWeightMedium,
+      fontSize: "0.8rem",
+    },
+    number: {
+      color: fontColor,
+      fontWeight: theme.typography.fontWeightBold,
+      fontSize: "1.1rem",
     },
     bgRed: {
       backgroundColor: `${bgColor}`,
@@ -67,17 +84,11 @@ export default function ({
       elevation={0}
     >
       <CardContent className={classes.cardContent}>
-        <Typography
-          className={classes.title}
-          color="textSecondary"
-          gutterBottom
-        >
+        <Typography className={classes.title} gutterBottom>
           {heading}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {subHeading}
-        </Typography>
-        <Typography variant="body2" component="p">
+        <Typography className={classes.pos}>{subHeading}</Typography>
+        <Typography variant="body2" component="p" className={classes.number}>
           {number}
           <br />
         </Typography>
