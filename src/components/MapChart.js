@@ -5,6 +5,7 @@ import pink from "@material-ui/core/colors/pink";
 import green from "@material-ui/core/colors/green";
 import blue from "@material-ui/core/colors/blue";
 import grey from "@material-ui/core/colors/grey";
+import Fade from "@material-ui/core/Fade";
 
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
@@ -130,7 +131,7 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
   };
 
   return (
-    <>
+    <Fade in={true} style={{ transitionDelay: "300ms" }} timeout={600}>
       <ComposableMap
         data-tip=""
         projection="geoAzimuthalEqualArea"
@@ -199,7 +200,7 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
           }
         </Geographies>
       </ComposableMap>
-    </>
+    </Fade>
   );
 };
 
