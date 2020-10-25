@@ -63,6 +63,7 @@ function ChartList() {
         color="primary"
         aria-label="outlined primary button group"
         disableElevation
+        className={classes.btnGroupDuration}
       >
         <Button
           onClick={() => handleDurationChange("all")}
@@ -87,6 +88,7 @@ function ChartList() {
         color="primary"
         aria-label="outlined primary button group"
         disableElevation
+        className={classes.btnGroupType}
       >
         <Button
           onClick={() => handleTypeChange("total")}

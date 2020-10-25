@@ -16,4 +16,15 @@ export default makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
+  btnGroupDuration: {
+    marginLeft: "auto",
+    marginRight: theme.spacing(1),
+    marginTop: theme.spacing(2),
+  },
+  btnGroupType: {
+    marginLeft: "auto",
+    marginRight: theme.spacing(1),
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(1),
+  },
 }));
