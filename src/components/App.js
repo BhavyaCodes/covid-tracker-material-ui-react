@@ -101,7 +101,11 @@ function App() {
                         <IconButton
                           aria-label="Github repository link"
                           aria-controls="menu-appbar"
+<<<<<<< HEAD
                           aria-haspopup="true"
+=======
+                          aria-haspopup="false"
+>>>>>>> add github link to header
                           color="inherit"
                         >
                           <GitHubIcon />
