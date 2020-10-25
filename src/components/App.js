@@ -27,8 +27,10 @@ function App() {
   const [darkState, setDarkState] = useState(false);
   const paletteType = darkState ? "dark" : "light";
 
-  const arcBlue = "#0B72B9";
-  const arcOrange = "#FFBA60";
+  // const arcBlue = "#0B72B9";
+  // const arcOrange = "#FFBA60";
+  const arcBlue = "#00acc1";
+  const arcOrange = "#ffab40";
 
   const theme = createMuiTheme({
     palette: {
@@ -49,8 +51,8 @@ function App() {
         head: {
           fontSize: "1rem",
           fontWeight: 700,
-          color: arcBlue,
-          borderColor: arcBlue,
+          color: arcOrange,
+          borderColor: arcOrange,
         },
       },
     },

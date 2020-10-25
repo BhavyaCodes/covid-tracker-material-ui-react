@@ -51,6 +51,7 @@ function ChartList() {
       <div className={classes.selectorContainer}>
         <FormControl className={classes.formControl}>
           <Select
+            color="secondary"
             id="region-selector"
             value={state}
             onChange={handleRegionChange}
@@ -60,7 +61,7 @@ function ChartList() {
         </FormControl>
       </div>
       <ButtonGroup
-        color="primary"
+        color="secondary"
         aria-label="outlined primary button group"
         disableElevation
         className={classes.btnGroupDuration}
@@ -85,7 +86,7 @@ function ChartList() {
         </Button>
       </ButtonGroup>
       <ButtonGroup
-        color="primary"
+        color="secondary"
         aria-label="outlined primary button group"
         disableElevation
         className={classes.btnGroupType}
