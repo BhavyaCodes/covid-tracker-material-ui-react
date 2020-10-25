@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import Grid from "@material-ui/core/Grid";
-import Grow from "@material-ui/core/Grow";
 import Zoom from "@material-ui/core/Zoom";
 
 import Card from "./Card";

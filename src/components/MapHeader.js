@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import Fade from "@material-ui/core/Fade";
 
 import CountUp from "react-countup";
 
@@ -37,29 +38,31 @@ function MapHeader({ locationId }) {
   };
 
   return (
-    <div className={`${classes.root} ${attributeToClass[attribute]}`}>
-      <Typography variant="h4" gutterBottom>
-        {STATE_NAMES[locationId]}
-      </Typography>
-      <Typography className={classes.number}>
-        <CountUp
-          start={prevNumber}
-          end={data.data[locationId]?.total[attribute] || 0}
-          delay={0}
-          duration={0.8}
-          formattingFn={(num) => num.toLocaleString("en-IN")}
-        >
-          {({ countUpRef }) => (
-            <div>
-              <span ref={countUpRef} />
-            </div>
-          )}
-        </CountUp>
-      </Typography>
-      <Typography variant="h6" gutterBottom className={classes.type}>
-        {attribute}
-      </Typography>
-    </div>
+    <Fade in={true} style={{ transitionDelay: "300ms" }} timeout={600}>
+      <div className={`${classes.root} ${attributeToClass[attribute]}`}>
+        <Typography variant="h4" gutterBottom>
+          {STATE_NAMES[locationId]}
+        </Typography>
+        <Typography className={classes.number}>
+          <CountUp
+            start={prevNumber}
+            end={data.data[locationId]?.total[attribute] || 0}
+            delay={0}
+            duration={0.8}
+            formattingFn={(num) => num.toLocaleString("en-IN")}
+          >
+            {({ countUpRef }) => (
+              <div>
+                <span ref={countUpRef} />
+              </div>
+            )}
+          </CountUp>
+        </Typography>
+        <Typography variant="h6" gutterBottom className={classes.type}>
+          {attribute}
+        </Typography>
+      </div>
+    </Fade>
   );
 }
 

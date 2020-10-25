@@ -13,6 +13,7 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
+import Slide from "@material-ui/core/Slide";
 
 import { DataContext } from "../context/data.context";
 import { STATE_NAMES } from "../constants";
@@ -263,69 +264,71 @@ export default function EnhancedTable() {
   }
 
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <EnhancedTableToolbar numSelected={selected.length} />
-        <TableContainer>
-          <Table
-            className={classes.table}
-            aria-labelledby="tableTitle"
-            size="small"
-            aria-label="enhanced table"
-          >
-            <EnhancedTableHead
-              classes={classes}
-              numSelected={selected.length}
-              order={order}
-              orderBy={orderBy}
-              onSelectAllClick={handleSelectAllClick}
-              onRequestSort={handleRequestSort}
-              rowCount={rows.length}
-            />
-            <TableBody>
-              {stableSort(rows, getComparator(order, orderBy)).map(
-                (row, index) => {
-                  // const isItemSelected = isSelected(row.name);
-                  const labelId = `enhanced-table-checkbox-${index}`;
+    <Slide direction="up" in={true} mountOnEnter unmountOnExit>
+      <div className={classes.root}>
+        <Paper className={classes.paper}>
+          <EnhancedTableToolbar numSelected={selected.length} />
+          <TableContainer>
+            <Table
+              className={classes.table}
+              aria-labelledby="tableTitle"
+              size="small"
+              aria-label="enhanced table"
+            >
+              <EnhancedTableHead
+                classes={classes}
+                numSelected={selected.length}
+                order={order}
+                orderBy={orderBy}
+                onSelectAllClick={handleSelectAllClick}
+                onRequestSort={handleRequestSort}
+                rowCount={rows.length}
+              />
+              <TableBody>
+                {stableSort(rows, getComparator(order, orderBy)).map(
+                  (row, index) => {
+                    // const isItemSelected = isSelected(row.name);
+                    const labelId = `enhanced-table-checkbox-${index}`;
 
-                  return (
-                    <StyledTableRow
-                      hover
-                      // onClick={(event) => handleClick(event, row.name)}
-                      role="checkbox"
-                      // aria-checked={isItemSelected}
-                      tabIndex={-1}
-                      key={row.name}
-                      // selected={isItemSelected}
-                    >
-                      <TableCell
-                        component="th"
-                        id={labelId}
-                        scope="row"
-                        className={classes.name}
+                    return (
+                      <StyledTableRow
+                        hover
+                        // onClick={(event) => handleClick(event, row.name)}
+                        role="checkbox"
+                        // aria-checked={isItemSelected}
+                        tabIndex={-1}
+                        key={row.name}
+                        // selected={isItemSelected}
                       >
-                        {row.name}
-                      </TableCell>
-                      <TableCell padding="none" align="right">
-                        {row.confirmed.toLocaleString("en-IN")}
-                      </TableCell>
-                      <TableCell padding="none" align="right">
-                        {row.active.toLocaleString("en-IN")}
-                      </TableCell>
-                      <TableCell padding="none" align="right">
-                        {row.recovered.toLocaleString("en-IN")}
-                      </TableCell>
-                      <TableCell align="right">
-                        {row.deceased.toLocaleString("en-IN")}
-                      </TableCell>
-                    </StyledTableRow>
-                  );
-                }
-              )}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
-    </div>
+                        <TableCell
+                          component="th"
+                          id={labelId}
+                          scope="row"
+                          className={classes.name}
+                        >
+                          {row.name}
+                        </TableCell>
+                        <TableCell padding="none" align="right">
+                          {row.confirmed.toLocaleString("en-IN")}
+                        </TableCell>
+                        <TableCell padding="none" align="right">
+                          {row.active.toLocaleString("en-IN")}
+                        </TableCell>
+                        <TableCell padding="none" align="right">
+                          {row.recovered.toLocaleString("en-IN")}
+                        </TableCell>
+                        <TableCell align="right">
+                          {row.deceased.toLocaleString("en-IN")}
+                        </TableCell>
+                      </StyledTableRow>
+                    );
+                  }
+                )}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Paper>
+      </div>
+    </Slide>
   );
 }
