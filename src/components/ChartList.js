@@ -16,7 +16,7 @@ function ChartList() {
   const historicalData = useContext(HistoricalData);
   const [state, setState] = useState("TT");
   const [duration, setDuration] = useState(3);
-  const [type, setType] = useState("total");
+  const [type, setType] = useState("delta");
 
   const handleRegionChange = (event) => {
     setState(event.target.value);
