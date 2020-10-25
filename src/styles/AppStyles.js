@@ -19,4 +19,8 @@ export default makeStyles((theme) => ({
     top: "auto",
     bottom: 0,
   },
+  footerIcons: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
 }));

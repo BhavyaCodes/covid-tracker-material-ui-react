@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Landing from "./Landing";
+import Footer from "./Footer";
 
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
@@ -11,6 +12,8 @@ import Slide from "@material-ui/core/Slide";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
 import IconButton from "@material-ui/core/IconButton";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import Link from "@material-ui/core/Link";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -89,6 +92,21 @@ function App() {
                       >
                         {darkState ? <Brightness7Icon /> : <Brightness4Icon />}
                       </IconButton>
+                      <Link
+                        href="https://github.com/Juggernaut9/covid-tracker-material-ui-react"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        color="inherit"
+                      >
+                        <IconButton
+                          aria-label="Github repository link"
+                          aria-controls="menu-appbar"
+                          aria-haspopup="true"
+                          color="inherit"
+                        >
+                          <GitHubIcon />
+                        </IconButton>
+                      </Link>
                     </div>
                   </Toolbar>
                 </AppBar>
@@ -97,13 +115,7 @@ function App() {
               <Container className={classes.content} maxWidth="lg">
                 <Landing />
               </Container>
-              <AppBar
-                position="absolute"
-                color="primary"
-                className={classes.footer}
-              >
-                <Toolbar>footer</Toolbar>
-              </AppBar>
+              <Footer />
             </div>
           </ThemeProvider>
         </HistoricalDataProvider>
