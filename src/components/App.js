@@ -41,6 +41,16 @@ function App() {
       },
       type: paletteType,
     },
+    overrides: {
+      MuiTableCell: {
+        head: {
+          fontSize: "1rem",
+          fontWeight: 700,
+          color: arcBlue,
+          borderColor: arcBlue,
+        },
+      },
+    },
   });
 
   const handleThemeChange = () => {

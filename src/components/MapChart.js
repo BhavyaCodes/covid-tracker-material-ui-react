@@ -161,7 +161,7 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
                     default: {
                       fill: colorScale()(
                         stateData[alias]
-                          ? stateData[alias]["total"][attribute]
+                          ? stateData[alias]["total"][attribute] || 0
                           : "#EEE"
                       ),
 
@@ -175,7 +175,7 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
                     hover: {
                       fill: colorScale()(
                         stateData[alias]
-                          ? stateData[alias]["total"][attribute]
+                          ? stateData[alias]["total"][attribute] || 0
                           : "#EEE"
                       ),
                       outline: "none",
@@ -185,7 +185,7 @@ const MapChart = ({ setTooltipContent, locationId, setLocationId }) => {
                     pressed: {
                       fill: colorScale()(
                         stateData[alias]
-                          ? stateData[alias]["total"][attribute]
+                          ? stateData[alias]["total"][attribute] || 0
                           : "#EEE"
                       ),
                       outline: "none",

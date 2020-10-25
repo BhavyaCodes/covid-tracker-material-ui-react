@@ -21,7 +21,7 @@ function MapHeader({ locationId }) {
       return;
     }
     return () => {
-      setPrevNumber(data.data[locationId]["total"][attribute]);
+      setPrevNumber(data.data[locationId]?.total[attribute]);
     };
   }, [attribute, locationId, data]);
 
@@ -44,7 +44,7 @@ function MapHeader({ locationId }) {
       <Typography className={classes.number}>
         <CountUp
           start={prevNumber}
-          end={data.data[locationId]["total"][attribute]}
+          end={data.data[locationId]?.total[attribute] || 0}
           delay={0}
           duration={0.8}
           formattingFn={(num) => num.toLocaleString("en-IN")}

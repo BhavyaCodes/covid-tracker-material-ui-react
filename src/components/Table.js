@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import { lighten, makeStyles } from "@material-ui/core/styles";
+import { lighten, makeStyles, withStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -181,7 +181,18 @@ const useStyles = makeStyles((theme) => ({
     top: 20,
     width: 1,
   },
+  name: {
+    fontWeight: 700,
+  },
 }));
+
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    "&:nth-of-type(odd)": {
+      backgroundColor: theme.palette.action.hover,
+    },
+  },
+}))(TableRow);
 
 export default function EnhancedTable() {
   const classes = useStyles();
@@ -278,7 +289,7 @@ export default function EnhancedTable() {
                   const labelId = `enhanced-table-checkbox-${index}`;
 
                   return (
-                    <TableRow
+                    <StyledTableRow
                       hover
                       // onClick={(event) => handleClick(event, row.name)}
                       role="checkbox"
@@ -287,7 +298,12 @@ export default function EnhancedTable() {
                       key={row.name}
                       // selected={isItemSelected}
                     >
-                      <TableCell component="th" id={labelId} scope="row">
+                      <TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        className={classes.name}
+                      >
                         {row.name}
                       </TableCell>
                       <TableCell padding="none" align="right">
@@ -302,7 +318,7 @@ export default function EnhancedTable() {
                       <TableCell align="right">
                         {row.deceased.toLocaleString("en-IN")}
                       </TableCell>
-                    </TableRow>
+                    </StyledTableRow>
                   );
                 }
               )}
