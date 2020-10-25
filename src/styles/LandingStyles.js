@@ -22,6 +22,11 @@ export default makeStyles((theme) => ({
       paddingRight: "0",
     },
   },
+  spinner: {
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+  },
   container: {
     [theme.breakpoints.up("sm")]: {
       padding: "10px 10px",
