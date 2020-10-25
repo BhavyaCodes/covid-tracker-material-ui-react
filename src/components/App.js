@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Landing from "./Landing";
 import Footer from "./Footer";
 
@@ -16,6 +16,7 @@ import Link from "@material-ui/core/Link";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
+import useLocalStorageState from "../hooks/useLocalStorageState";
 import { DataProvider } from "../context/data.context";
 import { AttributeProvider } from "../context/attribute.context";
 import { HistoricalDataProvider } from "../context/historicalData.context";
@@ -24,7 +25,8 @@ import logo from "../images/logo.png";
 
 function App() {
   const classes = useStyles();
-  const [darkState, setDarkState] = useState(false);
+  // const [darkState, setDarkState] = useState(false);
+  const [darkState, setDarkState] = useLocalStorageState("darkMode", false);
   const paletteType = darkState ? "dark" : "light";
 
   // const arcBlue = "#0B72B9";
