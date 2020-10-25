@@ -13,6 +13,10 @@ import Brightness7Icon from "@material-ui/icons/Brightness7";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import EmailIcon from "@material-ui/icons/Email";
+import Button from "@material-ui/core/Button";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -100,7 +104,7 @@ function App() {
                         <IconButton
                           aria-label="Github repository link"
                           aria-controls="menu-appbar"
-                          aria-haspopup="false"
+                          aria-haspopup="true"
                           color="inherit"
                         >
                           <GitHubIcon />
@@ -119,7 +123,63 @@ function App() {
                 color="primary"
                 className={classes.footer}
               >
-                <Toolbar>footer</Toolbar>
+                <Toolbar className={classes.footerIcons}>
+                  <div>
+                    <Link
+                      href="https://github.com/Juggernaut9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      color="inherit"
+                    >
+                      <IconButton
+                        aria-label="Github"
+                        aria-haspopup="true"
+                        color="inherit"
+                      >
+                        <GitHubIcon />
+                      </IconButton>
+                    </Link>
+                    <Link
+                      href="https://twitter.com/BhavyaCodes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      color="inherit"
+                    >
+                      <IconButton
+                        aria-label="Github"
+                        aria-haspopup="true"
+                        color="inherit"
+                      >
+                        <TwitterIcon />
+                      </IconButton>
+                    </Link>
+                    <Link
+                      href="mailto:fullmernstack@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      color="inherit"
+                    >
+                      <IconButton
+                        aria-label="Github"
+                        aria-haspopup="true"
+                        color="inherit"
+                      >
+                        <EmailIcon />
+                      </IconButton>
+                    </Link>
+                  </div>
+                  <div>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      disableElevation
+                      className={classes.button}
+                      endIcon={<OpenInNewIcon />}
+                    >
+                      API
+                    </Button>
+                  </div>
+                </Toolbar>
               </AppBar>
             </div>
           </ThemeProvider>
