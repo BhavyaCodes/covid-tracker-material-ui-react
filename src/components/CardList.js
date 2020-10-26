@@ -38,7 +38,7 @@ function Cards() {
     setCardData({
       confirmed: {
         total: data.indiaData.total.confirmed.toLocaleString("en-IN"),
-        delta: data.indiaData.delta.confirmed
+        delta: data.indiaData?.delta?.confirmed
           ? "+" + data.indiaData.delta.confirmed.toLocaleString("en-IN")
           : "♥",
       },
@@ -47,13 +47,13 @@ function Cards() {
       },
       recovered: {
         total: data.indiaData.total.recovered.toLocaleString("en-IN"),
-        delta: data.indiaData.delta.recovered
+        delta: data.indiaData?.delta?.recovered
           ? "+" + data.indiaData.delta.recovered.toLocaleString("en-IN")
           : "♥",
       },
       deceased: {
         total: data.indiaData.total.deceased.toLocaleString("en-IN"),
-        delta: data.indiaData.delta.deceased
+        delta: data.indiaData?.delta?.deceased
           ? "+" + data.indiaData.delta.deceased.toLocaleString("en-IN")
           : "♥",
       },
