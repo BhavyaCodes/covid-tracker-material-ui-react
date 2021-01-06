@@ -39,9 +39,14 @@ function Chart({
     let chartData = [];
     if (duration === "all") {
       for (let date in data[state].dates) {
+        const dataDate = new Date(
+          parseInt(date.split("-")[0]),
+          parseInt(date.split("-")[1]) - 1,
+          parseInt(date.split("-")[2])
+        );
         if (data[state]["dates"][date][type]) {
           let newDataPoint = {
-            x: date,
+            x: dataDate,
             y: data[state]["dates"][date][type][attribute],
           };
           chartData.push(newDataPoint);
@@ -61,7 +66,7 @@ function Chart({
         if (specifiedDate < dataDate) {
           if (data[state]["dates"][date][type]) {
             let newDataPoint = {
-              x: date,
+              x: dataDate,
               y: data[state]["dates"][date][type][attribute] || 0,
             };
             chartData.push(newDataPoint);
@@ -71,8 +76,6 @@ function Chart({
       return chartData;
     }
   };
-
-  // console.log("buildChartData", buildChartData(3));
 
   const options = {
     legend: {
