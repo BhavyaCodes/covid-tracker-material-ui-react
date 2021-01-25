@@ -218,25 +218,7 @@ export default function EnhancedTable() {
     setSelected([]);
   };
 
-  const handleClick = (event, name) => {
-    // const selectedIndex = selected.indexOf(name);
-    // let newSelected = [];
-    // if (selectedIndex === -1) {
-    //   newSelected = newSelected.concat(selected, name);
-    // } else if (selectedIndex === 0) {
-    //   newSelected = newSelected.concat(selected.slice(1));
-    // } else if (selectedIndex === selected.length - 1) {
-    //   newSelected = newSelected.concat(selected.slice(0, -1));
-    // } else if (selectedIndex > 0) {
-    //   newSelected = newSelected.concat(
-    //     selected.slice(0, selectedIndex),
-    //     selected.slice(selectedIndex + 1)
-    //   );
-    // }
-    // setSelected(newSelected);
-  };
-
-  // const isSelected = (name) => selected.indexOf(name) !== -1;
+  const handleClick = (event, name) => {};
 
   useEffect(() => {
     if (!data.hasLoaded) {
@@ -309,16 +291,16 @@ export default function EnhancedTable() {
                           {row.name}
                         </TableCell>
                         <TableCell padding="none" align="right">
-                          {row.confirmed.toLocaleString("en-IN")}
+                          {row?.confirmed?.toLocaleString("en-IN")}
                         </TableCell>
                         <TableCell padding="none" align="right">
-                          {row.active.toLocaleString("en-IN")}
+                          {row?.active?.toLocaleString("en-IN")}
                         </TableCell>
                         <TableCell padding="none" align="right">
-                          {row.recovered.toLocaleString("en-IN")}
+                          {row?.recovered?.toLocaleString("en-IN")}
                         </TableCell>
                         <TableCell align="right">
-                          {row.deceased.toLocaleString("en-IN")}
+                          {row?.deceased?.toLocaleString("en-IN")}
                         </TableCell>
                       </StyledTableRow>
                     );
