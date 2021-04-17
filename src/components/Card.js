@@ -48,6 +48,9 @@ export default function ({
       color: fontColor,
       fontWeight: theme.typography.fontWeightBold,
       fontSize: "1.1rem",
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "0.9rem",
+      },
     },
     bgRed: {
       backgroundColor: `${bgColor}`,
