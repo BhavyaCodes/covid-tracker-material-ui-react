@@ -78,22 +78,18 @@ function Footer() {
           </Link>
         </div>
         <div>
-          <Link
+          <Button
             href="https://github.com/covid19india/api"
             target="_blank"
             rel="noopener noreferrer"
-            color="inherit"
+            variant="contained"
+            color="secondary"
+            disableElevation
+            className={classes.button}
+            endIcon={<OpenInNewIcon />}
           >
-            <Button
-              variant="contained"
-              color="secondary"
-              disableElevation
-              className={classes.button}
-              endIcon={<OpenInNewIcon />}
-            >
-              API
-            </Button>
-          </Link>
+            API
+          </Button>
         </div>
       </Toolbar>
     </AppBar>
