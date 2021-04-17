@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Link from "@material-ui/core/Link";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -20,7 +21,7 @@ function Footer() {
       <Toolbar className={classes.footerIcons}>
         <div>
           <Link
-            href="https://github.com/Juggernaut9"
+            href="https://github.com/BhavyaCodes"
             target="_blank"
             rel="noopener noreferrer"
             color="inherit"
@@ -31,6 +32,20 @@ function Footer() {
               color="inherit"
             >
               <GitHubIcon />
+            </IconButton>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/bhavya-tomar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="inherit"
+          >
+            <IconButton
+              aria-label="LinkedIn"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <LinkedInIcon />
             </IconButton>
           </Link>
           <Link
@@ -63,22 +78,18 @@ function Footer() {
           </Link>
         </div>
         <div>
-          <Link
+          <Button
             href="https://github.com/covid19india/api"
             target="_blank"
             rel="noopener noreferrer"
-            color="inherit"
+            variant="contained"
+            color="secondary"
+            disableElevation
+            className={classes.button}
+            endIcon={<OpenInNewIcon />}
           >
-            <Button
-              variant="contained"
-              color="secondary"
-              disableElevation
-              className={classes.button}
-              endIcon={<OpenInNewIcon />}
-            >
-              API
-            </Button>
-          </Link>
+            API
+          </Button>
         </div>
       </Toolbar>
     </AppBar>
