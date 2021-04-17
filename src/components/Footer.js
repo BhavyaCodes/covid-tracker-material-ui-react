@@ -20,7 +20,7 @@ function Footer() {
       <Toolbar className={classes.footerIcons}>
         <div>
           <Link
-            href="https://github.com/Juggernaut9"
+            href="https://github.com/BhavyaCodes"
             target="_blank"
             rel="noopener noreferrer"
             color="inherit"

@@ -97,7 +97,7 @@ function App() {
                         {darkState ? <Brightness7Icon /> : <Brightness4Icon />}
                       </IconButton>
                       <Link
-                        href="https://github.com/Juggernaut9/covid-tracker-material-ui-react"
+                        href="https://github.com/BhavyaCodes/covid-tracker-material-ui-react"
                         target="_blank"
                         rel="noopener noreferrer"
                         color="inherit"
