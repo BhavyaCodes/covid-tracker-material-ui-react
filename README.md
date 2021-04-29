@@ -1,4 +1,12 @@
-# Covid-19 tracker for India made using React with material-ui styling
+# Covid-19 tracker for India
+
+Track current and historical covid-19 data of India and its states and union territories.
+
+## Link to live website - [covid-tracker-beta.vercel.app](https://covid-tracker-beta.vercel.app/)
+
+## Demo
+
+<img src="/.github/demo.gif" width="100%">
 
 ## Features -
 
@@ -17,7 +25,56 @@
 - #### Sorted Data table
   A simple table that can be sorted by any column
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Run project on your computer
+
+- clone the repo
+
+```
+git clone <url>
+```
+
+- install dependencies and start development server
+
+```
+npm install
+npm start
+```
+
+- Build and run production app
+
+```
+npm run build
+npm install -g server
+serve -s build
+```
+
+---
+
+## Tech used to build this project
+
+<table>
+  <tr>
+    <td align="center"> <img align="center" src="/.github/icons/react.png" alt="react logo" width="100" /></td>
+		<td align="center"> <img align="center" src="/.github/icons/chartjs.svg" alt="chart.js logo" width="100" /></td>	
+		<td align="center"> <img align="center" src="/.github/icons/materialui.svg" alt="material-ui logo" width="100" /></td>
+   <tr>
+      <td align="center"><b> React </b></td>
+			<td align="center"><b> Chart.js </b></td>
+			<td align="center"><b> Material-UI </b></td>
+  </tr>
+</table>
+
+---
+
+## License
+
+![GitHub](https://img.shields.io/github/license/BhavyaCodes/covid-tracker-material-ui-react?style=for-the-badge)
+
+---
+
+### Leave a ⭐️ if you liked this project 😄
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -84,4 +141,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
