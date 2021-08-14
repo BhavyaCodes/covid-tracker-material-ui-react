@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const instance = axios.create({
-  baseURL: "",
+  baseURL: "https://data.covid19india.org",
 });
 
 export default instance;
