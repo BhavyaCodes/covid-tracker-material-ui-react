@@ -239,6 +239,7 @@ export default function EnhancedTable() {
       })
     );
   }, [data]);
+
   if (!data.hasLoaded) {
     return <div>spinner</div>;
   }
