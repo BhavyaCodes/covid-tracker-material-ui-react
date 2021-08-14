@@ -1,10 +1,10 @@
 {
 	"rewrites": [
 		{
-			"source": "https://api.covid19india.org/v4/timeseries.json", "destination": "https://api.covid19india.org/v4/timeseries.json"
+			"source": "/v4/timeseries.json", "destination": "https://api.covid19india.org/v4/timeseries.json"
 		},
 		{
-			"source": "https://api.covid19india.org/v4/data.json", "destination": "https://api.covid19india.org/v4/data.json"
+			"source": "/v4/data.json", "destination": "https://api.covid19india.org/v4/data.json"
 		}
   ]
 
