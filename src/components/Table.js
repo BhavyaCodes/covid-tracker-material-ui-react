@@ -218,8 +218,6 @@ export default function EnhancedTable() {
     setSelected([]);
   };
 
-  const handleClick = (event, name) => {};
-
   useEffect(() => {
     if (!data.hasLoaded) {
       return;
