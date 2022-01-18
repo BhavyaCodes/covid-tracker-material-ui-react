@@ -1,6 +1,7 @@
 import React from "react";
 import Landing from "./Landing";
 import Footer from "./Footer";
+import SnackBar from "./SnackBar";
 
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
@@ -13,6 +14,7 @@ import Brightness7Icon from "@material-ui/icons/Brightness7";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
+
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -75,15 +77,18 @@ function App() {
   }
 
   return (
+    
     <DataProvider>
       <AttributeProvider>
         <HistoricalDataProvider>
           <CssBaseline />
+         
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <div className={classes.root}>
               <HideOnScroll>
                 <AppBar>
+                
                   <Toolbar>
                     <img src={logo} alt="logo" className={classes.logo} />
                     <div className={classes.navItemsRight}>
@@ -96,6 +101,7 @@ function App() {
                       >
                         {darkState ? <Brightness7Icon /> : <Brightness4Icon />}
                       </IconButton>
+                      
                       <Link
                         href="https://github.com/BhavyaCodes/covid-tracker-material-ui-react"
                         target="_blank"
@@ -111,11 +117,15 @@ function App() {
                           <GitHubIcon />
                         </IconButton>
                       </Link>
+                      
                     </div>
                   </Toolbar>
                 </AppBar>
+               
               </HideOnScroll>
+              
               <Toolbar />
+              <SnackBar />
               <Container className={classes.content} maxWidth="lg">
                 <Landing />
               </Container>
