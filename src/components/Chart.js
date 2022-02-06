@@ -57,7 +57,6 @@ function Chart({
       const specifiedDate = new Date(
         new Date(2021,10,21).getTime() - 1000 * 60 * 60 * 24 * 30 * duration
       );
-      console.log(specifiedDate);
       for (let date in data[state].dates) {
         const dataDate = new Date(
           parseInt(date.split("-")[0]),
