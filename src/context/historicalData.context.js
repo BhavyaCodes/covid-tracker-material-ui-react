@@ -8,7 +8,7 @@ export function HistoricalDataProvider(props) {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await api.get("/v4/timeseries.json");
+      const res = await api.get("/v4/min/timeseries.min.json");
       setHistoricalData({ data: res.data, hasLoaded: true });
     };
     getData();
