@@ -1,0 +1,8 @@
+app/vercel/covid_tracker_beta/twa/BuildConfig.java
+ app.vercel.covid_tracker_beta.twa.BuildConfig
+app/vercel/covid_tracker_beta/twa/LauncherActivity.java
+ app.vercel.covid_tracker_beta.twa.LauncherActivity
+app/vercel/covid_tracker_beta/twa/DelegationService.java
+ app.vercel.covid_tracker_beta.twa.DelegationService
+app/vercel/covid_tracker_beta/twa/Application.java
+ app.vercel.covid_tracker_beta.twa.Application

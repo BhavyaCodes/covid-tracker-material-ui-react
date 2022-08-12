@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.vercel.covid_tracker_beta.twa",
+    "sha256_cert_fingerprints":
+    ["B8:87:B9:B8:DB:30:49:14:96:25:88:99:BC:8C:82:DA:2E:2F:47:E5:95:BD:DA:17:26:26:C6:85:E3:C9:EF:F7"]
+  }
+}]

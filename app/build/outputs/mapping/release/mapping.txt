@@ -1,0 +1,860 @@
+# compiler: R8
+# compiler_version: 2.1.86
+# min_api: 19
+# pg_map_id: 1cbebf3
+# common_typos_disable
+android.support.customtabs.ICustomTabsCallback -> a.a.a.a:
+    void onPostMessage(java.lang.String,android.os.Bundle) -> c
+    void extraCallback(java.lang.String,android.os.Bundle) -> e
+    void onMessageChannelReady(android.os.Bundle) -> f
+    android.os.Bundle extraCallbackWithResult(java.lang.String,android.os.Bundle) -> l
+    void onNavigationEvent(int,android.os.Bundle) -> m
+    void onRelationshipValidationResult(int,android.net.Uri,boolean,android.os.Bundle) -> q
+android.support.customtabs.ICustomTabsCallback$Stub -> a.a.a.a$a:
+android.support.customtabs.ICustomTabsService -> a.a.a.b:
+    boolean newSessionWithExtras(android.support.customtabs.ICustomTabsCallback,android.os.Bundle) -> b
+    boolean warmup(long) -> j
+    boolean newSession(android.support.customtabs.ICustomTabsCallback) -> k
+    boolean validateRelationship(android.support.customtabs.ICustomTabsCallback,int,android.net.Uri,android.os.Bundle) -> o
+    boolean receiveFile(android.support.customtabs.ICustomTabsCallback,android.net.Uri,int,android.os.Bundle) -> r
+android.support.customtabs.ICustomTabsService$Stub -> a.a.a.b$a:
+    android.support.customtabs.ICustomTabsService asInterface(android.os.IBinder) -> s
+    android.support.customtabs.ICustomTabsService getDefaultImpl() -> t
+android.support.customtabs.ICustomTabsService$Stub$Proxy -> a.a.a.b$a$a:
+    android.os.IBinder mRemote -> a
+    android.support.customtabs.ICustomTabsService sDefaultImpl -> b
+    boolean newSessionWithExtras(android.support.customtabs.ICustomTabsCallback,android.os.Bundle) -> b
+    boolean warmup(long) -> j
+    boolean newSession(android.support.customtabs.ICustomTabsCallback) -> k
+    boolean validateRelationship(android.support.customtabs.ICustomTabsCallback,int,android.net.Uri,android.os.Bundle) -> o
+    boolean receiveFile(android.support.customtabs.ICustomTabsCallback,android.net.Uri,int,android.os.Bundle) -> r
+android.support.customtabs.trusted.ITrustedWebActivityCallback -> a.a.a.c.a:
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub -> a.a.a.c.a$a:
+    android.support.customtabs.trusted.ITrustedWebActivityCallback asInterface(android.os.IBinder) -> s
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub$Proxy -> a.a.a.c.a$a$a:
+    android.os.IBinder mRemote -> a
+android.support.customtabs.trusted.ITrustedWebActivityService -> a.a.a.c.b:
+    android.os.Bundle areNotificationsEnabled(android.os.Bundle) -> a
+    android.os.Bundle getActiveNotifications() -> d
+    int getSmallIconId() -> g
+    void cancelNotification(android.os.Bundle) -> h
+    android.os.Bundle extraCommand(java.lang.String,android.os.Bundle,android.os.IBinder) -> i
+    android.os.Bundle notifyNotificationWithChannel(android.os.Bundle) -> n
+    android.os.Bundle getSmallIconBitmap() -> p
+android.support.customtabs.trusted.ITrustedWebActivityService$Stub -> a.a.a.c.b$a:
+androidx.browser.R$dimen -> b.a.a:
+    int browser_actions_context_menu_min_padding -> b
+    int browser_actions_context_menu_max_width -> a
+androidx.browser.browseractions.BrowserActionsFallbackMenuView -> androidx.browser.browseractions.BrowserActionsFallbackMenuView:
+    int mBrowserActionsMenuMaxWidthPx -> b
+    int mBrowserActionsMenuMinPaddingPx -> a
+androidx.browser.customtabs.CustomTabColorSchemeParams -> b.a.b.a:
+    java.lang.Integer navigationBarColor -> c
+    java.lang.Integer navigationBarDividerColor -> d
+    java.lang.Integer toolbarColor -> a
+    java.lang.Integer secondaryToolbarColor -> b
+    androidx.browser.customtabs.CustomTabColorSchemeParams fromBundle(android.os.Bundle) -> a
+    android.os.Bundle toBundle() -> b
+    androidx.browser.customtabs.CustomTabColorSchemeParams withDefaults(androidx.browser.customtabs.CustomTabColorSchemeParams) -> c
+androidx.browser.customtabs.CustomTabColorSchemeParams$Builder -> b.a.b.a$a:
+    java.lang.Integer mNavigationBarColor -> c
+    java.lang.Integer mNavigationBarDividerColor -> d
+    java.lang.Integer mToolbarColor -> a
+    java.lang.Integer mSecondaryToolbarColor -> b
+    androidx.browser.customtabs.CustomTabColorSchemeParams build() -> a
+    androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setNavigationBarColor(int) -> b
+    androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setNavigationBarDividerColor(int) -> c
+    androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setToolbarColor(int) -> d
+androidx.browser.customtabs.CustomTabsCallback -> b.a.b.b:
+    void extraCallback(java.lang.String,android.os.Bundle) -> a
+    android.os.Bundle extraCallbackWithResult(java.lang.String,android.os.Bundle) -> b
+    void onMessageChannelReady(android.os.Bundle) -> c
+    void onNavigationEvent(int,android.os.Bundle) -> d
+    void onPostMessage(java.lang.String,android.os.Bundle) -> e
+    void onRelationshipValidationResult(int,android.net.Uri,boolean,android.os.Bundle) -> f
+androidx.browser.customtabs.CustomTabsClient -> b.a.b.c:
+    android.content.ComponentName mServiceComponentName -> b
+    android.content.Context mApplicationContext -> c
+    android.support.customtabs.ICustomTabsService mService -> a
+    boolean bindCustomTabsService(android.content.Context,java.lang.String,androidx.browser.customtabs.CustomTabsServiceConnection) -> a
+    boolean bindCustomTabsServicePreservePriority(android.content.Context,java.lang.String,androidx.browser.customtabs.CustomTabsServiceConnection) -> b
+    android.support.customtabs.ICustomTabsCallback$Stub createCallbackWrapper(androidx.browser.customtabs.CustomTabsCallback) -> c
+    android.app.PendingIntent createSessionId(android.content.Context,int) -> d
+    androidx.browser.customtabs.CustomTabsSession newSession(androidx.browser.customtabs.CustomTabsCallback) -> e
+    androidx.browser.customtabs.CustomTabsSession newSession(androidx.browser.customtabs.CustomTabsCallback,int) -> f
+    androidx.browser.customtabs.CustomTabsSession newSessionInternal(androidx.browser.customtabs.CustomTabsCallback,android.app.PendingIntent) -> g
+    boolean warmup(long) -> h
+androidx.browser.customtabs.CustomTabsClient$2 -> b.a.b.c$a:
+    androidx.browser.customtabs.CustomTabsCallback val$callback -> b
+    android.os.Handler mHandler -> a
+    void onPostMessage(java.lang.String,android.os.Bundle) -> c
+    void extraCallback(java.lang.String,android.os.Bundle) -> e
+    void onMessageChannelReady(android.os.Bundle) -> f
+    android.os.Bundle extraCallbackWithResult(java.lang.String,android.os.Bundle) -> l
+    void onNavigationEvent(int,android.os.Bundle) -> m
+    void onRelationshipValidationResult(int,android.net.Uri,boolean,android.os.Bundle) -> q
+androidx.browser.customtabs.CustomTabsClient$2$1 -> b.a.b.c$a$a:
+    android.os.Bundle val$extras -> b
+    androidx.browser.customtabs.CustomTabsClient$2 this$1 -> c
+    int val$navigationEvent -> a
+androidx.browser.customtabs.CustomTabsClient$2$2 -> b.a.b.c$a$b:
+    android.os.Bundle val$args -> b
+    androidx.browser.customtabs.CustomTabsClient$2 this$1 -> c
+    java.lang.String val$callbackName -> a
+androidx.browser.customtabs.CustomTabsClient$2$3 -> b.a.b.c$a$c:
+    android.os.Bundle val$extras -> a
+    androidx.browser.customtabs.CustomTabsClient$2 this$1 -> b
+androidx.browser.customtabs.CustomTabsClient$2$4 -> b.a.b.c$a$d:
+    android.os.Bundle val$extras -> b
+    androidx.browser.customtabs.CustomTabsClient$2 this$1 -> c
+    java.lang.String val$message -> a
+androidx.browser.customtabs.CustomTabsClient$2$5 -> b.a.b.c$a$e:
+    android.os.Bundle val$extras -> d
+    androidx.browser.customtabs.CustomTabsClient$2 this$1 -> e
+    android.net.Uri val$requestedOrigin -> b
+    boolean val$result -> c
+    int val$relation -> a
+androidx.browser.customtabs.CustomTabsIntent -> b.a.b.d:
+    android.content.Intent intent -> a
+    android.os.Bundle startAnimationBundle -> b
+    androidx.browser.customtabs.CustomTabColorSchemeParams getColorSchemeParams(android.content.Intent,int) -> a
+    void launchUrl(android.content.Context,android.net.Uri) -> b
+androidx.browser.customtabs.CustomTabsIntent$Builder -> b.a.b.d$a:
+    androidx.browser.customtabs.CustomTabColorSchemeParams$Builder mDefaultColorSchemeBuilder -> b
+    boolean mInstantAppsEnabled -> i
+    android.content.Intent mIntent -> a
+    int mShareState -> h
+    android.os.Bundle mStartAnimationBundle -> d
+    android.os.Bundle mDefaultColorSchemeBundle -> g
+    java.util.ArrayList mActionButtons -> e
+    android.util.SparseArray mColorSchemeParamBundles -> f
+    java.util.ArrayList mMenuItems -> c
+    androidx.browser.customtabs.CustomTabsIntent build() -> a
+    androidx.browser.customtabs.CustomTabsIntent$Builder setColorScheme(int) -> b
+    androidx.browser.customtabs.CustomTabsIntent$Builder setColorSchemeParams(int,androidx.browser.customtabs.CustomTabColorSchemeParams) -> c
+    androidx.browser.customtabs.CustomTabsIntent$Builder setNavigationBarColor(int) -> d
+    androidx.browser.customtabs.CustomTabsIntent$Builder setNavigationBarDividerColor(int) -> e
+    androidx.browser.customtabs.CustomTabsIntent$Builder setSession(androidx.browser.customtabs.CustomTabsSession) -> f
+    void setSessionParameters(android.os.IBinder,android.app.PendingIntent) -> g
+    androidx.browser.customtabs.CustomTabsIntent$Builder setToolbarColor(int) -> h
+androidx.browser.customtabs.CustomTabsServiceConnection -> b.a.b.e:
+    android.content.Context mApplicationContext -> a
+    void onCustomTabsServiceConnected(android.content.ComponentName,androidx.browser.customtabs.CustomTabsClient) -> a
+    void setApplicationContext(android.content.Context) -> b
+androidx.browser.customtabs.CustomTabsServiceConnection$1 -> b.a.b.e$a:
+androidx.browser.customtabs.CustomTabsSession -> b.a.b.f:
+    android.support.customtabs.ICustomTabsCallback mCallback -> b
+    android.content.ComponentName mComponentName -> c
+    android.support.customtabs.ICustomTabsService mService -> a
+    android.app.PendingIntent mId -> d
+    void addIdToBundle(android.os.Bundle) -> a
+    android.os.Bundle createBundleWithId(android.os.Bundle) -> b
+    android.os.IBinder getBinder() -> c
+    android.content.ComponentName getComponentName() -> d
+    android.app.PendingIntent getId() -> e
+    boolean receiveFile(android.net.Uri,int,android.os.Bundle) -> f
+    boolean validateRelationship(int,android.net.Uri,android.os.Bundle) -> g
+androidx.browser.customtabs.TrustedWebUtils -> b.a.b.g:
+    boolean areSplashScreensSupported(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean transferSplashImage(android.content.Context,java.io.File,java.lang.String,java.lang.String,androidx.browser.customtabs.CustomTabsSession) -> b
+androidx.browser.trusted.-$$Lambda$TokenContents$Q7kOl2yBde7CmQs5Ktpiz56Nr70 -> b.a.c.a:
+    androidx.browser.trusted.-$$Lambda$TokenContents$Q7kOl2yBde7CmQs5Ktpiz56Nr70 INSTANCE -> a
+androidx.browser.trusted.NotificationApiHelperForM -> b.a.c.b:
+    android.os.Parcelable[] getActiveNotifications(android.app.NotificationManager) -> a
+androidx.browser.trusted.NotificationApiHelperForO -> b.a.c.c:
+    android.app.Notification copyNotificationOntoChannel(android.content.Context,android.app.NotificationManager,android.app.Notification,java.lang.String,java.lang.String) -> a
+    boolean isChannelEnabled(android.app.NotificationManager,java.lang.String) -> b
+androidx.browser.trusted.PackageIdentityUtils -> b.a.c.d:
+    byte[] getCertificateSHA256Fingerprint(android.content.pm.Signature) -> a
+    java.util.List getFingerprintsForPackage(java.lang.String,android.content.pm.PackageManager) -> b
+    androidx.browser.trusted.PackageIdentityUtils$SignaturesCompat getImpl() -> c
+    boolean packageMatchesToken(java.lang.String,android.content.pm.PackageManager,androidx.browser.trusted.TokenContents) -> d
+androidx.browser.trusted.PackageIdentityUtils$Api28Implementation -> b.a.c.d$a:
+    java.util.List getFingerprintsForPackage(java.lang.String,android.content.pm.PackageManager) -> a
+    boolean packageMatchesToken(java.lang.String,android.content.pm.PackageManager,androidx.browser.trusted.TokenContents) -> b
+androidx.browser.trusted.PackageIdentityUtils$Pre28Implementation -> b.a.c.d$b:
+    java.util.List getFingerprintsForPackage(java.lang.String,android.content.pm.PackageManager) -> a
+    boolean packageMatchesToken(java.lang.String,android.content.pm.PackageManager,androidx.browser.trusted.TokenContents) -> b
+androidx.browser.trusted.PackageIdentityUtils$SignaturesCompat -> b.a.c.d$c:
+    java.util.List getFingerprintsForPackage(java.lang.String,android.content.pm.PackageManager) -> a
+    boolean packageMatchesToken(java.lang.String,android.content.pm.PackageManager,androidx.browser.trusted.TokenContents) -> b
+androidx.browser.trusted.Token -> b.a.c.e:
+    androidx.browser.trusted.TokenContents mContents -> a
+    androidx.browser.trusted.Token create(java.lang.String,android.content.pm.PackageManager) -> a
+    androidx.browser.trusted.Token deserialize(byte[]) -> b
+    boolean matches(java.lang.String,android.content.pm.PackageManager) -> c
+    byte[] serialize() -> d
+androidx.browser.trusted.TokenContents -> b.a.c.f:
+    byte[] mContents -> a
+    java.util.List mFingerprints -> c
+    java.lang.String mPackageName -> b
+    int compareByteArrays(byte[],byte[]) -> a
+    androidx.browser.trusted.TokenContents create(java.lang.String,java.util.List) -> b
+    byte[] createToken(java.lang.String,java.util.List) -> c
+    androidx.browser.trusted.TokenContents deserialize(byte[]) -> d
+    byte[] getFingerprint(int) -> e
+    java.lang.String getPackageName() -> f
+    int lambda$Q7kOl2yBde7CmQs5Ktpiz56Nr70(byte[],byte[]) -> g
+    void parseIfNeeded() -> h
+    byte[] serialize() -> i
+androidx.browser.trusted.TokenStore -> b.a.c.g:
+    void store(androidx.browser.trusted.Token) -> a
+    androidx.browser.trusted.Token load() -> b
+androidx.browser.trusted.TrustedWebActivityCallbackRemote -> b.a.c.h:
+    android.support.customtabs.trusted.ITrustedWebActivityCallback mCallbackBinder -> a
+    androidx.browser.trusted.TrustedWebActivityCallbackRemote fromBinder(android.os.IBinder) -> a
+androidx.browser.trusted.TrustedWebActivityDisplayMode -> b.a.c.i:
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.TrustedWebActivityDisplayMode$DefaultMode -> b.a.c.i$a:
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.TrustedWebActivityDisplayMode$ImmersiveMode -> b.a.c.i$b:
+    boolean mIsSticky -> a
+    int mLayoutInDisplayCutoutMode -> b
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.TrustedWebActivityIntent -> b.a.c.j:
+    java.util.List mSharedFileUris -> b
+    android.content.Intent mIntent -> a
+    android.content.Intent getIntent() -> a
+    void grantUriPermissionToProvider(android.content.Context) -> b
+    void launchTrustedWebActivity(android.content.Context) -> c
+androidx.browser.trusted.TrustedWebActivityIntentBuilder -> b.a.c.k:
+    androidx.browser.trusted.sharing.ShareTarget mShareTarget -> f
+    int mScreenOrientation -> h
+    java.util.List mAdditionalTrustedOrigins -> c
+    android.os.Bundle mSplashScreenParams -> d
+    androidx.browser.trusted.sharing.ShareData mShareData -> e
+    androidx.browser.trusted.TrustedWebActivityDisplayMode mDisplayMode -> g
+    androidx.browser.customtabs.CustomTabsIntent$Builder mIntentBuilder -> b
+    android.net.Uri mUri -> a
+    androidx.browser.trusted.TrustedWebActivityIntent build(androidx.browser.customtabs.CustomTabsSession) -> a
+    androidx.browser.customtabs.CustomTabsIntent buildCustomTabsIntent() -> b
+    android.net.Uri getUri() -> c
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setAdditionalTrustedOrigins(java.util.List) -> d
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setColorScheme(int) -> e
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setColorSchemeParams(int,androidx.browser.customtabs.CustomTabColorSchemeParams) -> f
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setDisplayMode(androidx.browser.trusted.TrustedWebActivityDisplayMode) -> g
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setNavigationBarColor(int) -> h
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setNavigationBarDividerColor(int) -> i
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setScreenOrientation(int) -> j
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setShareParams(androidx.browser.trusted.sharing.ShareTarget,androidx.browser.trusted.sharing.ShareData) -> k
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setSplashScreenParams(android.os.Bundle) -> l
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder setToolbarColor(int) -> m
+androidx.browser.trusted.TrustedWebActivityService -> b.a.c.l:
+    android.app.NotificationManager mNotificationManager -> a
+    int mVerifiedUid -> b
+    android.support.customtabs.trusted.ITrustedWebActivityService$Stub mBinder -> c
+    java.lang.String channelNameToId(java.lang.String) -> a
+    void ensureOnCreateCalled() -> b
+    androidx.browser.trusted.TokenStore getTokenStore() -> c
+    boolean onAreNotificationsEnabled(java.lang.String) -> d
+    void onCancelNotification(java.lang.String,int) -> e
+    android.os.Bundle onExtraCommand(java.lang.String,android.os.Bundle,androidx.browser.trusted.TrustedWebActivityCallbackRemote) -> f
+    android.os.Parcelable[] onGetActiveNotifications() -> g
+    android.os.Bundle onGetSmallIconBitmap() -> h
+    int onGetSmallIconId() -> i
+    boolean onNotifyNotificationWithChannel(java.lang.String,int,android.app.Notification,java.lang.String) -> j
+androidx.browser.trusted.TrustedWebActivityService$1 -> b.a.c.l$a:
+    androidx.browser.trusted.TrustedWebActivityService this$0 -> a
+    android.os.Bundle areNotificationsEnabled(android.os.Bundle) -> a
+    android.os.Bundle getActiveNotifications() -> d
+    int getSmallIconId() -> g
+    void cancelNotification(android.os.Bundle) -> h
+    android.os.Bundle extraCommand(java.lang.String,android.os.Bundle,android.os.IBinder) -> i
+    android.os.Bundle notifyNotificationWithChannel(android.os.Bundle) -> n
+    android.os.Bundle getSmallIconBitmap() -> p
+    void checkCaller() -> s
+androidx.browser.trusted.TrustedWebActivityServiceConnection -> b.a.c.m:
+    void ensureBundleContains(android.os.Bundle,java.lang.String) -> a
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ActiveNotificationsArgs -> b.a.c.m$a:
+    android.os.Parcelable[] notifications -> a
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.TrustedWebActivityServiceConnection$CancelNotificationArgs -> b.a.c.m$b:
+    java.lang.String platformTag -> a
+    int platformId -> b
+    androidx.browser.trusted.TrustedWebActivityServiceConnection$CancelNotificationArgs fromBundle(android.os.Bundle) -> a
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotificationsEnabledArgs -> b.a.c.m$c:
+    java.lang.String channelName -> a
+    androidx.browser.trusted.TrustedWebActivityServiceConnection$NotificationsEnabledArgs fromBundle(android.os.Bundle) -> a
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotifyNotificationArgs -> b.a.c.m$d:
+    java.lang.String platformTag -> a
+    android.app.Notification notification -> c
+    int platformId -> b
+    java.lang.String channelName -> d
+    androidx.browser.trusted.TrustedWebActivityServiceConnection$NotifyNotificationArgs fromBundle(android.os.Bundle) -> a
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ResultArgs -> b.a.c.m$e:
+    boolean success -> a
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.sharing.ShareData -> b.a.c.n.a:
+    java.util.List uris -> c
+    java.lang.String title -> a
+    java.lang.String text -> b
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.sharing.ShareTarget -> b.a.c.n.b:
+    androidx.browser.trusted.sharing.ShareTarget$Params params -> d
+    java.lang.String action -> a
+    java.lang.String encodingType -> c
+    java.lang.String method -> b
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.sharing.ShareTarget$FileFormField -> b.a.c.n.b$a:
+    java.util.List acceptedTypes -> b
+    java.lang.String name -> a
+    android.os.Bundle toBundle() -> a
+androidx.browser.trusted.sharing.ShareTarget$Params -> b.a.c.n.b$b:
+    java.util.List files -> c
+    java.lang.String title -> a
+    java.lang.String text -> b
+    android.os.Bundle toBundle() -> a
+androidx.collection.ArrayMap -> b.b.a:
+    androidx.collection.MapCollections mCollections -> h
+    androidx.collection.MapCollections getCollection() -> m
+androidx.collection.ArrayMap$1 -> b.b.a$a:
+    androidx.collection.ArrayMap this$0 -> d
+    void colClear() -> a
+    java.lang.Object colGetEntry(int,int) -> b
+    java.util.Map colGetMap() -> c
+    int colGetSize() -> d
+    int colIndexOfKey(java.lang.Object) -> e
+    int colIndexOfValue(java.lang.Object) -> f
+    void colPut(java.lang.Object,java.lang.Object) -> g
+    void colRemoveAt(int) -> h
+    java.lang.Object colSetValue(int,java.lang.Object) -> i
+androidx.collection.ContainerHelpers -> b.b.b:
+    java.lang.Object[] EMPTY_OBJECTS -> b
+    int[] EMPTY_INTS -> a
+    int binarySearch(int[],int,int) -> a
+    boolean equal(java.lang.Object,java.lang.Object) -> b
+androidx.collection.MapCollections -> b.b.c:
+    androidx.collection.MapCollections$KeySet mKeySet -> b
+    androidx.collection.MapCollections$ValuesCollection mValues -> c
+    androidx.collection.MapCollections$EntrySet mEntrySet -> a
+    void colClear() -> a
+    java.lang.Object colGetEntry(int,int) -> b
+    java.util.Map colGetMap() -> c
+    int colGetSize() -> d
+    int colIndexOfKey(java.lang.Object) -> e
+    int colIndexOfValue(java.lang.Object) -> f
+    void colPut(java.lang.Object,java.lang.Object) -> g
+    void colRemoveAt(int) -> h
+    java.lang.Object colSetValue(int,java.lang.Object) -> i
+    boolean containsAllHelper(java.util.Map,java.util.Collection) -> j
+    boolean equalsSetHelper(java.util.Set,java.lang.Object) -> k
+    java.util.Set getEntrySet() -> l
+    java.util.Set getKeySet() -> m
+    java.util.Collection getValues() -> n
+    boolean removeAllHelper(java.util.Map,java.util.Collection) -> o
+    boolean retainAllHelper(java.util.Map,java.util.Collection) -> p
+    java.lang.Object[] toArrayHelper(int) -> q
+    java.lang.Object[] toArrayHelper(java.lang.Object[],int) -> r
+androidx.collection.MapCollections$ArrayIterator -> b.b.c$a:
+    androidx.collection.MapCollections this$0 -> e
+    int mSize -> b
+    int mIndex -> c
+    int mOffset -> a
+    boolean mCanRemove -> d
+androidx.collection.MapCollections$EntrySet -> b.b.c$b:
+    androidx.collection.MapCollections this$0 -> a
+    boolean add(java.util.Map$Entry) -> a
+androidx.collection.MapCollections$KeySet -> b.b.c$c:
+    androidx.collection.MapCollections this$0 -> a
+androidx.collection.MapCollections$MapIterator -> b.b.c$d:
+    int mIndex -> b
+    boolean mEntryValid -> c
+    androidx.collection.MapCollections this$0 -> d
+    int mEnd -> a
+    java.util.Map$Entry next() -> a
+androidx.collection.MapCollections$ValuesCollection -> b.b.c$e:
+    androidx.collection.MapCollections this$0 -> a
+androidx.collection.SimpleArrayMap -> b.b.d:
+    java.lang.Object[] mBaseCache -> d
+    java.lang.Object[] mArray -> b
+    int mTwiceBaseCacheSize -> g
+    int mBaseCacheSize -> e
+    int[] mHashes -> a
+    int mSize -> c
+    java.lang.Object[] mTwiceBaseCache -> f
+    void allocArrays(int) -> a
+    int binarySearchHashes(int[],int,int) -> b
+    void ensureCapacity(int) -> c
+    void freeArrays(int[],java.lang.Object[],int) -> d
+    int indexOf(java.lang.Object,int) -> e
+    int indexOfKey(java.lang.Object) -> f
+    int indexOfNull() -> g
+    int indexOfValue(java.lang.Object) -> h
+    java.lang.Object keyAt(int) -> i
+    java.lang.Object removeAt(int) -> j
+    java.lang.Object setValueAt(int,java.lang.Object) -> k
+    java.lang.Object valueAt(int) -> l
+androidx.core.app.BundleCompat -> androidx.core.app.a:
+    void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder) -> a
+androidx.core.app.BundleCompat$BundleCompatBaseImpl -> androidx.core.app.a$a:
+    boolean sPutIBinderMethodFetched -> b
+    java.lang.reflect.Method sPutIBinderMethod -> a
+    void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder) -> a
+androidx.core.app.CoreComponentFactory -> androidx.core.app.CoreComponentFactory:
+    java.lang.Object checkCompatWrapper(java.lang.Object) -> a
+androidx.core.app.CoreComponentFactory$CompatWrapped -> androidx.core.app.CoreComponentFactory$a:
+    java.lang.Object getWrapper() -> a
+androidx.core.app.NotificationManagerCompat -> androidx.core.app.b:
+    android.content.Context mContext -> a
+    android.app.NotificationManager mNotificationManager -> b
+    boolean areNotificationsEnabled() -> a
+    androidx.core.app.NotificationManagerCompat from(android.content.Context) -> b
+androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
+    androidx.core.graphics.drawable.IconCompat mIcon -> a
+    java.lang.CharSequence mTitle -> b
+    java.lang.CharSequence mContentDescription -> c
+    boolean mEnabled -> e
+    boolean mShouldShowIcon -> f
+    android.app.PendingIntent mActionIntent -> d
+androidx.core.content.ContextCompat -> androidx.core.content.a:
+    android.util.TypedValue sTempValue -> b
+    java.lang.Object sLock -> a
+    int getColor(android.content.Context,int) -> a
+    android.graphics.drawable.Drawable getDrawable(android.content.Context,int) -> b
+    java.io.File[] getExternalCacheDirs(android.content.Context) -> c
+    java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String) -> d
+    void startActivity(android.content.Context,android.content.Intent,android.os.Bundle) -> e
+androidx.core.content.FileProvider -> androidx.core.content.FileProvider:
+    java.io.File DEVICE_ROOT -> c
+    androidx.core.content.FileProvider$PathStrategy mStrategy -> a
+    java.util.HashMap sCache -> d
+    java.lang.String[] COLUMNS -> b
+    java.io.File buildPath(java.io.File,java.lang.String[]) -> a
+    java.lang.Object[] copyOf(java.lang.Object[],int) -> b
+    java.lang.String[] copyOf(java.lang.String[],int) -> c
+    androidx.core.content.FileProvider$PathStrategy getPathStrategy(android.content.Context,java.lang.String) -> d
+    android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File) -> e
+    int modeToMode(java.lang.String) -> f
+    androidx.core.content.FileProvider$PathStrategy parsePathStrategy(android.content.Context,java.lang.String) -> g
+androidx.core.content.FileProvider$PathStrategy -> androidx.core.content.FileProvider$a:
+    java.io.File getFileForUri(android.net.Uri) -> a
+    android.net.Uri getUriForFile(java.io.File) -> b
+androidx.core.content.FileProvider$SimplePathStrategy -> androidx.core.content.FileProvider$b:
+    java.util.HashMap mRoots -> b
+    java.lang.String mAuthority -> a
+    java.io.File getFileForUri(android.net.Uri) -> a
+    android.net.Uri getUriForFile(java.io.File) -> b
+    void addRoot(java.lang.String,java.io.File) -> c
+androidx.core.graphics.drawable.DrawableCompat -> androidx.core.graphics.drawable.a:
+    android.graphics.drawable.Drawable wrap(android.graphics.drawable.Drawable) -> a
+androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.IconCompat:
+    android.graphics.PorterDuff$Mode DEFAULT_TINT_MODE -> j
+    java.lang.String mTintModeStr -> i
+    android.graphics.PorterDuff$Mode mTintMode -> h
+    android.os.Parcelable mParcelable -> d
+    java.lang.Object mObj1 -> b
+    int mInt2 -> f
+    android.content.res.ColorStateList mTintList -> g
+    int mInt1 -> e
+    byte[] mData -> c
+    int mType -> a
+    int getResId() -> a
+    int getResId(android.graphics.drawable.Icon) -> b
+    java.lang.String getResPackage() -> c
+    java.lang.String getResPackage(android.graphics.drawable.Icon) -> d
+    void onPostParceling() -> e
+    void onPreParceling(boolean) -> f
+    java.lang.String typeToString(int) -> g
+androidx.core.graphics.drawable.TintAwareDrawable -> androidx.core.graphics.drawable.b:
+androidx.core.graphics.drawable.WrappedDrawableApi14 -> androidx.core.graphics.drawable.c:
+    android.graphics.drawable.Drawable mDrawable -> f
+    androidx.core.graphics.drawable.WrappedDrawableState mState -> d
+    android.graphics.PorterDuff$Mode DEFAULT_TINT_MODE -> g
+    android.graphics.PorterDuff$Mode mCurrentMode -> b
+    boolean mMutated -> e
+    boolean mColorFilterSet -> c
+    int mCurrentColor -> a
+    boolean isCompatTintEnabled() -> a
+    androidx.core.graphics.drawable.WrappedDrawableState mutateConstantState() -> b
+    void setWrappedDrawable(android.graphics.drawable.Drawable) -> c
+    void updateLocalState(android.content.res.Resources) -> d
+    boolean updateTint(int[]) -> e
+androidx.core.graphics.drawable.WrappedDrawableApi21 -> androidx.core.graphics.drawable.d:
+    java.lang.reflect.Method sIsProjectedDrawableMethod -> h
+    boolean isCompatTintEnabled() -> a
+    void findAndCacheIsProjectedDrawableMethod() -> f
+androidx.core.graphics.drawable.WrappedDrawableState -> androidx.core.graphics.drawable.e:
+    android.graphics.drawable.Drawable$ConstantState mDrawableState -> b
+    android.content.res.ColorStateList mTint -> c
+    android.graphics.PorterDuff$Mode mTintMode -> d
+    int mChangingConfigurations -> a
+    boolean canConstantState() -> a
+androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
+    androidx.versionedparcelable.VersionedParcelable mParcel -> a
+androidx.versionedparcelable.ParcelImpl$1 -> androidx.versionedparcelable.ParcelImpl$a:
+    androidx.versionedparcelable.ParcelImpl createFromParcel(android.os.Parcel) -> a
+    androidx.versionedparcelable.ParcelImpl[] newArray(int) -> b
+androidx.versionedparcelable.VersionedParcel -> androidx.versionedparcelable.a:
+    androidx.collection.ArrayMap mParcelizerCache -> c
+    androidx.collection.ArrayMap mReadCache -> a
+    androidx.collection.ArrayMap mWriteCache -> b
+    void writeByteArray(byte[]) -> A
+    void writeByteArray(byte[],int) -> B
+    void writeCharSequence(java.lang.CharSequence) -> C
+    void writeCharSequence(java.lang.CharSequence,int) -> D
+    void writeInt(int) -> E
+    void writeInt(int,int) -> F
+    void writeParcelable(android.os.Parcelable) -> G
+    void writeParcelable(android.os.Parcelable,int) -> H
+    void writeString(java.lang.String) -> I
+    void writeString(java.lang.String,int) -> J
+    void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel) -> K
+    void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable) -> L
+    void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> M
+    void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable) -> N
+    void closeField() -> a
+    androidx.versionedparcelable.VersionedParcel createSubParcel() -> b
+    java.lang.Class findParcelClass(java.lang.Class) -> c
+    java.lang.reflect.Method getReadMethod(java.lang.String) -> d
+    java.lang.reflect.Method getWriteMethod(java.lang.Class) -> e
+    boolean isStream() -> f
+    boolean readBoolean() -> g
+    boolean readBoolean(boolean,int) -> h
+    byte[] readByteArray() -> i
+    byte[] readByteArray(byte[],int) -> j
+    java.lang.CharSequence readCharSequence() -> k
+    java.lang.CharSequence readCharSequence(java.lang.CharSequence,int) -> l
+    boolean readField(int) -> m
+    androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel) -> n
+    int readInt() -> o
+    int readInt(int,int) -> p
+    android.os.Parcelable readParcelable() -> q
+    android.os.Parcelable readParcelable(android.os.Parcelable,int) -> r
+    java.lang.String readString() -> s
+    java.lang.String readString(java.lang.String,int) -> t
+    androidx.versionedparcelable.VersionedParcelable readVersionedParcelable() -> u
+    androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> v
+    void setOutputField(int) -> w
+    void setSerializationFlags(boolean,boolean) -> x
+    void writeBoolean(boolean) -> y
+    void writeBoolean(boolean,int) -> z
+androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelable.b:
+    android.util.SparseIntArray mPositionLookup -> d
+    java.lang.String mPrefix -> h
+    int mNextRead -> j
+    android.os.Parcel mParcel -> e
+    int mFieldId -> k
+    int mCurrentField -> i
+    int mOffset -> f
+    int mEnd -> g
+    void writeByteArray(byte[]) -> A
+    void writeCharSequence(java.lang.CharSequence) -> C
+    void writeInt(int) -> E
+    void writeParcelable(android.os.Parcelable) -> G
+    void writeString(java.lang.String) -> I
+    void closeField() -> a
+    androidx.versionedparcelable.VersionedParcel createSubParcel() -> b
+    boolean readBoolean() -> g
+    byte[] readByteArray() -> i
+    java.lang.CharSequence readCharSequence() -> k
+    boolean readField(int) -> m
+    int readInt() -> o
+    android.os.Parcelable readParcelable() -> q
+    java.lang.String readString() -> s
+    void setOutputField(int) -> w
+    void writeBoolean(boolean) -> y
+androidx.versionedparcelable.VersionedParcelable -> androidx.versionedparcelable.c:
+app.vercel.covid_tracker_beta.twa.LauncherActivity -> app.vercel.covid_tracker_beta.twa.LauncherActivity:
+    android.net.Uri getLaunchingUrl() -> f
+com.google.androidbrowserhelper.R$drawable -> c.a.a.a:
+    int ic_site_settings -> a
+com.google.androidbrowserhelper.R$string -> c.a.a.b:
+    int manage_space_not_supported_toast -> b
+    int manage_space_no_data_toast -> a
+com.google.androidbrowserhelper.trusted.-$$Lambda$LauncherActivity$K443AaSgHDsKB62OgS7KQKQV8M0 -> com.google.androidbrowserhelper.trusted.a:
+    com.google.androidbrowserhelper.trusted.LauncherActivity f$0 -> a
+com.google.androidbrowserhelper.trusted.-$$Lambda$QualityEnforcer$VMdyvMgt3n2HQzWYzBF2reMpaRU -> com.google.androidbrowserhelper.trusted.b:
+    com.google.androidbrowserhelper.trusted.-$$Lambda$QualityEnforcer$VMdyvMgt3n2HQzWYzBF2reMpaRU INSTANCE -> a
+    void crash(java.lang.String) -> a
+com.google.androidbrowserhelper.trusted.-$$Lambda$QualityEnforcer$f3R4gaFscv63LkY8ThpY_wMK7Nc -> com.google.androidbrowserhelper.trusted.c:
+    java.lang.String f$0 -> a
+com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$6zo6viK_vVSs4bt2THXs48ruews -> com.google.androidbrowserhelper.trusted.d:
+    java.lang.Runnable f$2 -> c
+    com.google.androidbrowserhelper.trusted.TwaLauncher f$0 -> a
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder f$1 -> b
+com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$EJYdd7bfUPSZc0LOHP-EwHGGqdI -> com.google.androidbrowserhelper.trusted.e:
+    com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$EJYdd7bfUPSZc0LOHP-EwHGGqdI INSTANCE -> a
+    void launch(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.String,java.lang.Runnable) -> a
+com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$ncmZsRmSlMWCn1gmZDiylKqcYgw -> com.google.androidbrowserhelper.trusted.f:
+    java.lang.Runnable f$3 -> d
+    com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy f$2 -> c
+    com.google.androidbrowserhelper.trusted.TwaLauncher f$0 -> a
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder f$1 -> b
+com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$qvtPjeA3K9qnZSuDExlxWH8zs9E -> com.google.androidbrowserhelper.trusted.g:
+    java.lang.Runnable f$3 -> d
+    com.google.androidbrowserhelper.trusted.TwaLauncher f$0 -> a
+    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy f$1 -> b
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder f$2 -> c
+com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$ulnQ4sTUFWSKNkeKlTEC5YJK6tM -> com.google.androidbrowserhelper.trusted.h:
+    com.google.androidbrowserhelper.trusted.-$$Lambda$TwaLauncher$ulnQ4sTUFWSKNkeKlTEC5YJK6tM INSTANCE -> a
+    void launch(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.String,java.lang.Runnable) -> a
+com.google.androidbrowserhelper.trusted.ChromeLegacyUtils -> com.google.androidbrowserhelper.trusted.i:
+    java.util.List VERSION_CHECK_CHROME_PACKAGES -> b
+    java.util.List SUPPORTED_CHROME_PACKAGES -> a
+    java.util.List LOCAL_BUILD_PACKAGES -> c
+    boolean checkChromeVersion(android.content.pm.PackageManager,java.lang.String,int) -> a
+    int getVersionCode(android.content.pm.PackageManager,java.lang.String) -> b
+    boolean supportsLaunchWithoutWarmup(android.content.pm.PackageManager,java.lang.String) -> c
+    boolean supportsManageSpaceWithoutWarmupAndValidation(android.content.pm.PackageManager,java.lang.String) -> d
+    boolean supportsNavbarAndColorCustomization(android.content.pm.PackageManager,java.lang.String) -> e
+    boolean supportsSiteSettings(android.content.pm.PackageManager,java.lang.String) -> f
+    boolean supportsTrustedWebActivities(android.content.pm.PackageManager,java.lang.String) -> g
+    boolean usesWhiteNavbar(java.lang.String) -> h
+com.google.androidbrowserhelper.trusted.ChromeOsSupport -> com.google.androidbrowserhelper.trusted.j:
+    boolean isRunningOnArc(android.content.pm.PackageManager) -> a
+com.google.androidbrowserhelper.trusted.ChromeUpdatePrompt -> com.google.androidbrowserhelper.trusted.k:
+    boolean chromeNeedsUpdate(android.content.pm.PackageManager,java.lang.String) -> a
+    void promptIfNeeded(android.content.Context,java.lang.String) -> b
+    void showToastIfResourceExists(android.content.Context,java.lang.String) -> c
+com.google.androidbrowserhelper.trusted.DelegationService -> com.google.androidbrowserhelper.trusted.l:
+    com.google.androidbrowserhelper.trusted.SharedPreferencesTokenStore mTokenStore -> e
+    java.util.List mExtraCommandHandlers -> d
+    androidx.browser.trusted.TokenStore getTokenStore() -> c
+    android.os.Bundle onExtraCommand(java.lang.String,android.os.Bundle,androidx.browser.trusted.TrustedWebActivityCallbackRemote) -> f
+com.google.androidbrowserhelper.trusted.ExtraCommandHandler -> com.google.androidbrowserhelper.trusted.m:
+    android.os.Bundle handleExtraCommand(android.content.Context,java.lang.String,android.os.Bundle,androidx.browser.trusted.TrustedWebActivityCallbackRemote) -> a
+com.google.androidbrowserhelper.trusted.FocusActivity -> com.google.androidbrowserhelper.trusted.FocusActivity:
+    java.lang.Boolean mActivityExistsCached -> a
+    void addToIntent(android.content.Intent,android.content.Context) -> a
+com.google.androidbrowserhelper.trusted.LauncherActivity -> com.google.androidbrowserhelper.trusted.n:
+    androidx.browser.customtabs.CustomTabsCallback mCustomTabsCallback -> d
+    boolean sChromeVersionChecked -> f
+    int sLauncherActivitiesAlive -> g
+    com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy mSplashScreenStrategy -> c
+    com.google.androidbrowserhelper.trusted.TwaLauncher mTwaLauncher -> e
+    com.google.androidbrowserhelper.trusted.LauncherActivityMetadata mMetadata -> a
+    boolean mBrowserWasLaunched -> b
+    void addShareDataIfPresent(androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> a
+    com.google.androidbrowserhelper.trusted.TwaLauncher createTwaLauncher() -> b
+    int getColorCompat(int) -> c
+    androidx.browser.trusted.TrustedWebActivityDisplayMode getDisplayMode() -> d
+    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy getFallbackStrategy() -> e
+    android.net.Uri getLaunchingUrl() -> f
+    android.widget.ImageView$ScaleType getSplashImageScaleType() -> g
+    android.graphics.Matrix getSplashImageTransformationMatrix() -> h
+    void lambda$launchTwa$0() -> i
+    void lambda$launchTwa$0$LauncherActivity() -> j
+    void launchTwa() -> k
+    boolean restartInNewTask() -> l
+    boolean shouldLaunchImmediately() -> m
+    boolean splashScreenNeeded() -> n
+com.google.androidbrowserhelper.trusted.LauncherActivityMetadata -> com.google.androidbrowserhelper.trusted.o:
+    int screenOrientation -> o
+    java.lang.String fileProviderAuthority -> j
+    int splashScreenFadeOutDurationMillis -> k
+    int splashImageDrawableId -> h
+    java.lang.String fallbackStrategyType -> m
+    int splashScreenBackgroundColorId -> i
+    int navigationBarDividerColorId -> f
+    int navigationBarDividerColorDarkId -> g
+    int navigationBarColorId -> d
+    int navigationBarColorDarkId -> e
+    java.lang.String shareTarget -> p
+    int statusBarColorId -> b
+    int statusBarColorDarkId -> c
+    androidx.browser.trusted.TrustedWebActivityDisplayMode displayMode -> n
+    java.lang.String defaultUrl -> a
+    java.util.List additionalTrustedOrigins -> l
+    androidx.browser.trusted.TrustedWebActivityDisplayMode getDisplayMode(android.os.Bundle) -> a
+    int getOrientation(java.lang.String) -> b
+    com.google.androidbrowserhelper.trusted.LauncherActivityMetadata parse(android.content.Context) -> c
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity -> com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity:
+    androidx.browser.customtabs.CustomTabsServiceConnection mConnection -> b
+    java.lang.String mProviderPackage -> a
+    void access$200(com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity,androidx.browser.customtabs.CustomTabsSession) -> a
+    void addSiteSettingsShortcut(android.content.Context,java.lang.String) -> b
+    android.view.View createLoadingView() -> c
+    android.net.Uri getDefaultUrlForManagingSpace() -> d
+    android.content.pm.ShortcutInfo getSiteSettingsShortcutOrNull(android.content.Context,android.content.pm.PackageManager) -> e
+    void handleNoSupportForManageSpace() -> f
+    void handleTwaNeverLaunched() -> g
+    boolean launchBrowserSiteSettings(android.app.Activity,androidx.browser.customtabs.CustomTabsSession,java.lang.String,android.net.Uri) -> h
+    void launchSettings(androidx.browser.customtabs.CustomTabsSession) -> i
+    void onError(java.lang.RuntimeException) -> j
+    boolean packageSupportsSiteSettings(java.lang.String,android.content.pm.PackageManager) -> k
+    boolean supportsTrustedWebActivities(java.lang.String) -> l
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$1 -> com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$a:
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$Connection -> com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$b:
+    com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity this$0 -> b
+    void onCustomTabsServiceConnected(android.content.ComponentName,androidx.browser.customtabs.CustomTabsClient) -> a
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection -> com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$c:
+    androidx.browser.customtabs.CustomTabsCallback mCustomTabsCallback -> c
+    androidx.browser.customtabs.CustomTabsSession mSession -> b
+    com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity this$0 -> d
+    void onCustomTabsServiceConnected(android.content.ComponentName,androidx.browser.customtabs.CustomTabsClient) -> a
+    androidx.browser.customtabs.CustomTabsSession access$300(com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection) -> c
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection$1 -> com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$c$a:
+    com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection this$1 -> a
+    void onRelationshipValidationResult(int,android.net.Uri,boolean,android.os.Bundle) -> f
+com.google.androidbrowserhelper.trusted.QualityEnforcer -> com.google.androidbrowserhelper.trusted.p:
+    com.google.androidbrowserhelper.trusted.QualityEnforcer$Delegate mDelegate -> a
+    android.os.Bundle extraCallbackWithResult(java.lang.String,android.os.Bundle) -> b
+    void lambda$new$0(java.lang.String) -> g
+    void lambda$new$1(java.lang.String) -> h
+com.google.androidbrowserhelper.trusted.QualityEnforcer$Delegate -> com.google.androidbrowserhelper.trusted.p$a:
+    void crash(java.lang.String) -> a
+com.google.androidbrowserhelper.trusted.SharedPreferencesTokenStore -> com.google.androidbrowserhelper.trusted.q:
+    android.content.Context mContext -> a
+    void store(androidx.browser.trusted.Token) -> a
+    androidx.browser.trusted.Token load() -> b
+com.google.androidbrowserhelper.trusted.SharingUtils -> com.google.androidbrowserhelper.trusted.r:
+    boolean isShareIntent(android.content.Intent) -> a
+    java.util.List parseAcceptedTypes(java.lang.Object) -> b
+    java.util.List parseFiles(org.json.JSONArray) -> c
+    androidx.browser.trusted.sharing.ShareTarget parseShareTargetJson(java.lang.String) -> d
+    androidx.browser.trusted.sharing.ShareData retrieveShareDataFromIntent(android.content.Intent) -> e
+com.google.androidbrowserhelper.trusted.TwaLauncher -> com.google.androidbrowserhelper.trusted.s:
+    android.content.Context mContext -> a
+    androidx.browser.trusted.TokenStore mTokenStore -> g
+    androidx.browser.customtabs.CustomTabsSession mSession -> f
+    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy WEBVIEW_FALLBACK_STRATEGY -> j
+    com.google.androidbrowserhelper.trusted.TwaLauncher$TwaCustomTabsServiceConnection mServiceConnection -> e
+    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy CCT_FALLBACK_STRATEGY -> i
+    int mSessionId -> d
+    boolean mDestroyed -> h
+    java.lang.String mProviderPackage -> b
+    int mLaunchMode -> c
+    android.content.Context access$100(com.google.androidbrowserhelper.trusted.TwaLauncher) -> a
+    java.lang.String access$200(com.google.androidbrowserhelper.trusted.TwaLauncher) -> b
+    androidx.browser.customtabs.CustomTabsSession access$300(com.google.androidbrowserhelper.trusted.TwaLauncher) -> c
+    androidx.browser.customtabs.CustomTabsSession access$302(com.google.androidbrowserhelper.trusted.TwaLauncher,androidx.browser.customtabs.CustomTabsSession) -> d
+    int access$400(com.google.androidbrowserhelper.trusted.TwaLauncher) -> e
+    void destroy() -> f
+    java.lang.String getProviderPackage() -> g
+    void lambda$launchTwa$2(androidx.browser.trusted.TrustedWebActivityIntentBuilder,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable) -> h
+    void lambda$launchTwa$2$TwaLauncher(androidx.browser.trusted.TrustedWebActivityIntentBuilder,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable) -> i
+    void lambda$launchTwa$3(com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable) -> j
+    void lambda$launchTwa$3$TwaLauncher(com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable) -> k
+    void lambda$launchWhenSessionEstablished$4(androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable) -> l
+    void lambda$launchWhenSessionEstablished$4$TwaLauncher(androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable) -> m
+    void lambda$static$0(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.String,java.lang.Runnable) -> n
+    void lambda$static$1(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.String,java.lang.Runnable) -> o
+    void launch(androidx.browser.trusted.TrustedWebActivityIntentBuilder,androidx.browser.customtabs.CustomTabsCallback,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable,com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy) -> p
+    void launchTwa(androidx.browser.trusted.TrustedWebActivityIntentBuilder,androidx.browser.customtabs.CustomTabsCallback,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable,com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy) -> q
+    void launchWhenSessionEstablished(androidx.browser.trusted.TrustedWebActivityIntentBuilder,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable) -> r
+    void launchWhenSplashScreenReady(androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable) -> s
+com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy -> com.google.androidbrowserhelper.trusted.s$a:
+    void launch(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.String,java.lang.Runnable) -> a
+com.google.androidbrowserhelper.trusted.TwaLauncher$TwaCustomTabsServiceConnection -> com.google.androidbrowserhelper.trusted.s$b:
+    java.lang.Runnable mOnSessionCreationFailedRunnable -> c
+    java.lang.Runnable mOnSessionCreatedRunnable -> b
+    androidx.browser.customtabs.CustomTabsCallback mCustomTabsCallback -> d
+    com.google.androidbrowserhelper.trusted.TwaLauncher this$0 -> e
+    void onCustomTabsServiceConnected(android.content.ComponentName,androidx.browser.customtabs.CustomTabsClient) -> a
+    void access$000(com.google.androidbrowserhelper.trusted.TwaLauncher$TwaCustomTabsServiceConnection,java.lang.Runnable,java.lang.Runnable) -> c
+    void setSessionCreationRunnables(java.lang.Runnable,java.lang.Runnable) -> d
+com.google.androidbrowserhelper.trusted.TwaProviderPicker -> com.google.androidbrowserhelper.trusted.t:
+    java.lang.String sPackageNameForTesting -> a
+    java.util.Map getLaunchModesForCustomTabsServices(android.content.pm.PackageManager) -> a
+    com.google.androidbrowserhelper.trusted.TwaProviderPicker$Action pickProvider(android.content.pm.PackageManager) -> b
+com.google.androidbrowserhelper.trusted.TwaProviderPicker$Action -> com.google.androidbrowserhelper.trusted.t$a:
+    java.lang.String provider -> b
+    int launchMode -> a
+com.google.androidbrowserhelper.trusted.TwaSharedPreferencesManager -> com.google.androidbrowserhelper.trusted.u:
+    android.content.SharedPreferences mSharedPreferences -> a
+    java.lang.String readLastLaunchedProviderPackageName() -> a
+    void writeLastLaunchedProviderPackageName(java.lang.String) -> b
+com.google.androidbrowserhelper.trusted.Utils -> com.google.androidbrowserhelper.trusted.v:
+    void addSystemUiVisibilityFlag(android.app.Activity,int) -> a
+    android.graphics.Bitmap convertDrawableToBitmap(android.content.Context,int) -> b
+    float luminanceOfColorComponent(float) -> c
+    void setNavigationBarColor(android.app.Activity,int) -> d
+    void setStatusBarColor(android.app.Activity,int) -> e
+    boolean shouldUseDarkIconsOnBackground(int) -> f
+com.google.androidbrowserhelper.trusted.WebViewFallbackActivity -> com.google.androidbrowserhelper.trusted.WebViewFallbackActivity:
+    java.util.List mExtraOrigins -> d
+    android.webkit.WebView mWebView -> c
+    int mStatusBarColor -> b
+    java.lang.String TAG -> e
+    android.net.Uri mLaunchUrl -> a
+    android.webkit.WebView access$000(com.google.androidbrowserhelper.trusted.WebViewFallbackActivity) -> a
+    android.webkit.WebView access$002(com.google.androidbrowserhelper.trusted.WebViewFallbackActivity,android.webkit.WebView) -> b
+    void access$100(android.webkit.WebSettings) -> c
+    android.net.Uri access$200(com.google.androidbrowserhelper.trusted.WebViewFallbackActivity) -> d
+    int access$300(com.google.androidbrowserhelper.trusted.WebViewFallbackActivity) -> e
+    java.lang.String access$400() -> f
+    java.util.List access$500(com.google.androidbrowserhelper.trusted.WebViewFallbackActivity) -> g
+    android.content.Intent createLaunchIntent(android.content.Context,android.net.Uri,com.google.androidbrowserhelper.trusted.LauncherActivityMetadata) -> h
+    android.webkit.WebViewClient createWebViewClient() -> i
+    void setupWebSettings(android.webkit.WebSettings) -> j
+com.google.androidbrowserhelper.trusted.WebViewFallbackActivity$1 -> com.google.androidbrowserhelper.trusted.WebViewFallbackActivity$a:
+    com.google.androidbrowserhelper.trusted.WebViewFallbackActivity this$0 -> a
+    boolean matchExtraOrigins(android.net.Uri) -> a
+    boolean shouldOverrideUrlLoading(android.net.Uri) -> b
+    boolean uriOriginsMatch(android.net.Uri,android.net.Uri) -> c
+com.google.androidbrowserhelper.trusted.splashscreens.-$$Lambda$PwaWrapperSplashScreenStrategy$AEuRt7oVnGOP2vf-Uvl2RaqkFW4 -> com.google.androidbrowserhelper.trusted.w.a:
+    java.lang.Runnable f$2 -> c
+    com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy f$0 -> a
+    androidx.browser.trusted.TrustedWebActivityIntentBuilder f$1 -> b
+    void onFinished(boolean) -> a
+com.google.androidbrowserhelper.trusted.splashscreens.-$$Lambda$PwaWrapperSplashScreenStrategy$p-f_rUE4TsZEGw17K3MBDrUxlsQ -> com.google.androidbrowserhelper.trusted.w.b:
+    java.lang.Runnable f$1 -> b
+    com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy f$0 -> a
+com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy -> com.google.androidbrowserhelper.trusted.w.c:
+    java.lang.String mFileProviderAuthority -> f
+    android.widget.ImageView$ScaleType mScaleType -> d
+    java.lang.String mProviderPackage -> j
+    boolean mProviderSupportsSplashScreens -> k
+    boolean mEnterAnimationComplete -> l
+    com.google.androidbrowserhelper.trusted.splashscreens.SystemBarColorPredictor sSystemBarColorPredictor -> n
+    int mFadeOutDurationMillis -> g
+    int mDrawableId -> b
+    int mBackgroundColor -> c
+    android.graphics.Bitmap mSplashImage -> h
+    com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask mSplashImageTransferTask -> i
+    java.lang.Runnable mOnEnterAnimationCompleteRunnable -> m
+    android.graphics.Matrix mTransformationMatrix -> e
+    android.app.Activity mActivity -> a
+    void configureTwaBuilder(androidx.browser.trusted.TrustedWebActivityIntentBuilder,androidx.browser.customtabs.CustomTabsSession,java.lang.Runnable) -> a
+    void onTwaLaunchInitiated(java.lang.String,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> b
+    void customizeStatusAndNavBarDuringSplashScreen(java.lang.String,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> c
+    void destroy() -> d
+    void lambda$configureTwaBuilder$0(androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable,boolean) -> e
+    void lambda$configureTwaBuilder$0$PwaWrapperSplashScreenStrategy(androidx.browser.trusted.TrustedWebActivityIntentBuilder,java.lang.Runnable,boolean) -> f
+    void lambda$onSplashImageTransferred$1(java.lang.Runnable) -> g
+    void lambda$onSplashImageTransferred$1$PwaWrapperSplashScreenStrategy(java.lang.Runnable) -> h
+    android.os.Bundle makeSplashScreenParamsBundle() -> i
+    void onActivityEnterAnimationComplete() -> j
+    void onSplashImageTransferred(androidx.browser.trusted.TrustedWebActivityIntentBuilder,boolean,java.lang.Runnable) -> k
+    void runWhenEnterAnimationComplete(java.lang.Runnable) -> l
+    void showSplashScreen() -> m
+com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask -> com.google.androidbrowserhelper.trusted.w.d:
+    android.content.Context mContext -> a
+    androidx.browser.customtabs.CustomTabsSession mSession -> d
+    android.graphics.Bitmap mBitmap -> b
+    com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask$Callback mCallback -> f
+    java.lang.String mAuthority -> c
+    android.os.AsyncTask mAsyncTask -> g
+    java.lang.String mProviderPackage -> e
+    android.content.Context access$000(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> a
+    android.graphics.Bitmap access$100(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> b
+    java.lang.String access$200(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> c
+    java.lang.String access$300(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> d
+    androidx.browser.customtabs.CustomTabsSession access$400(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> e
+    com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask$Callback access$500(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask) -> f
+    void cancel() -> g
+    void execute(com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask$Callback) -> h
+com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask$1 -> com.google.androidbrowserhelper.trusted.w.d$a:
+    com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask this$0 -> a
+    java.lang.Boolean doInBackground(java.lang.Void[]) -> a
+    long getLastAppUpdateTime() -> b
+    void onPostExecute(java.lang.Boolean) -> c
+    boolean transferToCustomTabsProvider(java.io.File) -> d
+com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask$Callback -> com.google.androidbrowserhelper.trusted.w.d$b:
+    void onFinished(boolean) -> a
+com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy -> com.google.androidbrowserhelper.trusted.w.e:
+    void configureTwaBuilder(androidx.browser.trusted.TrustedWebActivityIntentBuilder,androidx.browser.customtabs.CustomTabsSession,java.lang.Runnable) -> a
+    void onTwaLaunchInitiated(java.lang.String,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> b
+com.google.androidbrowserhelper.trusted.splashscreens.SystemBarColorPredictor -> com.google.androidbrowserhelper.trusted.w.f:
+    java.util.Map mSupportedFeaturesCache -> a
+    int getExpectedColorScheme(android.content.Context,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> a
+    java.lang.Integer getExpectedNavbarColor(android.content.Context,java.lang.String,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> b
+    java.lang.Integer getExpectedStatusBarColor(android.content.Context,java.lang.String,androidx.browser.trusted.TrustedWebActivityIntentBuilder) -> c
+    com.google.androidbrowserhelper.trusted.splashscreens.SystemBarColorPredictor$SupportedFeatures getSupportedFeatures(android.content.Context,java.lang.String) -> d
+    boolean hasCategory(android.content.pm.ResolveInfo,java.lang.String) -> e
+    boolean providerSupportsColorSchemeParams(android.content.Context,java.lang.String) -> f
+    boolean providerSupportsNavBarColorCustomization(android.content.Context,java.lang.String) -> g
+com.google.androidbrowserhelper.trusted.splashscreens.SystemBarColorPredictor$1 -> com.google.androidbrowserhelper.trusted.w.f$a:
+com.google.androidbrowserhelper.trusted.splashscreens.SystemBarColorPredictor$SupportedFeatures -> com.google.androidbrowserhelper.trusted.w.f$b:
+    boolean navbarColorCustomization -> a
+    boolean colorSchemeCustomization -> b

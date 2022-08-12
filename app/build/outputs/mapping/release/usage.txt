@@ -1,0 +1,1356 @@
+androidx.core.graphics.drawable.WrappedDrawable
+androidx.core.graphics.drawable.RoundedBitmapDrawable21
+androidx.lifecycle.ClassesInfoCache
+com.google.androidbrowserhelper.trusted.SharedPreferencesTokenStore:
+    public void setVerifiedProvider(java.lang.String,android.content.pm.PackageManager)
+    private static final java.lang.String SHARED_PREFERENCES_NAME
+    private static final java.lang.String KEY_TOKEN
+androidx.core.os.ParcelableCompat
+androidx.browser.customtabs.CustomTabsSession:
+    public static androidx.browser.customtabs.CustomTabsSession createMockSessionForTesting(android.content.ComponentName)
+    public boolean mayLaunchUrl(android.net.Uri,android.os.Bundle,java.util.List)
+    public boolean setActionButton(android.graphics.Bitmap,java.lang.String)
+    public boolean setSecondaryToolbarViews(android.widget.RemoteViews,int[],android.app.PendingIntent)
+    public boolean setToolbarItem(int,android.graphics.Bitmap,java.lang.String)
+    public boolean requestPostMessageChannel(android.net.Uri)
+    public int postMessage(java.lang.String,android.os.Bundle)
+    private static final java.lang.String TAG
+androidx.core.text.util.FindAddress
+androidx.core.view.OneShotPreDrawListener
+androidx.browser.trusted.splashscreens.SplashScreenVersion
+androidx.core.os.BuildCompat
+androidx.browser.trusted.TrustedWebActivityServiceConnectionPool
+androidx.annotation.Size
+androidx.browser.browseractions.BrowserServiceFileProvider
+androidx.core.view.MarginLayoutParamsCompat
+androidx.core.view.ActionProvider$VisibilityListener
+androidx.core.app.ActivityCompat$OnRequestPermissionsResultCallback
+androidx.core.widget.NestedScrollView$OnScrollChangeListener
+androidx.browser.customtabs.CustomTabsService
+androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask
+androidx.annotation.ContentView
+androidx.core.view.accessibility.AccessibilityViewCommand$MoveHtmlArguments
+androidx.core.content.res.FontResourcesParserCompat$ProviderResourceEntry
+androidx.core.provider.FontsContractCompat$4$2
+androidx.browser.trusted.NotificationApiHelperForO:
+    private void <init>()
+androidx.annotation.IntRange
+app.vercel.covid_tracker_beta.twa.R$bool
+androidx.browser.customtabs.CustomTabColorSchemeParams$Builder:
+    public androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setSecondaryToolbarColor(int)
+androidx.browser.customtabs.CustomTabsSessionToken
+androidx.collection.SimpleArrayMap:
+    public void <init>(int)
+    public void <init>(androidx.collection.SimpleArrayMap)
+    public void putAll(androidx.collection.SimpleArrayMap)
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+    private static final boolean CONCURRENT_MODIFICATION_EXCEPTIONS
+    private static final int BASE_SIZE
+    private static final int CACHE_SIZE
+androidx.concurrent.futures.CallbackToFutureAdapter$Completer
+androidx.core.graphics.TypefaceCompat
+androidx.lifecycle.Lifecycle$Event
+androidx.browser.customtabs.CustomTabsServiceConnection:
+    android.content.Context getApplicationContext()
+androidx.core.view.AccessibilityDelegateCompat$AccessibilityDelegateAdapter
+androidx.core.text.BidiFormatter$DirectionalityEstimator
+androidx.annotation.StringDef
+androidx.core.graphics.TypefaceCompatUtil
+androidx.browser.customtabs.CustomTabsSessionToken$MockCallback
+androidx.concurrent.futures.AbstractResolvableFuture$1
+androidx.versionedparcelable.ParcelUtils
+androidx.core.text.util.LinkifyCompat$LinkifyMask
+androidx.core.view.accessibility.AccessibilityEventCompat
+androidx.core.accessibilityservice.AccessibilityServiceInfoCompat
+androidx.interpolator.view.animation.LookupTableInterpolator
+androidx.core.provider.FontsContractCompat$TypefaceResult
+androidx.core.widget.ListViewCompat
+androidx.core.content.res.FontResourcesParserCompat
+androidx.core.R$dimen
+androidx.browser.trusted.TrustedWebActivityIntentBuilder:
+    public androidx.browser.trusted.TrustedWebActivityIntentBuilder setDefaultColorSchemeParams(androidx.browser.customtabs.CustomTabColorSchemeParams)
+    public androidx.browser.trusted.TrustedWebActivityDisplayMode getDisplayMode()
+    public static final java.lang.String EXTRA_SPLASH_SCREEN_PARAMS
+    public static final java.lang.String EXTRA_ADDITIONAL_TRUSTED_ORIGINS
+    public static final java.lang.String EXTRA_SHARE_TARGET
+    public static final java.lang.String EXTRA_SHARE_DATA
+    public static final java.lang.String EXTRA_DISPLAY_MODE
+    public static final java.lang.String EXTRA_SCREEN_ORIENTATION
+androidx.core.view.ViewCompat$FocusRealDirection
+androidx.core.math.MathUtils
+androidx.core.os.TraceCompat
+androidx.core.app.ComponentActivity
+androidx.core.app.JobIntentService$GenericWorkItem
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsFallDialogListener
+androidx.core.view.ScrollingView
+androidx.core.app.ActivityCompat
+androidx.core.provider.SelfDestructiveThread$2$1
+androidx.core.hardware.display.DisplayManagerCompat
+androidx.core.widget.NestedScrollView$SavedState$1
+androidx.core.app.FrameMetricsAggregator$MetricType
+androidx.core.widget.TextViewCompat
+androidx.core.widget.ContentLoadingProgressBar$1
+androidx.core.view.accessibility.AccessibilityViewCommand
+androidx.core.graphics.PathParser
+androidx.core.util.ObjectsCompat
+android.support.v4.os.ResultReceiver$1
+androidx.annotation.WorkerThread
+androidx.core.graphics.TypefaceCompatBaseImpl$2
+androidx.core.view.accessibility.AccessibilityManagerCompat
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr2
+androidx.browser.customtabs.CustomTabsSession$MockSession
+androidx.core.content.PermissionChecker
+com.google.androidbrowserhelper.R$attr
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub:
+    public void <init>()
+    public static boolean setDefaultImpl(android.support.customtabs.trusted.ITrustedWebActivityCallback)
+    public static android.support.customtabs.trusted.ITrustedWebActivityCallback getDefaultImpl()
+    public android.os.IBinder asBinder()
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onExtraCallback
+androidx.core.provider.SelfDestructiveThread$ReplyCallback
+androidx.core.text.PrecomputedTextCompat$Params$Builder
+androidx.core.app.NotificationCompatSideChannelService
+androidx.core.view.DragStartHelper$OnDragStartListener
+androidx.core.view.NestedScrollingChild
+androidx.annotation.DrawableRes
+androidx.core.app.ServiceCompat$StopForegroundFlags
+androidx.core.net.ConnectivityManagerCompat
+app.vercel.covid_tracker_beta.twa.R$styleable
+androidx.concurrent.futures.CallbackToFutureAdapter$FutureGarbageCollectedException
+androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
+androidx.core.content.res.ResourcesCompat$FontCallback$2
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$ViewHolderItem
+androidx.core.view.animation.PathInterpolatorCompat
+androidx.lifecycle.CompositeGeneratedAdaptersObserver:
+    void <init>(androidx.lifecycle.GeneratedAdapter[])
+    public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+    private final androidx.lifecycle.GeneratedAdapter[] mGeneratedAdapters
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
+androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments
+androidx.core.app.ActivityCompat$SharedElementCallback21Impl
+androidx.concurrent.futures.AbstractResolvableFuture$Listener
+androidx.lifecycle.Lifecycle
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+    public void onExtraCallback(java.lang.String,android.os.Bundle)
+    public static android.support.customtabs.trusted.ITrustedWebActivityCallback sDefaultImpl
+androidx.core.app.JobIntentService$JobServiceEngineImpl$WrapperWorkItem
+androidx.core.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorListenerApi14
+androidx.core.app.NotificationCompatSideChannelService$NotificationSideChannelStub
+androidx.versionedparcelable.VersionedParcelParcel:
+    public void writeByteArray(byte[],int,int)
+    public void writeLong(long)
+    public void writeFloat(float)
+    public void writeDouble(double)
+    public void writeStrongBinder(android.os.IBinder)
+    public void writeStrongInterface(android.os.IInterface)
+    public void writeBundle(android.os.Bundle)
+    public long readLong()
+    public float readFloat()
+    public double readDouble()
+    public android.os.IBinder readStrongBinder()
+    public android.os.Bundle readBundle()
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+androidx.browser.trusted.TrustedWebActivityCallbackRemote:
+    public void runExtraCallback(java.lang.String,android.os.Bundle)
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$BrowserActionsFallMenuUiListener
+androidx.core.widget.PopupMenuCompat
+androidx.lifecycle.FullLifecycleObserver
+androidx.lifecycle.R
+androidx.core.app.RemoteInput$Builder
+androidx.collection.ArrayMap:
+    public void <init>(int)
+    public void <init>(androidx.collection.SimpleArrayMap)
+    public boolean containsAll(java.util.Collection)
+    public boolean removeAll(java.util.Collection)
+    public boolean retainAll(java.util.Collection)
+androidx.lifecycle.LifecycleOwner
+com.google.androidbrowserhelper.R$drawable:
+    private void <init>()
+    public static final int notification_action_background
+    public static final int notification_bg
+    public static final int notification_bg_low
+    public static final int notification_bg_low_normal
+    public static final int notification_bg_low_pressed
+    public static final int notification_bg_normal
+    public static final int notification_bg_normal_pressed
+    public static final int notification_icon_background
+    public static final int notification_template_icon_bg
+    public static final int notification_template_icon_low_bg
+    public static final int notification_tile_bg
+    public static final int notify_panel_notification_icon_bg
+android.support.customtabs.ICustomTabsService:
+    public abstract boolean mayLaunchUrl(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle,java.util.List)
+    public abstract android.os.Bundle extraCommand(java.lang.String,android.os.Bundle)
+    public abstract boolean updateVisuals(android.support.customtabs.ICustomTabsCallback,android.os.Bundle)
+    public abstract boolean requestPostMessageChannel(android.support.customtabs.ICustomTabsCallback,android.net.Uri)
+    public abstract boolean requestPostMessageChannelWithExtras(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle)
+    public abstract int postMessage(android.support.customtabs.ICustomTabsCallback,java.lang.String,android.os.Bundle)
+androidx.core.content.SharedPreferencesCompat
+app.vercel.covid_tracker_beta.twa.R$xml
+androidx.browser.trusted.TrustedWebActivityCallback
+androidx.core.content.res.FontResourcesParserCompat$FetchStrategy
+androidx.core.content.IntentCompat
+androidx.annotation.InspectableProperty$EnumEntry
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImpl
+com.google.androidbrowserhelper.trusted.TwaProviderPicker$LaunchMode
+androidx.core.database.CursorWindowCompat
+androidx.core.hardware.fingerprint.FingerprintManagerCompat
+androidx.annotation.LongDef
+androidx.core.app.ActivityRecreator$2
+androidx.concurrent.futures.AbstractResolvableFuture$Failure$1
+androidx.annotation.InspectableProperty$FlagEntry
+androidx.core.app.ServiceCompat
+com.google.androidbrowserhelper.R
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
+com.google.androidbrowserhelper.trusted.TwaProviderPicker:
+    public void <init>()
+    static void restrictToPackageForTesting(java.lang.String)
+    private static final java.lang.String TAG
+androidx.core.widget.TextViewCompat$OreoCallback
+androidx.core.util.PatternsCompat
+androidx.core.net.DatagramSocketWrapper
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter
+androidx.browser.browseractions.BrowserActionItem
+androidx.arch.core.internal.SafeIterableMap$SupportRemove
+androidx.core.content.FileProvider:
+    private static final java.lang.String META_DATA_FILE_PROVIDER_PATHS
+    private static final java.lang.String TAG_ROOT_PATH
+    private static final java.lang.String TAG_FILES_PATH
+    private static final java.lang.String TAG_CACHE_PATH
+    private static final java.lang.String TAG_EXTERNAL
+    private static final java.lang.String TAG_EXTERNAL_FILES
+    private static final java.lang.String TAG_EXTERNAL_CACHE
+    private static final java.lang.String TAG_EXTERNAL_MEDIA
+    private static final java.lang.String ATTR_NAME
+    private static final java.lang.String ATTR_PATH
+androidx.browser.trusted.TrustedWebActivityServiceConnection$CancelNotificationArgs:
+    public android.os.Bundle toBundle()
+androidx.core.view.inputmethod.InputConnectionCompat
+app.vercel.covid_tracker_beta.twa.R$dimen
+androidx.core.app.NotificationCompat$Style
+androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1
+androidx.core.widget.NestedScrollView$AccessibilityDelegate
+androidx.core.content.pm.ShortcutInfoCompatSaver
+androidx.core.content.ContextCompat:
+    protected void <init>()
+    public static boolean startActivities(android.content.Context,android.content.Intent[])
+    public static boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+    public static java.io.File getDataDir(android.content.Context)
+    public static java.io.File[] getObbDirs(android.content.Context)
+    public static android.content.res.ColorStateList getColorStateList(android.content.Context,int)
+    public static int checkSelfPermission(android.content.Context,java.lang.String)
+    public static java.io.File getNoBackupFilesDir(android.content.Context)
+    public static java.io.File getCodeCacheDir(android.content.Context)
+    private static synchronized java.io.File createFilesDir(java.io.File)
+    public static android.content.Context createDeviceProtectedStorageContext(android.content.Context)
+    public static boolean isDeviceProtectedStorage(android.content.Context)
+    public static java.util.concurrent.Executor getMainExecutor(android.content.Context)
+    public static void startForegroundService(android.content.Context,android.content.Intent)
+    public static java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+    public static java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+    private static final java.lang.String TAG
+androidx.annotation.Dimension
+app.vercel.covid_tracker_beta.twa.R$drawable
+androidx.core.widget.EdgeEffectCompat
+androidx.core.view.accessibility.AccessibilityViewCommand$SetSelectionArguments
+androidx.core.R$layout
+androidx.browser.R$id
+androidx.lifecycle.ReflectiveGenericLifecycleObserver:
+    void <init>(java.lang.Object)
+    public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+    private final java.lang.Object mWrapped
+    private final androidx.lifecycle.ClassesInfoCache$CallbackInfo mInfo
+com.google.androidbrowserhelper.trusted.ChromeOsSupport:
+    public void <init>()
+    public static final java.lang.String ARC_FEATURE
+    public static final java.lang.String ARC_PAYMENT_APP
+androidx.core.app.ShareCompat$IntentReader
+androidx.annotation.MainThread
+androidx.versionedparcelable.VersionedParcel$ParcelException
+androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    private void <init>()
+    public static android.os.IBinder getBinder(android.os.Bundle,java.lang.String)
+    private static final java.lang.String TAG
+    private static java.lang.reflect.Method sGetIBinderMethod
+    private static boolean sGetIBinderMethodFetched
+androidx.core.os.EnvironmentCompat
+androidx.browser.trusted.NotificationApiHelperForM:
+    private void <init>()
+androidx.lifecycle.ReportFragment$ActivityInitializationListener
+androidx.core.app.ActivityCompat$1
+androidx.core.app.NotificationCompat$Action$Builder
+com.google.androidbrowserhelper.trusted.FocusActivity:
+    private static final java.lang.String EXTRA_FOCUS_INTENT
+androidx.browser.browseractions.BrowserActionsFallbackMenuDialog
+androidx.core.widget.TintableCompoundDrawablesView
+androidx.core.text.BidiFormatter$Builder
+com.google.androidbrowserhelper.R$string:
+    private void <init>()
+    public static final int app_name
+    public static final int copy_toast_msg
+    public static final int fallback_menu_item_copy_link
+    public static final int fallback_menu_item_open_in_browser
+    public static final int fallback_menu_item_share_link
+    public static final int no_provider_toast
+    public static final int status_bar_notification_info_overflow
+    public static final int update_chrome_toast
+androidx.core.os.UserManagerCompat
+androidx.core.util.AtomicFile
+androidx.annotation.CallSuper
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$1
+androidx.core.view.ViewPropertyAnimatorCompat$1
+androidx.core.telephony.mbms.MbmsHelper
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatApi25Impl
+androidx.core.app.ShareCompat$IntentBuilder
+androidx.annotation.NonNull
+androidx.core.app.SharedElementCallback$OnSharedElementsReadyListener
+androidx.core.view.MenuCompat
+androidx.core.R$string
+androidx.core.view.MenuItemCompat
+androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListener
+androidx.concurrent.futures.AbstractResolvableFuture
+androidx.core.util.Pools$SimplePool
+app.vercel.covid_tracker_beta.twa.R$layout
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
+androidx.core.text.util.LinkifyCompat
+androidx.browser.trusted.TrustedWebActivityService:
+    public static final java.lang.String ACTION_TRUSTED_WEB_ACTIVITY_SERVICE
+    public static final java.lang.String META_DATA_NAME_SMALL_ICON
+    public static final java.lang.String KEY_SMALL_ICON_BITMAP
+    public static final java.lang.String KEY_SUCCESS
+    public static final int SMALL_ICON_NOT_SET
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase
+android.support.customtabs.IPostMessageService$Stub$Proxy
+androidx.collection.SparseArrayCompat
+androidx.core.widget.AutoSizeableTextView
+androidx.core.view.accessibility.AccessibilityViewCommand$SetProgressArguments
+androidx.browser.browseractions.BrowserActionsIntent
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+androidx.core.app.TaskStackBuilder
+app.vercel.covid_tracker_beta.twa.R$style
+androidx.versionedparcelable.VersionedParcelStream
+androidx.core.content.pm.PermissionInfoCompat$Protection
+androidx.core.view.inputmethod.EditorInfoCompat
+com.google.common.util.concurrent.ListenableFuture
+androidx.core.util.DebugUtils
+androidx.core.app.NotificationCompat
+android.support.customtabs.ICustomTabsCallback$Default
+androidx.core.util.Pools$Pool
+androidx.interpolator.view.animation.FastOutSlowInInterpolator
+androidx.annotation.RequiresPermission
+androidx.browser.trusted.ConnectionHolder$WrapperFactory
+androidx.core.widget.NestedScrollView
+androidx.core.provider.SelfDestructiveThread$3
+androidx.core.view.KeyEventDispatcher$Component
+com.google.androidbrowserhelper.R$integer
+androidx.collection.LongSparseArray
+androidx.core.view.NestedScrollingChild2
+androidx.annotation.InterpolatorRes
+androidx.core.app.RemoteInput
+androidx.core.view.ActionProvider$SubUiVisibilityListener
+androidx.browser.trusted.PackageIdentityUtils:
+    private void <init>()
+    private static final java.lang.String TAG
+androidx.core.app.NotificationCompatBuilder
+androidx.collection.LruCache
+androidx.annotation.RestrictTo
+androidx.core.provider.FontsContractCompat$FontInfo
+androidx.core.widget.NestedScrollView$SavedState
+androidx.lifecycle.FullLifecycleObserverAdapter:
+    void <init>(androidx.lifecycle.FullLifecycleObserver)
+    public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+    private final androidx.lifecycle.FullLifecycleObserver mObserver
+androidx.annotation.RequiresFeature
+androidx.core.content.ContentResolverCompat
+androidx.interpolator.R
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsUrlType
+androidx.core.os.ParcelCompat
+androidx.core.view.ViewPropertyAnimatorUpdateListener
+androidx.annotation.Px
+androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+androidx.lifecycle.ReportFragment
+androidx.core.R$id
+androidx.core.provider.FontsContractCompat$4$8
+androidx.browser.trusted.TrustedWebActivityDisplayMode:
+    public static androidx.browser.trusted.TrustedWebActivityDisplayMode fromBundle(android.os.Bundle)
+    public static final java.lang.String KEY_ID
+androidx.core.content.PermissionChecker$PermissionResult
+androidx.core.app.ActivityCompat$SharedElementCallback21Impl$1
+android.support.v4.os.IResultReceiver$Stub$Proxy
+androidx.core.app.NotificationManagerCompat$Task
+androidx.core.os.ConfigurationCompat
+androidx.core.view.WindowCompat
+androidx.core.util.Supplier
+androidx.concurrent.futures.AbstractResolvableFuture$SetFuture
+androidx.browser.customtabs.CustomTabsService$Result
+androidx.annotation.StringRes
+androidx.browser.customtabs.CustomTabsClient:
+    public static java.lang.String getPackageName(android.content.Context,java.util.List)
+    public static java.lang.String getPackageName(android.content.Context,java.util.List,boolean)
+    public static boolean connectAndInitialize(android.content.Context,java.lang.String)
+    public static androidx.browser.customtabs.CustomTabsSession$PendingSession newPendingSession(android.content.Context,androidx.browser.customtabs.CustomTabsCallback,int)
+    public android.os.Bundle extraCommand(java.lang.String,android.os.Bundle)
+    public androidx.browser.customtabs.CustomTabsSession attachSession(androidx.browser.customtabs.CustomTabsSession$PendingSession)
+    private static final java.lang.String TAG
+androidx.lifecycle.OnLifecycleEvent
+androidx.core.app.NotificationManagerCompat$ServiceConnectedEvent
+androidx.core.internal.view.SupportSubMenu
+androidx.core.content.res.FontResourcesParserCompat$FontFileResourceEntry
+androidx.core.content.SharedPreferencesCompat$EditorCompat$Helper
+androidx.core.view.NestedScrollingParent3
+androidx.core.provider.SelfDestructiveThread$1
+androidx.core.view.inputmethod.InputConnectionCompat$2
+androidx.core.graphics.PathParser$PathDataNode
+app.vercel.covid_tracker_beta.twa.R$integer
+androidx.core.view.DragStartHelper$1
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerWrapper
+androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat
+androidx.core.app.JobIntentService$WorkEnqueuer
+androidx.core.view.ViewParentCompat
+androidx.browser.trusted.ScreenOrientation$LockType
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationResult
+androidx.lifecycle.LifecycleRegistryOwner
+androidx.core.app.NotificationCompat$Action$SemanticAction
+androidx.core.widget.PopupWindowCompat
+androidx.annotation.RawRes
+androidx.core.content.pm.PermissionInfoCompat
+androidx.annotation.VisibleForTesting
+androidx.core.view.ViewCompat$ScrollIndicators
+androidx.core.view.NestedScrollingParentHelper
+androidx.core.app.NotificationCompat$InboxStyle
+androidx.core.util.Consumer
+androidx.core.widget.TintableImageSourceView
+androidx.lifecycle.Lifecycling
+androidx.browser.customtabs.CustomTabsSession$PendingSession
+androidx.core.view.accessibility.AccessibilityWindowInfoCompat
+androidx.core.location.LocationManagerCompat
+androidx.lifecycle.FullLifecycleObserverAdapter$1
+androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl
+androidx.core.util.Preconditions
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$3
+androidx.core.view.inputmethod.InputContentInfoCompat
+androidx.concurrent.futures.CallbackToFutureAdapter$Resolver
+androidx.core.app.NotificationCompat$BigPictureStyle
+androidx.core.provider.FontsContractCompat$FontFamilyResult
+androidx.core.widget.CompoundButtonCompat
+androidx.core.content.pm.ShortcutInfoCompatSaver$NoopImpl
+androidx.core.R$style
+androidx.core.provider.FontsContractCompat$4$6
+androidx.core.text.TextUtilsCompat
+app.vercel.covid_tracker_beta.twa.R$color
+androidx.core.app.NotificationCompat$Action$WearableExtender
+com.google.androidbrowserhelper.trusted.SharingUtils:
+    private void <init>()
+androidx.browser.trusted.TokenContents:
+    public int getFingerprintCount()
+androidx.annotation.RequiresApi
+androidx.concurrent.futures.AbstractResolvableFuture$AtomicHelper
+androidx.core.app.NotificationCompat$BigTextStyle
+androidx.core.app.ActivityCompat$PermissionCompatDelegate
+android.support.v4.os.ResultReceiver$MyRunnable
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatBaseImpl
+androidx.core.app.JobIntentService$CompatWorkEnqueuer
+androidx.annotation.AnyThread
+androidx.browser.R
+com.google.androidbrowserhelper.R$color
+com.google.androidbrowserhelper.R$dimen
+androidx.browser.trusted.sharing.ShareTarget$RequestMethod
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter
+androidx.core.app.NotificationCompat$DecoratedCustomViewStyle
+androidx.browser.browseractions.BrowserServiceFileProvider$FileCleanupTask
+androidx.core.widget.ImageViewCompat
+androidx.browser.customtabs.CustomTabsIntent:
+    public static int getMaxToolbarItems()
+    public static android.content.Intent setAlwaysUseBrowserUI(android.content.Intent)
+    public static boolean shouldAlwaysUseBrowserUI(android.content.Intent)
+    private static final java.lang.String EXTRA_USER_OPT_OUT_FROM_CUSTOM_TABS
+    public static final java.lang.String EXTRA_SESSION
+    public static final java.lang.String EXTRA_SESSION_ID
+    public static final int COLOR_SCHEME_SYSTEM
+    public static final int COLOR_SCHEME_LIGHT
+    public static final int COLOR_SCHEME_DARK
+    private static final int COLOR_SCHEME_MAX
+    public static final java.lang.String EXTRA_COLOR_SCHEME
+    public static final java.lang.String EXTRA_TOOLBAR_COLOR
+    public static final java.lang.String EXTRA_ENABLE_URLBAR_HIDING
+    public static final java.lang.String EXTRA_CLOSE_BUTTON_ICON
+    public static final java.lang.String EXTRA_TITLE_VISIBILITY_STATE
+    public static final int NO_TITLE
+    public static final int SHOW_PAGE_TITLE
+    public static final java.lang.String EXTRA_ACTION_BUTTON_BUNDLE
+    public static final java.lang.String EXTRA_TOOLBAR_ITEMS
+    public static final java.lang.String EXTRA_SECONDARY_TOOLBAR_COLOR
+    public static final java.lang.String KEY_ICON
+    public static final java.lang.String KEY_DESCRIPTION
+    public static final java.lang.String KEY_PENDING_INTENT
+    public static final java.lang.String EXTRA_TINT_ACTION_BUTTON
+    public static final java.lang.String EXTRA_MENU_ITEMS
+    public static final java.lang.String KEY_MENU_ITEM_TITLE
+    public static final java.lang.String EXTRA_EXIT_ANIMATION_BUNDLE
+    public static final int SHARE_STATE_DEFAULT
+    public static final int SHARE_STATE_ON
+    public static final int SHARE_STATE_OFF
+    private static final int SHARE_STATE_MAX
+    public static final java.lang.String EXTRA_SHARE_STATE
+    public static final java.lang.String EXTRA_DEFAULT_SHARE_MENU_ITEM
+    public static final java.lang.String EXTRA_REMOTEVIEWS
+    public static final java.lang.String EXTRA_REMOTEVIEWS_VIEW_IDS
+    public static final java.lang.String EXTRA_REMOTEVIEWS_PENDINGINTENT
+    public static final java.lang.String EXTRA_REMOTEVIEWS_CLICKED_ID
+    public static final java.lang.String EXTRA_ENABLE_INSTANT_APPS
+    public static final java.lang.String EXTRA_COLOR_SCHEME_PARAMS
+    public static final java.lang.String EXTRA_NAVIGATION_BAR_COLOR
+    public static final java.lang.String EXTRA_NAVIGATION_BAR_DIVIDER_COLOR
+    public static final java.lang.String KEY_ID
+    public static final int TOOLBAR_ACTION_BUTTON_ID
+    private static final int MAX_TOOLBAR_ITEMS
+androidx.core.view.ViewCompat$FocusDirection
+androidx.annotation.RestrictTo$Scope
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
+androidx.core.widget.ContentLoadingProgressBar
+androidx.versionedparcelable.ParcelImpl:
+    public void <init>(androidx.versionedparcelable.VersionedParcelable)
+    public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
+androidx.annotation.StyleableRes
+androidx.core.view.ViewCompat$2
+androidx.core.provider.FontsContractCompat$4
+androidx.core.app.NotificationCompatJellybean
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ResultArgs:
+    public static androidx.browser.trusted.TrustedWebActivityServiceConnection$ResultArgs fromBundle(android.os.Bundle)
+androidx.browser.browseractions.BrowserServiceFileProvider$1
+androidx.core.text.HtmlCompat
+androidx.core.view.accessibility.AccessibilityRecordCompat
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
+androidx.core.view.animation.PathInterpolatorApi14
+androidx.core.content.ContextCompat$MainHandlerExecutor
+androidx.core.app.JobIntentService
+androidx.browser.trusted.splashscreens.SplashScreenParamKey
+androidx.core.view.accessibility.AccessibilityViewCommand$SetTextArguments
+androidx.core.view.ViewConfigurationCompat
+androidx.annotation.FractionRes
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$1
+androidx.core.os.HandlerCompat
+androidx.core.provider.FontsContractCompat$4$4
+androidx.annotation.DimenRes
+androidx.arch.core.internal.SafeIterableMap$AscendingIterator
+androidx.core.app.NotificationCompat$MessagingStyle
+androidx.core.app.NotificationManagerCompat$SideChannelManager
+androidx.browser.customtabs.PostMessageServiceConnection
+androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture
+androidx.annotation.FloatRange
+androidx.browser.trusted.TrustedWebActivityServiceConnection:
+    void <init>(android.support.customtabs.trusted.ITrustedWebActivityService,android.content.ComponentName)
+    private static android.support.customtabs.trusted.ITrustedWebActivityCallback wrapCallback(androidx.browser.trusted.TrustedWebActivityCallback)
+    public boolean areNotificationsEnabled(java.lang.String)
+    public boolean notify(java.lang.String,int,android.app.Notification,java.lang.String)
+    public void cancel(java.lang.String,int)
+    public android.os.Parcelable[] getActiveNotifications()
+    public int getSmallIconId()
+    public android.graphics.Bitmap getSmallIconBitmap()
+    public android.content.ComponentName getComponentName()
+    public android.os.Bundle sendExtraCommand(java.lang.String,android.os.Bundle,androidx.browser.trusted.TrustedWebActivityCallback)
+    private final android.support.customtabs.trusted.ITrustedWebActivityService mService
+    private final android.content.ComponentName mComponentName
+    private static final java.lang.String KEY_PLATFORM_TAG
+    private static final java.lang.String KEY_PLATFORM_ID
+    private static final java.lang.String KEY_NOTIFICATION
+    private static final java.lang.String KEY_CHANNEL_NAME
+    private static final java.lang.String KEY_ACTIVE_NOTIFICATIONS
+    private static final java.lang.String KEY_NOTIFICATION_SUCCESS
+androidx.core.app.DialogCompat
+android.support.customtabs.ICustomTabsService$Stub:
+    public void <init>()
+    public static boolean setDefaultImpl(android.support.customtabs.ICustomTabsService)
+    public android.os.IBinder asBinder()
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_warmup
+    static final int TRANSACTION_newSession
+    static final int TRANSACTION_newSessionWithExtras
+    static final int TRANSACTION_mayLaunchUrl
+    static final int TRANSACTION_extraCommand
+    static final int TRANSACTION_updateVisuals
+    static final int TRANSACTION_requestPostMessageChannel
+    static final int TRANSACTION_requestPostMessageChannelWithExtras
+    static final int TRANSACTION_postMessage
+    static final int TRANSACTION_validateRelationship
+    static final int TRANSACTION_receiveFile
+androidx.core.view.MenuItemCompat$1
+androidx.core.view.ViewPropertyAnimatorCompat
+androidx.core.content.res.ComplexColorCompat
+androidx.browser.browseractions.BrowserActionsIntent$Builder
+androidx.core.view.accessibility.AccessibilityClickableSpanCompat
+android.support.customtabs.ICustomTabsCallback$Stub$Proxy
+androidx.core.view.ViewCompat$4
+androidx.arch.core.internal.FastSafeIterableMap
+androidx.core.provider.FontsContractCompat$2
+androidx.core.content.pm.PackageInfoCompat
+androidx.annotation.CheckResult
+androidx.browser.customtabs.PostMessageService
+androidx.core.graphics.drawable.WrappedDrawableApi21:
+    private static final java.lang.String TAG
+androidx.core.app.ActivityManagerCompat
+androidx.annotation.RequiresPermission$Read
+androidx.core.app.NotificationCompat$Action
+androidx.versionedparcelable.CustomVersionedParcelable:
+    public void onPreParceling(boolean)
+    public void onPostParceling()
+androidx.browser.R$layout
+androidx.core.graphics.TypefaceCompatBaseImpl$1
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
+app.vercel.covid_tracker_beta.twa.R$id
+androidx.arch.core.internal.SafeIterableMap
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$2
+androidx.core.content.res.ConfigurationHelper
+androidx.collection.ContainerHelpers:
+    public static int idealIntArraySize(int)
+    public static int idealLongArraySize(int)
+    public static int idealByteArraySize(int)
+    static int binarySearch(long[],int,long)
+    private void <init>()
+androidx.core.view.accessibility.AccessibilityViewCommand$ScrollToPositionArguments
+androidx.arch.core.internal.SafeIterableMap$DescendingIterator
+androidx.core.app.TaskStackBuilder$SupportParentable
+androidx.core.app.NotificationCompat$CarExtender$UnreadConversation
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$CryptoObject
+androidx.core.R$styleable
+androidx.concurrent.futures.CallbackToFutureAdapter
+androidx.core.view.ViewCompat$ScrollAxis
+androidx.annotation.HalfFloat
+androidx.core.view.ViewCompat$FocusRelativeDirection
+androidx.core.app.FrameMetricsAggregator
+androidx.core.graphics.PaintCompat
+androidx.core.view.ViewGroupCompat
+androidx.core.view.ScaleGestureDetectorCompat
+androidx.core.app.NotificationCompat$CarExtender
+androidx.browser.customtabs.CustomTabsService$FilePurpose
+androidx.lifecycle.GenericLifecycleObserver
+androidx.annotation.LayoutRes
+androidx.concurrent.futures.AbstractResolvableFuture$SynchronizedHelper
+android.support.v4.app.INotificationSideChannel
+androidx.core.graphics.PathParser$ExtractFloatResult
+androidx.core.provider.FontsContractCompat$4$3
+androidx.browser.trusted.TrustedWebActivityServiceConnection$1
+androidx.core.app.RemoteActionCompat:
+    public void <init>(androidx.core.graphics.drawable.IconCompat,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)
+    public void <init>(androidx.core.app.RemoteActionCompat)
+    public static androidx.core.app.RemoteActionCompat createFromRemoteAction(android.app.RemoteAction)
+    public void setEnabled(boolean)
+    public boolean isEnabled()
+    public void setShouldShowIcon(boolean)
+    public boolean shouldShowIcon()
+    public androidx.core.graphics.drawable.IconCompat getIcon()
+    public java.lang.CharSequence getTitle()
+    public java.lang.CharSequence getContentDescription()
+    public android.app.PendingIntent getActionIntent()
+    public android.app.RemoteAction toRemoteAction()
+androidx.core.graphics.BitmapCompat
+androidx.collection.CircularArray
+androidx.core.provider.SelfDestructiveThread
+androidx.versionedparcelable.VersionedParcel$1
+com.google.androidbrowserhelper.trusted.ChromeUpdatePrompt:
+    private void <init>()
+    private static final java.lang.String UPDATE_CHROME_MESSAGE_RESOURCE_ID
+com.google.androidbrowserhelper.trusted.DelegationService:
+    public void registerExtraCommandHandler(com.google.androidbrowserhelper.trusted.ExtraCommandHandler)
+androidx.core.app.ActivityOptionsCompat$ActivityOptionsCompatImpl
+androidx.browser.customtabs.CustomTabsClient$1
+androidx.core.app.ActivityRecreator
+androidx.annotation.UiThread
+androidx.versionedparcelable.NonParcelField
+androidx.browser.customtabs.PostMessageBackend
+androidx.core.view.GravityCompat
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Default
+androidx.annotation.IntegerRes
+androidx.annotation.GuardedBy
+androidx.core.R$integer
+androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+androidx.annotation.InspectableProperty$ValueType
+androidx.core.content.res.FontResourcesParserCompat$FamilyResourceEntry
+androidx.core.R
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
+androidx.core.view.ViewPropertyAnimatorListenerAdapter
+androidx.core.widget.ListViewAutoScrollHelper
+androidx.core.util.Pools$SynchronizedPool
+androidx.browser.browseractions.BrowserServiceFileProvider$FileSaveTask
+androidx.annotation.InspectableProperty
+androidx.core.app.NotificationManagerCompat$NotifyTask
+androidx.core.content.pm.ShortcutInfoCompat
+android.support.customtabs.trusted.ITrustedWebActivityService$Stub:
+    public static android.support.customtabs.trusted.ITrustedWebActivityService asInterface(android.os.IBinder)
+    public static boolean setDefaultImpl(android.support.customtabs.trusted.ITrustedWebActivityService)
+    public static android.support.customtabs.trusted.ITrustedWebActivityService getDefaultImpl()
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_areNotificationsEnabled
+    static final int TRANSACTION_notifyNotificationWithChannel
+    static final int TRANSACTION_cancelNotification
+    static final int TRANSACTION_getActiveNotifications
+    static final int TRANSACTION_getSmallIconId
+    static final int TRANSACTION_getSmallIconBitmap
+    static final int TRANSACTION_extraCommand
+androidx.core.app.ShareCompat
+androidx.core.content.SharedPreferencesCompat$EditorCompat
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi16
+androidx.core.view.NestedScrollingParent
+androidx.core.app.NotificationCompat$Extender
+androidx.lifecycle.MethodCallsLogger
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi
+androidx.core.app.ActivityRecreator$LifecycleCheckCallbacks
+androidx.browser.R$dimen:
+    private void <init>()
+androidx.core.graphics.TypefaceCompatApi24Impl
+androidx.core.provider.FontsContractCompat$4$1
+androidx.core.os.LocaleListInterface
+androidx.core.widget.ContentLoadingProgressBar$2
+androidx.core.view.LayoutInflaterCompat$Factory2Wrapper
+androidx.browser.trusted.sharing.ShareData:
+    public static androidx.browser.trusted.sharing.ShareData fromBundle(android.os.Bundle)
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_TEXT
+    public static final java.lang.String KEY_URIS
+androidx.annotation.TransitionRes
+androidx.browser.trusted.TrustedWebActivityDisplayMode$DefaultMode:
+    private static final int ID
+androidx.browser.trusted.sharing.ShareTarget$EncodingType
+androidx.core.app.NotificationCompat$CarExtender$UnreadConversation$Builder
+androidx.core.app.ComponentActivity$ExtraData
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListener
+androidx.annotation.BinderThread
+androidx.core.content.res.GradientColorInflaterCompat$ColorStops
+com.google.androidbrowserhelper.BuildConfig
+androidx.core.app.ActivityRecreator$1
+androidx.arch.core.internal.SafeIterableMap$Entry
+androidx.browser.trusted.sharing.ShareTarget$FileFormField:
+    static androidx.browser.trusted.sharing.ShareTarget$FileFormField fromBundle(android.os.Bundle)
+    public static final java.lang.String KEY_NAME
+    public static final java.lang.String KEY_ACCEPTED_TYPES
+androidx.annotation.PluralsRes
+androidx.core.view.ViewPropertyAnimatorCompat$2
+androidx.core.content.pm.ShortcutManagerCompat$1
+androidx.core.app.JobIntentService$CompatWorkItem
+androidx.core.text.TextDirectionHeuristicsCompat
+android.support.customtabs.ICustomTabsService$Default
+androidx.annotation.Nullable
+androidx.browser.trusted.TrustedWebActivityServiceConnectionPool$BindToServiceAsyncTask
+androidx.browser.trusted.ScreenOrientation
+androidx.core.graphics.drawable.DrawableCompat:
+    public static void jumpToCurrentState(android.graphics.drawable.Drawable)
+    public static void setAutoMirrored(android.graphics.drawable.Drawable,boolean)
+    public static boolean isAutoMirrored(android.graphics.drawable.Drawable)
+    public static void setHotspot(android.graphics.drawable.Drawable,float,float)
+    public static void setHotspotBounds(android.graphics.drawable.Drawable,int,int,int,int)
+    public static void setTint(android.graphics.drawable.Drawable,int)
+    public static void setTintList(android.graphics.drawable.Drawable,android.content.res.ColorStateList)
+    public static void setTintMode(android.graphics.drawable.Drawable,android.graphics.PorterDuff$Mode)
+    public static int getAlpha(android.graphics.drawable.Drawable)
+    public static void applyTheme(android.graphics.drawable.Drawable,android.content.res.Resources$Theme)
+    public static boolean canApplyTheme(android.graphics.drawable.Drawable)
+    public static android.graphics.ColorFilter getColorFilter(android.graphics.drawable.Drawable)
+    public static void clearColorFilter(android.graphics.drawable.Drawable)
+    public static void inflate(android.graphics.drawable.Drawable,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+    public static android.graphics.drawable.Drawable unwrap(android.graphics.drawable.Drawable)
+    public static boolean setLayoutDirection(android.graphics.drawable.Drawable,int)
+    public static int getLayoutDirection(android.graphics.drawable.Drawable)
+    private void <init>()
+    private static final java.lang.String TAG
+    private static java.lang.reflect.Method sSetLayoutDirectionMethod
+    private static boolean sSetLayoutDirectionMethodFetched
+    private static java.lang.reflect.Method sGetLayoutDirectionMethod
+    private static boolean sGetLayoutDirectionMethodFetched
+androidx.core.content.res.ResourcesCompat$FontCallback$1
+androidx.core.content.res.ResourcesCompat$FontCallback
+com.google.androidbrowserhelper.trusted.ExtraCommandHandler:
+    public static final java.lang.String EXTRA_COMMAND_SUCCESS
+com.google.androidbrowserhelper.trusted.QualityEnforcer:
+    void <init>(com.google.androidbrowserhelper.trusted.QualityEnforcer$Delegate)
+    private static final java.lang.String TAG
+    static final java.lang.String CRASH
+    static final java.lang.String KEY_CRASH_REASON
+    static final java.lang.String KEY_SUCCESS
+androidx.arch.core.internal.SafeIterableMap$ListIterator
+androidx.browser.customtabs.TrustedWebUtils:
+    private void <init>()
+    public static void launchBrowserSiteSettings(android.content.Context,androidx.browser.customtabs.CustomTabsSession,android.net.Uri)
+    public static void launchAsTrustedWebActivity(android.content.Context,androidx.browser.customtabs.CustomTabsIntent,android.net.Uri)
+    public static final java.lang.String EXTRA_LAUNCH_AS_TRUSTED_WEB_ACTIVITY
+    public static final java.lang.String ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA
+com.google.androidbrowserhelper.R$styleable
+app.vercel.covid_tracker_beta.twa.R$attr
+androidx.core.internal.package-info
+androidx.concurrent.futures.AbstractResolvableFuture$Failure
+androidx.core.provider.FontsContractCompat
+androidx.core.widget.AutoScrollHelper$ScrollAnimationRunnable
+androidx.core.view.accessibility.AccessibilityViewCommand$CommandArguments
+androidx.annotation.AttrRes
+androidx.core.content.pm.ActivityInfoCompat
+androidx.core.view.GestureDetectorCompat
+app.vercel.covid_tracker_beta.twa.R$string
+androidx.core.app.Person
+androidx.browser.trusted.Token:
+    private static final java.lang.String TAG
+androidx.concurrent.futures.ResolvableFuture
+androidx.core.util.TimeUtils
+androidx.core.app.AppOpsManagerCompat
+androidx.annotation.ArrayRes
+androidx.annotation.StyleRes
+androidx.core.app.Person$Builder
+androidx.core.content.MimeTypeFilter
+androidx.core.view.DisplayCutoutCompat
+androidx.core.app.NotificationCompat$NotificationVisibility
+android.support.v4.os.ResultReceiver$MyResultReceiver
+androidx.core.widget.AutoScrollHelper
+androidx.core.os.ParcelableCompat$ParcelableCompatCreatorHoneycombMR2
+androidx.core.text.util.FindAddress$ZipRange
+androidx.core.view.VelocityTrackerCompat
+androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask$PrecomputedTextCallback
+androidx.browser.customtabs.CustomTabsSessionToken$1
+androidx.lifecycle.LifecycleRegistry$1
+androidx.core.app.ActivityRecreator$3
+androidx.core.widget.TintableCompoundButton
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotificationsEnabledArgs:
+    public android.os.Bundle toBundle()
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+androidx.core.app.NotificationCompat$MessagingStyle$Message
+androidx.core.R$color
+androidx.core.widget.TextViewCompat$AutoSizeTextType
+androidx.annotation.NavigationRes
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat
+androidx.browser.trusted.sharing.ShareTarget:
+    public static androidx.browser.trusted.sharing.ShareTarget fromBundle(android.os.Bundle)
+    public static final java.lang.String KEY_ACTION
+    public static final java.lang.String KEY_METHOD
+    public static final java.lang.String KEY_ENCTYPE
+    public static final java.lang.String KEY_PARAMS
+    public static final java.lang.String METHOD_GET
+    public static final java.lang.String METHOD_POST
+    public static final java.lang.String ENCODING_TYPE_URL_ENCODED
+    public static final java.lang.String ENCODING_TYPE_MULTIPART
+androidx.core.internal.view.SupportMenu
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$1
+androidx.browser.customtabs.CustomTabsIntent$ColorScheme
+androidx.core.text.util.LinkifyCompat$LinkSpec
+androidx.core.graphics.PathUtils
+androidx.core.app.NotificationCompat$WearableExtender
+androidx.browser.R$color
+androidx.core.view.WindowInsetsCompat
+androidx.core.view.LayoutInflaterFactory
+androidx.annotation.BoolRes
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
+com.google.androidbrowserhelper.R$layout
+androidx.core.app.NotificationBuilderWithBuilderAccessor
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat
+androidx.core.app.FrameMetricsAggregator$FrameMetricsBaseImpl
+android.support.customtabs.IPostMessageService$Stub
+androidx.core.R$drawable
+androidx.core.text.BidiFormatter
+androidx.core.view.inputmethod.InputConnectionCompat$1
+androidx.annotation.FontRes
+androidx.core.widget.AutoScrollHelper$ClampedScroller
+androidx.browser.customtabs.CustomTabsIntent$Builder:
+    public void <init>(androidx.browser.customtabs.CustomTabsSession)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setPendingSession(androidx.browser.customtabs.CustomTabsSession$PendingSession)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder enableUrlBarHiding()
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setUrlBarHidingEnabled(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setCloseButtonIcon(android.graphics.Bitmap)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setShowTitle(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addMenuItem(java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addDefaultShareMenuItem()
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setDefaultShareMenuItemEnabled(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setShareState(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setActionButton(android.graphics.Bitmap,java.lang.String,android.app.PendingIntent,boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setActionButton(android.graphics.Bitmap,java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addToolbarItem(int,android.graphics.Bitmap,java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setSecondaryToolbarColor(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setSecondaryToolbarViews(android.widget.RemoteViews,int[],android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setInstantAppsEnabled(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setStartAnimations(android.content.Context,int,int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setExitAnimations(android.content.Context,int,int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setDefaultColorSchemeParams(androidx.browser.customtabs.CustomTabColorSchemeParams)
+androidx.core.view.InputDeviceCompat
+androidx.browser.customtabs.CustomTabsIntent$ShareState
+androidx.core.app.AppLaunchChecker
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotifyNotificationArgs:
+    public android.os.Bundle toBundle()
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ActiveNotificationsArgs:
+    public static androidx.browser.trusted.TrustedWebActivityServiceConnection$ActiveNotificationsArgs fromBundle(android.os.Bundle)
+androidx.browser.R$xml
+androidx.core.provider.FontRequest
+androidx.core.view.ActionProvider
+androidx.core.graphics.TypefaceCompatApi28Impl
+androidx.lifecycle.SingleGeneratedAdapterObserver:
+    void <init>(androidx.lifecycle.GeneratedAdapter)
+    public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+    private final androidx.lifecycle.GeneratedAdapter mGeneratedAdapter
+android.support.customtabs.trusted.ITrustedWebActivityService$Stub$Proxy
+androidx.core.view.OnApplyWindowInsetsListener
+androidx.core.content.pm.PermissionInfoCompat$ProtectionFlags
+androidx.versionedparcelable.R
+androidx.core.app.NotificationManagerCompat:
+    public static java.util.Set getEnabledListenerPackages(android.content.Context)
+    private static boolean useSideChannelForNotification(android.app.Notification)
+    private void pushSideChannelQueue(androidx.core.app.NotificationManagerCompat$Task)
+    public void cancel(int)
+    public void cancel(java.lang.String,int)
+    public void cancelAll()
+    public void notify(int,android.app.Notification)
+    public void notify(java.lang.String,int,android.app.Notification)
+    public int getImportance()
+    public void createNotificationChannel(android.app.NotificationChannel)
+    public void createNotificationChannelGroup(android.app.NotificationChannelGroup)
+    public void createNotificationChannels(java.util.List)
+    public void createNotificationChannelGroups(java.util.List)
+    public void deleteNotificationChannel(java.lang.String)
+    public void deleteNotificationChannelGroup(java.lang.String)
+    public android.app.NotificationChannel getNotificationChannel(java.lang.String)
+    public android.app.NotificationChannelGroup getNotificationChannelGroup(java.lang.String)
+    public java.util.List getNotificationChannels()
+    public java.util.List getNotificationChannelGroups()
+    private static final java.lang.String TAG
+    private static final java.lang.String CHECK_OP_NO_THROW
+    private static final java.lang.String OP_POST_NOTIFICATION
+    public static final java.lang.String EXTRA_USE_SIDE_CHANNEL
+    public static final java.lang.String ACTION_BIND_SIDE_CHANNEL
+    static final int MAX_SIDE_CHANNEL_SDK_VERSION
+    private static final int SIDE_CHANNEL_RETRY_BASE_INTERVAL_MS
+    private static final int SIDE_CHANNEL_RETRY_MAX_COUNT
+    private static final java.lang.String SETTING_ENABLED_NOTIFICATION_LISTENERS
+    private static java.lang.String sEnabledNotificationListeners
+    private static androidx.core.app.NotificationManagerCompat$SideChannelManager sSideChannelManager
+    public static final int IMPORTANCE_UNSPECIFIED
+    public static final int IMPORTANCE_NONE
+    public static final int IMPORTANCE_MIN
+    public static final int IMPORTANCE_LOW
+    public static final int IMPORTANCE_DEFAULT
+    public static final int IMPORTANCE_HIGH
+    public static final int IMPORTANCE_MAX
+androidx.lifecycle.ClassesInfoCache$CallbackInfo
+androidx.core.app.RemoteInput$Source
+com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy:
+    private static final java.lang.String TAG
+androidx.core.provider.FontsContractCompat$FontRequestCallback$FontRequestFailReason
+android.support.customtabs.IPostMessageService
+androidx.core.app.NotificationManagerCompat$CancelTask
+androidx.core.util.LogWriter
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsItemId
+androidx.collection.ArraySet
+androidx.core.text.util.LinkifyCompat$1
+androidx.core.app.NotificationCompat$Builder
+androidx.core.net.ConnectivityManagerCompat$RestrictBackgroundStatus
+androidx.core.util.Pools
+androidx.lifecycle.LifecycleObserver
+androidx.core.os.OperationCanceledException
+androidx.annotation.MenuRes
+androidx.core.graphics.TypefaceCompatApi21Impl
+androidx.versionedparcelable.VersionedParcelize
+android.support.customtabs.ICustomTabsCallback$Stub:
+    public static android.support.customtabs.ICustomTabsCallback asInterface(android.os.IBinder)
+    public static boolean setDefaultImpl(android.support.customtabs.ICustomTabsCallback)
+    public static android.support.customtabs.ICustomTabsCallback getDefaultImpl()
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onNavigationEvent
+    static final int TRANSACTION_extraCallback
+    static final int TRANSACTION_onMessageChannelReady
+    static final int TRANSACTION_onPostMessage
+    static final int TRANSACTION_onRelationshipValidationResult
+    static final int TRANSACTION_extraCallbackWithResult
+androidx.concurrent.futures.AbstractResolvableFuture$Cancellation
+androidx.core.view.ViewCompat
+androidx.core.text.PrecomputedTextCompat$Params
+androidx.browser.customtabs.CustomTabsService$Relation
+android.support.customtabs.trusted.ITrustedWebActivityCallback:
+    public abstract void onExtraCallback(java.lang.String,android.os.Bundle)
+androidx.core.os.CancellationSignal
+androidx.core.app.NotificationCompat$BadgeIconType
+androidx.browser.browseractions.BrowserActionsFallbackMenuDialog$1
+androidx.core.text.TextDirectionHeuristicsCompat$FirstStrong
+androidx.core.app.NotificationCompat$GroupAlertBehavior
+androidx.core.graphics.drawable.RoundedBitmapDrawableFactory$DefaultRoundedBitmapDrawable
+androidx.core.view.NestedScrollingParent2
+com.google.androidbrowserhelper.trusted.WebViewFallbackActivity:
+    private static final java.lang.String KEY_PREFIX
+    private static final java.lang.String KEY_LAUNCH_URI
+    private static final java.lang.String KEY_NAVIGATION_BAR_COLOR
+    private static final java.lang.String KEY_STATUS_BAR_COLOR
+    private static final java.lang.String KEY_EXTRA_ORIGINS
+com.google.androidbrowserhelper.R$style
+androidx.core.provider.SelfDestructiveThread$2
+androidx.core.graphics.TypefaceCompatApi26Impl
+androidx.core.app.JobIntentService$CommandProcessor
+androidx.core.view.DragStartHelper$2
+android.support.v4.os.IResultReceiver$Stub
+androidx.arch.core.util.Function
+android.support.v4.app.INotificationSideChannel$Stub$Proxy
+androidx.core.provider.FontsContractCompat$5
+androidx.core.view.ViewCompat$1
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatImpl
+androidx.annotation.RequiresPermission$Write
+androidx.core.graphics.drawable.IconCompat:
+    public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.Context,int)
+    public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.res.Resources,java.lang.String,int)
+    public static androidx.core.graphics.drawable.IconCompat createWithBitmap(android.graphics.Bitmap)
+    public static androidx.core.graphics.drawable.IconCompat createWithAdaptiveBitmap(android.graphics.Bitmap)
+    public static androidx.core.graphics.drawable.IconCompat createWithData(byte[],int,int)
+    public static androidx.core.graphics.drawable.IconCompat createWithContentUri(java.lang.String)
+    public static androidx.core.graphics.drawable.IconCompat createWithContentUri(android.net.Uri)
+    private void <init>(int)
+    private android.graphics.drawable.Drawable loadDrawableInner(android.content.Context)
+    private static android.content.res.Resources getResources(android.content.Context,java.lang.String)
+    public static androidx.core.graphics.drawable.IconCompat createFromBundle(android.os.Bundle)
+    public static androidx.core.graphics.drawable.IconCompat createFromIcon(android.content.Context,android.graphics.drawable.Icon)
+    public static androidx.core.graphics.drawable.IconCompat createFromIcon(android.graphics.drawable.Icon)
+    private static int getType(android.graphics.drawable.Icon)
+    private static android.net.Uri getUri(android.graphics.drawable.Icon)
+    static android.graphics.Bitmap createLegacyIconFromAdaptiveIcon(android.graphics.Bitmap,boolean)
+    public int getType()
+    public android.graphics.Bitmap getBitmap()
+    public android.net.Uri getUri()
+    public androidx.core.graphics.drawable.IconCompat setTint(int)
+    public androidx.core.graphics.drawable.IconCompat setTintList(android.content.res.ColorStateList)
+    public androidx.core.graphics.drawable.IconCompat setTintMode(android.graphics.PorterDuff$Mode)
+    public android.graphics.drawable.Icon toIcon()
+    public void checkResource(android.content.Context)
+    public android.graphics.drawable.Drawable loadDrawable(android.content.Context)
+    public void addToShortcutIntent(android.content.Intent,android.graphics.drawable.Drawable,android.content.Context)
+    public android.os.Bundle toBundle()
+    private static final java.lang.String TAG
+    public static final int TYPE_UNKNOWN
+    private static final float ADAPTIVE_ICON_INSET_FACTOR
+    private static final float DEFAULT_VIEW_PORT_SCALE
+    private static final float ICON_DIAMETER_FACTOR
+    private static final float BLUR_FACTOR
+    private static final float KEY_SHADOW_OFFSET_FACTOR
+    private static final int KEY_SHADOW_ALPHA
+    private static final int AMBIENT_SHADOW_ALPHA
+    private static final java.lang.String EXTRA_TYPE
+    private static final java.lang.String EXTRA_OBJ
+    private static final java.lang.String EXTRA_INT1
+    private static final java.lang.String EXTRA_INT2
+    private static final java.lang.String EXTRA_TINT_LIST
+    private static final java.lang.String EXTRA_TINT_MODE
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat
+androidx.annotation.AnimatorRes
+androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
+androidx.versionedparcelable.ParcelField
+androidx.core.content.res.ColorStateListInflaterCompat
+androidx.core.content.res.GradientColorInflaterCompat
+app.vercel.covid_tracker_beta.twa.R$mipmap
+com.google.androidbrowserhelper.trusted.TwaSharedPreferencesManager:
+    private static final java.lang.String PREFS_NAME
+    private static final java.lang.String KEY_PROVIDER_PACKAGE
+androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
+androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture$1
+app.vercel.covid_tracker_beta.twa.R$raw
+androidx.core.view.accessibility.AccessibilityViewCommand$MoveAtGranularityArguments
+com.google.androidbrowserhelper.trusted.LauncherActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String BROWSER_WAS_LAUNCHED_KEY
+    private static final java.lang.String FALLBACK_TYPE_WEBVIEW
+androidx.collection.ArraySet$1
+androidx.core.view.inputmethod.InputConnectionCompat$OnCommitContentListener
+androidx.core.provider.FontsContractCompat$FontRequestCallback
+androidx.concurrent.futures.DirectExecutor
+android.support.customtabs.trusted.ITrustedWebActivityService$Default
+androidx.core.os.LocaleListCompat
+androidx.lifecycle.ClassesInfoCache$MethodReference
+androidx.core.app.NotificationManagerCompat$SideChannelManager$ListenerRecord
+androidx.core.os.LocaleListPlatformWrapper
+androidx.core.graphics.TypefaceCompatBaseImpl$StyleExtractor
+androidx.core.view.ViewCompat$UnhandledKeyEventManager
+androidx.core.database.DatabaseUtilsCompat
+androidx.core.internal.view.SupportMenuItem
+androidx.core.provider.FontsContractCompat$4$9
+androidx.interpolator.view.animation.FastOutLinearInInterpolator
+androidx.core.view.MenuItemCompat$OnActionExpandListener
+app.vercel.covid_tracker_beta.twa.R
+androidx.annotation.AnyRes
+android.support.v4.app.INotificationSideChannel$Stub
+androidx.core.app.JobIntentService$JobServiceEngineImpl
+androidx.lifecycle.LifecycleRegistry$ObserverWithState
+android.support.customtabs.ICustomTabsService$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+    public boolean mayLaunchUrl(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle,java.util.List)
+    public android.os.Bundle extraCommand(java.lang.String,android.os.Bundle)
+    public boolean updateVisuals(android.support.customtabs.ICustomTabsCallback,android.os.Bundle)
+    public boolean requestPostMessageChannel(android.support.customtabs.ICustomTabsCallback,android.net.Uri)
+    public boolean requestPostMessageChannelWithExtras(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle)
+    public int postMessage(android.support.customtabs.ICustomTabsCallback,java.lang.String,android.os.Bundle)
+androidx.core.app.BundleCompat:
+    private void <init>()
+    public static android.os.IBinder getBinder(android.os.Bundle,java.lang.String)
+androidx.core.graphics.drawable.TintAwareDrawable:
+    public abstract void setTint(int)
+    public abstract void setTintList(android.content.res.ColorStateList)
+    public abstract void setTintMode(android.graphics.PorterDuff$Mode)
+androidx.annotation.AnimRes
+androidx.annotation.XmlRes
+androidx.core.app.NavUtils
+androidx.core.graphics.ColorUtils
+androidx.core.graphics.TypefaceCompatBaseImpl
+androidx.core.view.ViewCompat$NestedScrollType
+androidx.core.view.DragStartHelper
+androidx.lifecycle.Lifecycle$State
+androidx.core.content.res.ResourcesCompat
+app.vercel.covid_tracker_beta.twa.BuildConfig
+com.google.androidbrowserhelper.trusted.Utils:
+    public void <init>()
+com.google.androidbrowserhelper.R$id
+androidx.annotation.IntDef
+androidx.core.os.CancellationSignal$OnCancelListener
+androidx.browser.R$string
+androidx.versionedparcelable.VersionedParcel:
+    private void writeCollection(java.util.Collection,int)
+    private void writeCollection(java.util.Collection)
+    private int getType(java.lang.Object)
+    private void writeSerializable(java.io.Serializable)
+    private int readExceptionCode()
+    private java.lang.Exception readException(int,java.lang.String)
+    protected static java.lang.Throwable getRootCause(java.lang.Throwable)
+    private java.lang.Exception createException(int,java.lang.String)
+    private java.util.Collection readCollection(java.util.Collection)
+    protected abstract void writeByteArray(byte[],int,int)
+    protected abstract void writeLong(long)
+    protected abstract void writeFloat(float)
+    protected abstract void writeDouble(double)
+    protected abstract void writeStrongBinder(android.os.IBinder)
+    protected abstract void writeStrongInterface(android.os.IInterface)
+    protected abstract void writeBundle(android.os.Bundle)
+    protected abstract long readLong()
+    protected abstract float readFloat()
+    protected abstract double readDouble()
+    protected abstract android.os.IBinder readStrongBinder()
+    protected abstract android.os.Bundle readBundle()
+    public void writeStrongInterface(android.os.IInterface,int)
+    public void writeBundle(android.os.Bundle,int)
+    public void writeByteArray(byte[],int,int,int)
+    public void writeLong(long,int)
+    public void writeFloat(float,int)
+    public void writeDouble(double,int)
+    public void writeStrongBinder(android.os.IBinder,int)
+    public long readLong(long,int)
+    public float readFloat(float,int)
+    public double readDouble(double,int)
+    public android.os.IBinder readStrongBinder(android.os.IBinder,int)
+    public android.os.Bundle readBundle(android.os.Bundle,int)
+    public void writeByte(byte,int)
+    public void writeSize(android.util.Size,int)
+    public void writeSizeF(android.util.SizeF,int)
+    public void writeSparseBooleanArray(android.util.SparseBooleanArray,int)
+    public void writeBooleanArray(boolean[],int)
+    protected void writeBooleanArray(boolean[])
+    public boolean[] readBooleanArray(boolean[],int)
+    protected boolean[] readBooleanArray()
+    public void writeCharArray(char[],int)
+    public char[] readCharArray(char[],int)
+    public void writeIntArray(int[],int)
+    protected void writeIntArray(int[])
+    public int[] readIntArray(int[],int)
+    protected int[] readIntArray()
+    public void writeLongArray(long[],int)
+    protected void writeLongArray(long[])
+    public long[] readLongArray(long[],int)
+    protected long[] readLongArray()
+    public void writeFloatArray(float[],int)
+    protected void writeFloatArray(float[])
+    public float[] readFloatArray(float[],int)
+    protected float[] readFloatArray()
+    public void writeDoubleArray(double[],int)
+    protected void writeDoubleArray(double[])
+    public double[] readDoubleArray(double[],int)
+    protected double[] readDoubleArray()
+    public void writeSet(java.util.Set,int)
+    public void writeList(java.util.List,int)
+    public void writeMap(java.util.Map,int)
+    public void writeArray(java.lang.Object[],int)
+    protected void writeArray(java.lang.Object[])
+    public void writeSerializable(java.io.Serializable,int)
+    public void writeException(java.lang.Exception,int)
+    protected void writeNoException()
+    public java.lang.Exception readException(java.lang.Exception,int)
+    public byte readByte(byte,int)
+    public android.util.Size readSize(android.util.Size,int)
+    public android.util.SizeF readSizeF(android.util.SizeF,int)
+    public android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)
+    public java.util.Set readSet(java.util.Set,int)
+    public java.util.List readList(java.util.List,int)
+    public java.util.Map readMap(java.util.Map,int)
+    public java.lang.Object[] readArray(java.lang.Object[],int)
+    protected java.lang.Object[] readArray(java.lang.Object[])
+    protected java.io.Serializable readSerializable()
+    private static final java.lang.String TAG
+    private static final int EX_SECURITY
+    private static final int EX_BAD_PARCELABLE
+    private static final int EX_ILLEGAL_ARGUMENT
+    private static final int EX_NULL_POINTER
+    private static final int EX_ILLEGAL_STATE
+    private static final int EX_NETWORK_MAIN_THREAD
+    private static final int EX_UNSUPPORTED_OPERATION
+    private static final int EX_PARCELABLE
+    private static final int TYPE_VERSIONED_PARCELABLE
+    private static final int TYPE_PARCELABLE
+    private static final int TYPE_SERIALIZABLE
+    private static final int TYPE_STRING
+    private static final int TYPE_BINDER
+    private static final int TYPE_INTEGER
+    private static final int TYPE_FLOAT
+androidx.core.provider.FontsContractCompat$3
+androidx.core.view.ViewCompat$3
+androidx.core.view.KeyEventDispatcher
+androidx.core.net.DatagramSocketWrapper$DatagramSocketImplWrapper
+androidx.core.text.TextDirectionHeuristicCompat
+androidx.core.view.NestedScrollingChild3
+androidx.core.graphics.PathSegment
+androidx.core.app.SharedElementCallback
+androidx.core.graphics.drawable.IconCompat$IconType
+androidx.core.content.res.TypedArrayUtils
+androidx.browser.trusted.TrustedWebActivityDisplayMode$ImmersiveMode:
+    static androidx.browser.trusted.TrustedWebActivityDisplayMode fromBundle(android.os.Bundle)
+    public boolean isSticky()
+    public int layoutInDisplayCutoutMode()
+    private static final int ID
+    public static final java.lang.String KEY_STICKY
+    public static final java.lang.String KEY_CUTOUT_MODE
+android.support.v4.os.IResultReceiver
+androidx.core.graphics.drawable.RoundedBitmapDrawable
+androidx.browser.trusted.FutureUtils
+android.support.v4.os.ResultReceiver
+androidx.core.app.JobIntentService$JobWorkEnqueuer
+com.google.androidbrowserhelper.trusted.ChromeLegacyUtils:
+    private void <init>()
+    private static final java.lang.String CHROME_LOCAL_BUILD_PACKAGE
+    private static final java.lang.String CHROMIUM_LOCAL_BUILD_PACKAGE
+    private static final java.lang.String CHROME_CANARY_PACKAGE
+    private static final java.lang.String CHROME_DEV_PACKAGE
+    private static final java.lang.String CHROME_STABLE_PACKAGE
+    private static final java.lang.String CHROME_BETA_PACKAGE
+    static final int VERSION_SUPPORTS_TRUSTED_WEB_ACTIVITIES
+    private static final int VERSION_SUPPORTS_NO_PREWARM
+    private static final int VERSION_SUPPORTS_CUSTOM_COLOR
+    private static final int VERSION_SUPPORTS_SIMPLIFIED_MANAGE_DATA
+androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
+androidx.core.content.pm.ShortcutManagerCompat
+androidx.lifecycle.LifecycleRegistry
+androidx.core.database.sqlite.SQLiteCursorCompat
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$2
+androidx.core.view.PointerIconCompat
+androidx.core.widget.ScrollerCompat
+androidx.core.provider.FontsContractCompat$4$7
+androidx.annotation.ColorInt
+androidx.core.app.AppComponentFactory
+androidx.core.view.TintableBackgroundView
+androidx.core.app.NotificationCompatExtras
+androidx.core.view.ViewPropertyAnimatorListener
+androidx.core.app.ActivityCompat$RequestPermissionsRequestCodeValidator
+androidx.core.R$attr
+androidx.annotation.ColorRes
+androidx.core.net.TrafficStatsCompat
+androidx.core.content.res.GrowingArrayUtils
+androidx.browser.trusted.sharing.ShareTarget$Params:
+    static androidx.browser.trusted.sharing.ShareTarget$Params fromBundle(android.os.Bundle)
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_TEXT
+    public static final java.lang.String KEY_FILES
+androidx.core.view.ViewCompat$AccessibilityViewProperty
+androidx.browser.customtabs.CustomTabsCallback:
+    public static final int NAVIGATION_STARTED
+    public static final int NAVIGATION_FINISHED
+    public static final int NAVIGATION_FAILED
+    public static final int NAVIGATION_ABORTED
+    public static final int TAB_SHOWN
+    public static final int TAB_HIDDEN
+    public static final java.lang.String ONLINE_EXTRAS_KEY
+androidx.core.app.ActivityOptionsCompat
+androidx.annotation.IdRes
+com.google.androidbrowserhelper.trusted.TwaLauncher:
+    public void launch(android.net.Uri)
+    public void launch(androidx.browser.trusted.TrustedWebActivityIntentBuilder,androidx.browser.customtabs.CustomTabsCallback,com.google.androidbrowserhelper.trusted.splashscreens.SplashScreenStrategy,java.lang.Runnable)
+    private static final java.lang.String TAG
+    private static final int DEFAULT_SESSION_ID
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi19
+androidx.core.app.NotificationCompat$Action$Extender
+androidx.core.view.ViewCompat$5
+androidx.core.text.ICUCompat
+androidx.core.os.ParcelableCompatCreatorCallbacks
+androidx.core.provider.FontsContractCompat$1
+androidx.core.util.Pair
+com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask:
+    private static final java.lang.String TAG
+    private static final java.lang.String FOLDER_NAME
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String PREFS_FILE
+    private static final java.lang.String PREF_LAST_UPDATE_TIME
+androidx.core.text.PrecomputedTextCompat
+androidx.collection.CircularIntArray
+com.google.androidbrowserhelper.trusted.LauncherActivityMetadata:
+    private static final java.lang.String TAG
+    private static final java.lang.String METADATA_DEFAULT_URL
+    private static final java.lang.String METADATA_STATUS_BAR_COLOR_ID
+    private static final java.lang.String METADATA_STATUS_BAR_COLOR_DARK_ID
+    private static final java.lang.String METADATA_NAVIGATION_BAR_COLOR_ID
+    private static final java.lang.String METADATA_NAVIGATION_BAR_COLOR_DARK_ID
+    private static final java.lang.String METADATA_NAVIGATION_BAR_DIVIDER_COLOR_ID
+    private static final java.lang.String METADATA_NAVIGATION_BAR_DIVIDER_COLOR_DARK_ID
+    private static final java.lang.String METADATA_SPLASH_IMAGE_DRAWABLE_ID
+    private static final java.lang.String METADATA_SPLASH_SCREEN_BACKGROUND_COLOR
+    private static final java.lang.String METADATA_SPLASH_SCREEN_FADE_OUT_DURATION
+    private static final java.lang.String METADATA_FILE_PROVIDER_AUTHORITY
+    private static final java.lang.String METADATA_SHARE_TARGET
+    private static final java.lang.String METADATA_ADDITIONAL_TRUSTED_ORIGINS
+    private static final java.lang.String METADATA_FALLBACK_STRATEGY
+    private static final java.lang.String METADATA_DISPLAY_MODE
+    private static final java.lang.String METADATA_SCREEN_ORIENTATION
+    private static final int DEFAULT_COLOR_ID
+    private static final int DEFAULT_DIVIDER_COLOR_ID
+androidx.browser.trusted.ConnectionHolder
+android.support.customtabs.IPostMessageService$Default
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String METADATA_MANAGE_SPACE_DEFAULT_URL
+    public static final java.lang.String ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA
+    public static final java.lang.String SITE_SETTINGS_SHORTCUT_ID
+    public static final java.lang.String CATEGORY_LAUNCH_SITE_SETTINGS
+    public static final java.lang.String OVERRIDE_IC_SITE_SETTINGS_ID
+androidx.annotation.ColorLong
+androidx.core.app.NotificationCompat$StreamType
+androidx.core.content.res.FontResourcesParserCompat$FontFamilyFilesResourceEntry
+androidx.versionedparcelable.VersionedParcelStream$1
+androidx.core.view.LayoutInflaterCompat
+com.google.androidbrowserhelper.R$xml
+androidx.browser.customtabs.CustomTabsService$1
+androidx.core.os.LocaleListCompatWrapper
+androidx.core.view.MotionEventCompat
+androidx.core.view.NestedScrollingChildHelper
+androidx.core.content.pm.ShortcutInfoCompat$Builder
+androidx.core.app.JobIntentService$CompatJobEngine
+androidx.lifecycle.GeneratedAdapter
+androidx.concurrent.futures.AbstractResolvableFuture$SafeAtomicHelper
+androidx.core.view.DragAndDropPermissionsCompat
+androidx.core.provider.FontsContractCompat$Columns
+androidx.core.view.AccessibilityDelegateCompat
+androidx.core.os.MessageCompat
+androidx.browser.customtabs.PostMessageService$1
+androidx.core.widget.ListPopupWindowCompat
+androidx.core.app.AlarmManagerCompat
+androidx.core.provider.FontsContractCompat$4$5
+androidx.core.graphics.drawable.WrappedDrawableApi14:
+    public final android.graphics.drawable.Drawable getWrappedDrawable()
+androidx.core.content.ContextCompat$LegacyServiceMapHolder
+androidx.browser.customtabs.CustomTabsSession:
+    private final java.lang.Object mLock
+androidx.browser.customtabs.CustomTabsClient$2:
+    final synthetic androidx.browser.customtabs.CustomTabsClient this$0
+androidx.browser.customtabs.CustomTabsServiceConnection$1:
+    final synthetic androidx.browser.customtabs.CustomTabsServiceConnection this$0
+androidx.collection.ContainerHelpers:
+    static final long[] EMPTY_LONGS
+androidx.core.app.NotificationManagerCompat:
+    private static final java.lang.Object sEnabledNotificationListenersLock
+    private static java.util.Set sEnabledNotificationListenerPackages
+    private static final java.lang.Object sLock
+com.google.androidbrowserhelper.trusted.splashscreens.SplashImageTransferTask:
+    static final synthetic boolean $assertionsDisabled

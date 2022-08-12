@@ -1,0 +1,277 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="app.vercel.covid_tracker_beta.twa"
+26    android:versionCode="2"
+27    android:versionName="2" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="19"
+30-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml
+31        android:targetSdkVersion="31" />
+31-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml
+32
+33    <queries>
+33-->[com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /home/bhavya/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:26:5-34:15
+34        <intent>
+34-->[com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /home/bhavya/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:27:9-33:18
+35            <action android:name="android.intent.action.VIEW" />
+35-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:131:17-68
+35-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:131:25-66
+36
+37            <category android:name="android.intent.category.BROWSABLE" />
+37-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:133:17-77
+37-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:133:27-75
+38
+39            <data android:scheme="https" />
+39-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:134:17-135:54
+39-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:134:23-45
+40        </intent>
+41    </queries>
+42
+43    <application
+43-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:33:5-174:19
+44        android:name="app.vercel.covid_tracker_beta.twa.Application"
+44-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:34:9-35
+45        android:allowBackup="true"
+45-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:35:9-35
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.1.0] /home/bhavya/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:24:18-86
+47        android:icon="@mipmap/ic_launcher"
+47-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:36:9-43
+48        android:label="@string/appName"
+48-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:37:9-40
+49        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+49-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:39:9-105
+50        android:supportsRtl="true"
+50-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:41:9-35
+51        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+51-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:42:9-68
+52        <meta-data
+52-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:44:9-46:58
+53            android:name="asset_statements"
+53-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:45:13-44
+54            android:resource="@string/assetStatements" />
+54-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:46:13-55
+55        <meta-data
+55-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:49:13-51:58
+56            android:name="web_manifest_url"
+56-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:50:17-48
+57            android:value="@string/webManifestUrl" />
+57-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:51:17-55
+58        <meta-data
+58-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:54:9-56:52
+59            android:name="twa_generator"
+59-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:55:13-41
+60            android:value="@string/generatorApp" />
+60-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:56:13-49
+61
+62        <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" >
+62-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:63:13-67:24
+62-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:63:23-104
+63            <meta-data
+63-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:64:13-66:53
+64                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
+64-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:65:17-83
+65                android:value="@string/launchUrl" />
+65-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:66:17-50
+66        </activity>
+67        <activity
+67-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:70:9-139:20
+68            android:name="app.vercel.covid_tracker_beta.twa.LauncherActivity"
+68-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:70:19-50
+69            android:alwaysRetainTaskState="true"
+69-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:71:13-49
+70            android:exported="true"
+70-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:73:13-36
+71            android:label="@string/launcherName" >
+71-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:72:13-49
+72            <meta-data
+72-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:74:13-75:53
+73                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+73-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:74:24-85
+74                android:value="@string/launchUrl" />
+74-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:75:17-50
+75            <meta-data
+75-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:77:13-79:58
+76                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+76-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:78:17-83
+77                android:resource="@color/colorPrimary" />
+77-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:79:17-55
+78            <meta-data
+78-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:81:13-83:61
+79                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+79-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:82:17-87
+80                android:resource="@color/navigationColor" />
+80-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:83:17-58
+81            <meta-data
+81-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:85:13-87:65
+82                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
+82-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:86:17-92
+83                android:resource="@color/navigationColorDark" />
+83-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:87:17-62
+84            <meta-data
+84-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:89:13-91:68
+85                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
+85-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:90:17-84
+86                android:resource="@color/navigationDividerColor" />
+86-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:91:17-65
+87            <meta-data
+87-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:93:13-95:72
+88                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
+88-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:94:17-89
+89                android:resource="@color/navigationDividerColorDark" />
+89-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:95:17-69
+90            <meta-data
+90-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:97:13-98:54
+91                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+91-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:97:24-95
+92                android:resource="@drawable/splash" />
+92-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:98:17-52
+93            <meta-data
+93-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:100:13-101:60
+94                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+94-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:100:24-104
+95                android:resource="@color/backgroundColor" />
+95-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:101:17-58
+96            <meta-data
+96-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:103:13-104:71
+97                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+97-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:103:24-105
+98                android:value="@integer/splashScreenFadeOutDuration" />
+98-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:104:17-69
+99            <meta-data
+99-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:106:13-107:60
+100                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+100-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:106:24-97
+101                android:value="@string/providerAuthority" />
+101-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:107:17-58
+102            <meta-data
+102-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:109:13-97
+103                android:name="android.app.shortcuts"
+103-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:109:24-60
+104                android:resource="@xml/shortcuts" />
+104-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:109:61-94
+105            <meta-data
+105-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:111:13-112:56
+106                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+106-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:111:24-91
+107                android:value="@string/fallbackType" />
+107-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:112:17-53
+108            <meta-data
+108-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:118:13-119:54
+109                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+109-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:118:24-92
+110                android:value="@string/orientation" />
+110-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:119:17-52
+111
+112            <intent-filter>
+112-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:125:13-128:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:126:17-69
+113-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:126:25-66
+114
+115                <category android:name="android.intent.category.LAUNCHER" />
+115-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:127:17-77
+115-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:127:27-74
+116            </intent-filter>
+117            <intent-filter android:autoVerify="true" >
+117-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:130:13-136:29
+117-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:130:28-53
+118                <action android:name="android.intent.action.VIEW" />
+118-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:131:17-68
+118-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:131:25-66
+119
+120                <category android:name="android.intent.category.DEFAULT" />
+120-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:132:17-76
+120-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:132:27-73
+121                <category android:name="android.intent.category.BROWSABLE" />
+121-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:133:17-77
+121-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:133:27-75
+122
+123                <data
+123-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:134:17-135:54
+124                    android:host="@string/hostName"
+124-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:135:21-52
+125                    android:scheme="https" />
+125-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:134:23-45
+126            </intent-filter>
+127        </activity>
+128        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+128-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:141:9-90
+128-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:141:19-87
+129        <activity
+129-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:143:9-144:62
+130            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+130-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:143:19-97
+131            android:configChanges="orientation|screenSize" />
+131-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:144:13-59
+132
+133        <provider
+133-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:146:9-154:20
+134            android:name="androidx.core.content.FileProvider"
+134-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:147:13-62
+135            android:authorities="@string/providerAuthority"
+135-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:148:13-60
+136            android:exported="false"
+136-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:150:13-37
+137            android:grantUriPermissions="true" >
+137-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:149:13-47
+138            <meta-data
+138-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:151:13-153:53
+139                android:name="android.support.FILE_PROVIDER_PATHS"
+139-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:152:17-67
+140                android:resource="@xml/filepaths" />
+140-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:153:17-50
+141        </provider>
+142
+143        <service
+143-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:156:9-171:19
+144            android:name="app.vercel.covid_tracker_beta.twa.DelegationService"
+144-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:157:13-46
+145            android:enabled="@bool/enableNotification"
+145-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:158:13-55
+146            android:exported="@bool/enableNotification" >
+146-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:159:13-56
+147            <meta-data
+147-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:162:17-164:73
+148                android:name="android.support.customtabs.trusted.SMALL_ICON"
+148-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:163:21-81
+149                android:resource="@drawable/ic_notification_icon" />
+149-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:164:21-70
+150
+151            <intent-filter>
+151-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:167:13-170:29
+152                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+152-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:168:17-105
+152-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:168:25-103
+153
+154                <category android:name="android.intent.category.DEFAULT" />
+154-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:132:17-76
+154-->/home/bhavya/webdev/covid-tracker-material-ui-react/app/src/main/AndroidManifest.xml:132:27-73
+155            </intent-filter>
+156        </service>
+157    </application>
+158
+159</manifest>
